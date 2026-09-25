@@ -78,6 +78,14 @@ Bu görseller Magnific "auto" modeliyle üretildi. Tarihsel kanıt değil, tasar
 | 15 | `KONSEPT_A_tam_kic_v001.png` | Yardımcı referans (tam kıç). Kürek ve yıldız sapmaları var. |
 | 16 | `KONSEPT_A_kadirga_kureksiz_v001.png`, `..._v002b.png` | Reddedildi |
 
+## Kalite referansı: hazır Blender gemisi (Fab)
+
+Kullanıcının Fab kütüphanesindeki "Age of sail Blender ship" paketi. Kalite çıtası olarak incelenecek: topoloji, poly bütçesi, modüler parça yapısı, halat ve donanım, malzeme ve UV. Tarihsel kaynak değildir, ölçü de buradan alınmaz.
+
+- Yol (yalnızca kullanıcının yerel makinesinde): `C:\ProgramData\Epic\EpicGamesLauncher\VaultCache\FabLibrary\Age_of_sail_Blender_ship-7fc31661\blender\ship_v1_03_extracted\ship_v1_03.blend` (253 MB)
+- Durum: henüz incelenmedi.
+- Not: Dosya büyük. Canlı sahneyi bozmamak için Blender'da arka planda (`blender -b`) açılmalı.
+
 ## Bulunamayan ya da kullanılmayanlar
 
 - **Ayasofya 2612 ve Topkapı *Kitâb-ı Bahriye* nüshaları:** Commons'ta kurum ve envanterle eşleşen dosya bulunamadı.

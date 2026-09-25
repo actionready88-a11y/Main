@@ -35,18 +35,44 @@ Bu bir oynanış (Unreal) mantığıdır. Modelleme tarafında gerektirdikleri:
 | Geri tepme ve servis alanı | Top arkasında engelsiz güverte bölgesi. Ölçüsü top modeli yapılınca `CannonBattery` manifestine yazılır |
 | Mühimmat akışı | Top yanında gülle rafları, ambar ağızları ve merdivenler (`DeckUtility`). NPC'nin alt güverteye inip çıkabilmesi için navmesh bağlantı noktaları (`SOCK_NAVLINK_*`) |
 | Komuta zinciri istasyonları | `SOCK_STATION_CAPTAIN` (kıç kasarası, dümen yanı), `SOCK_STATION_SECOND_CAPTAIN`, `SOCK_STATION_GUNNERY_OFFICER` (bel, topların ortası) |
+| Pruva mahmuzu (ram) | `SOCKET_RAM` ve `MOD_RAM_*` modülü (oynanış; tarihsel değil). Çarpma hasarı oynanış tarafında hesaplanır |
 | Top gruplama | Top soketleri manifestte `battery_group` taşır: `PORT_MAIN`, `STARBOARD_MAIN`, `PORT_QD`, `STARBOARD_QD`, `CHASE_BOW`, `CHASE_STERN`. Emir bu gruplara verilir |
 | Hasar ve durum | Her top bağımsız durum taşır (standart: `CannonBattery` modülü). Mürettebat kaybı oynanış tarafında hesaplanır |
 
-## 4. Yürünebilir güverte gereksinimleri
+## 4. Gezilebilir ve tırmanılabilir gemi (Assassin's Creed tarzı)
+
+Kullanıcı kararı (2026-09-25): **geminin her yerine çıkılabilecek ve her yeri gezilebilecek.**
+
+### 4.1 Kapsam
+
+| Alan | Gezilebilir | Tırmanılabilir | Not |
+|---|---|---|---|
+| Açık güverteler (bel, kıç kasarası, baş kasarası, baş platformu) | ✓ | — | v003'te yürüme çarpışması var |
+| İç mekânlar: batarya güvertesinin kasara altı, alt güverte, kıç kamarası, ambar | ✓ | — | İç mekân pass'inde modellenecek |
+| Gövde dış yüzü (wale'ler, zincir tahtaları, lumbarlar, kıç galerisi) | — | ✓ | Sudan ya da bordalamadan tırmanma |
+| Direkler, çanaklıklar (tops), serenler, cıvadıra | ✓ (çanaklık, seren) | ✓ | Serenlerde yürüme ve denge |
+| Arma: iskele çarmıhları (ratlines), istralyalar | — | ✓ | Ağ tırmanma; halat kayma ve sallanma noktaları |
+| Küpeşte ve korkuluklar | ✓ (üzerinde denge) | ✓ | Kenar tutunma |
+
+### 4.2 Blender işaretleme kuralları (UE'ye aktarılacak)
+
+| İşaret | Biçim | Amaç |
+|---|---|---|
+| `UCX_*` + `ucx_purpose` | Dışbükey çarpışma | `hull`, `deck_*`, `bulwark_*`, ileride `climb_*`, `stairs_*` |
+| `CLIMB_*` | Basit hacim veya yüzey (render kapalı) | Tırmanma yüzeyi: `climb_type` = `net` (çarmıh), `pole` (direk), `wall` (gövde), `ledge` |
+| `SOCK_LEDGE_*` | Boş nesne çiftleri (başlangıç ve bitiş) | Tutunma kenarı (küpeşte, wale, çanaklık kenarı) |
+| `SOCK_NAVLINK_*` | Boş nesne çiftleri | Merdiven, ambar ağzı ve atlama bağlantıları (NPC navmesh) |
+| `SOCK_ROPE_*` | Boş nesne | Halat kayma ve sallanma bağlantı noktaları |
+| `SOCK_CREW_*`, `SOCK_STATION_*` | Boş nesne | Top mürettebatı ve komuta istasyonları (§3) |
+
+### 4.3 Boyut kuralları
 
 | Konu | Kural |
 |---|---|
-| Çarpışma | Gövde fiziği `UCX_CORE_HULL_*` (dışbükey, sade) olarak kalır. Güverteler için ayrı, basit yürüme çarpışması: `UCX_DECK_*` kutuları, rampa ve merdiven hacimleri, küpeşte duvarları (düşmeyi engeller) |
-| Tavan yüksekliği | Kasara altındaki bel ve batarya güvertesinde karakter kapsülü rahat geçmeli. **Açık karar:** v001'de kasara güvertesi batarya güvertesinin 2,0 m üstünde. Kiriş ve kalınlık düşülünce net yükseklik yaklaşık 1,7 m kalıyor; bu, UE varsayılan karakter kapsülü (176 cm) için yetersiz. Öneri: 2,3 m (oynanış sapması, tarihsel değil) |
-| Geçişler | Bel ile kasaralar arasında merdivenler; ambar ağızlarından alt güverteye merdivenler |
-| Hareketli gemi | Karakterler hareketli gemi üzerinde yürüyecek. Güverte çarpışması Hull Core root'una bağlıdır, ayrı fizik gövdesi yoktur |
-| Oynanabilir alanlar | Kapsam kararı bekliyor: yalnız açık güverteler mi, yoksa alt güverte ve kıç kamarası da dahil mi? |
+| Tavan yüksekliği | Kasara güvertesi, batarya güvertesinin **2,0 m** üstünde (kullanıcı kararı: şimdilik yeterli, az gelirse düzeltilecek). İç güverteler de aynı hedefle kurulur |
+| Geçişler | Bel ile kasaralar arası merdivenler; ambar ağızlarından alt güverte ve ambara merdivenler |
+| Hareketli gemi | Karakterler hareketli gemi üzerinde yürür ve tırmanır. Tüm çarpışmalar Hull Core root'una bağlıdır; ayrı fizik gövdesi yoktur |
+| Oynanış sapmaları | Tavan yüksekliği, merdiven genişliği ve seren kalınlığı gibi oynanış için büyütülen ölçüler `ship_spec.yaml` içinde "oynanış" notuyla işaretlenir |
 
 ## 5. Unreal Engine 5.8 teslimat notları
 

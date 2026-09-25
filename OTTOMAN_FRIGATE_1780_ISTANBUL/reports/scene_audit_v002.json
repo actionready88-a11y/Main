@@ -1,5 +1,5 @@
 {
-  "ship_id": "OTTOMAN_FRIGATE_1700_ISTANBUL",
+  "ship_id": "OTTOMAN_FRIGATE_1780_ISTANBUL",
   "version": "v002",
   "blender": "5.0.1",
   "unit_scale": 1.0,
@@ -1569,7 +1569,7 @@
   },
   "pass": {
     "name": "pass_v002_fix_stern_keel",
-    "source": "Blender/versions/OTTOMAN_FRIGATE_1700_ISTANBUL_v001.blend",
+    "source": "Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v001.blend",
     "pass_changes": {
       "replaced": [
         "CORE_HULL_SHELL",

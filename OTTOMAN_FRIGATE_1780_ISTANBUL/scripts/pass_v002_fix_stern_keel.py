@@ -1,7 +1,7 @@
 """Pass v002 — kıç ve omurga bağlantı düzeltmesi (v001 üzerine, tüm gemi yeniden kurulmaz).
 
 Çalıştırma (depo kökünden):
-    python3 OTTOMAN_FRIGATE_1700_ISTANBUL/scripts/pass_v002_fix_stern_keel.py [--no-render]
+    python3 OTTOMAN_FRIGATE_1780_ISTANBUL/scripts/pass_v002_fix_stern_keel.py [--no-render]
 
 Kullanıcı bulgusu (v001 ölçülü pafta):
   1. Kıçta su hattında dümen/kıç bodoslaması gövdeden kopuk görünüyor.

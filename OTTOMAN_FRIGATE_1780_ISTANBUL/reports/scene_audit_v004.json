@@ -1,6 +1,6 @@
 {
   "ship_id": "OTTOMAN_FRIGATE_1780_ISTANBUL",
-  "version": "v003",
+  "version": "v004",
   "blender": "5.0.1",
   "unit_scale": 1.0,
   "objects": [
@@ -1392,6 +1392,2001 @@
       ]
     },
     {
+      "name": "SOCK_CREW_CHASE_BOW_P_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        14.1506,
+        -1.0,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_BOW_P_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        16.1506,
+        -0.05,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_BOW_P_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        16.1506,
+        -1.95,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_BOW_P_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        15.0506,
+        -0.05,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_BOW_S_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        14.1506,
+        1.0,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_BOW_S_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        16.1506,
+        1.95,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_BOW_S_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        16.1506,
+        0.05,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_BOW_S_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        15.0506,
+        1.95,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_P_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -15.179,
+        -1.6,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_P_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.179,
+        -2.55,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_P_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.179,
+        -0.65,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_P_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -16.079,
+        -2.55,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_S_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -15.179,
+        1.6,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_S_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.179,
+        0.65,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_S_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.179,
+        2.55,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CHASE_STERN_S_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -16.079,
+        0.65,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_01_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.4,
+        -0.6255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_01_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.45,
+        -2.6255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_01_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -14.35,
+        -2.6255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_01_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.45,
+        -1.5255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_02_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.0364,
+        -1.0723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_02_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -10.0864,
+        -3.0723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_02_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.9864,
+        -3.0723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_02_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -10.0864,
+        -1.9723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_03_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -8.6727,
+        -1.4957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_03_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -7.7227,
+        -3.4957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_03_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.6227,
+        -3.4957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_03_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -7.7227,
+        -2.3957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_04_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -6.3091,
+        -1.7805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_04_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -5.3591,
+        -3.7805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_04_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -7.2591,
+        -3.7805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_04_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -5.3591,
+        -2.6805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_05_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -3.9455,
+        -1.6617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_05_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.9955,
+        -3.6617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_05_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -4.8955,
+        -3.6617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_05_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.9955,
+        -2.5617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_06_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -1.5818,
+        -1.6634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_06_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.6318,
+        -3.6634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_06_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.5318,
+        -3.6634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_06_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.6318,
+        -2.5634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_07_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        0.7818,
+        -1.6626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_07_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        1.7318,
+        -3.6626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_07_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.1682,
+        -3.6626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_07_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        1.7318,
+        -2.5626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_08_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        3.1455,
+        -1.6566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_08_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        4.0955,
+        -3.6566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_08_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        2.1955,
+        -3.6566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_08_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        4.0955,
+        -2.5566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_09_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        5.5091,
+        -1.5774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_09_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.4591,
+        -3.5774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_09_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        4.5591,
+        -3.5774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_09_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.4591,
+        -2.4774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_10_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        7.8727,
+        -1.3837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_10_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        8.8227,
+        -3.3837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_10_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.9227,
+        -3.3837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_10_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        8.8227,
+        -2.2837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_11_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        10.2364,
+        -1.0567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_11_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        11.1864,
+        -3.0567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_11_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        9.2864,
+        -3.0567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_11_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        11.1864,
+        -1.9567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_12_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        12.6,
+        -0.6788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_12_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        13.55,
+        -2.6788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_12_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        11.65,
+        -2.6788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_12_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        13.55,
+        -1.5788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_01_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.6,
+        -0.5634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_01_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.65,
+        -2.5634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_01_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.55,
+        -2.5634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_01_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.65,
+        -1.4634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_02_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -10.2,
+        -0.9707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_02_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.25,
+        -2.9707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_02_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.15,
+        -2.9707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_P_QD_02_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.25,
+        -1.8707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_01_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.4,
+        0.6255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_01_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -14.35,
+        2.6255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_01_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.45,
+        2.6255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_01_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -14.35,
+        1.5255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_02_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.0364,
+        1.0723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_02_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.9864,
+        3.0723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_02_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -10.0864,
+        3.0723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_02_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.9864,
+        1.9723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_03_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -8.6727,
+        1.4957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_03_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.6227,
+        3.4957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_03_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -7.7227,
+        3.4957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_03_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.6227,
+        2.3957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_04_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -6.3091,
+        1.7805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_04_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -7.2591,
+        3.7805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_04_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -5.3591,
+        3.7805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_04_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -7.2591,
+        2.6805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_05_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -3.9455,
+        1.6617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_05_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -4.8955,
+        3.6617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_05_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.9955,
+        3.6617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_05_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -4.8955,
+        2.5617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_06_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -1.5818,
+        1.6634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_06_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.5318,
+        3.6634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_06_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.6318,
+        3.6634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_06_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.5318,
+        2.5634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_07_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        0.7818,
+        1.6626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_07_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.1682,
+        3.6626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_07_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        1.7318,
+        3.6626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_07_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.1682,
+        2.5626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_08_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        3.1455,
+        1.6566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_08_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        2.1955,
+        3.6566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_08_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        4.0955,
+        3.6566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_08_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        2.1955,
+        2.5566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_09_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        5.5091,
+        1.5774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_09_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        4.5591,
+        3.5774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_09_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.4591,
+        3.5774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_09_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        4.5591,
+        2.4774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_10_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        7.8727,
+        1.3837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_10_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.9227,
+        3.3837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_10_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        8.8227,
+        3.3837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_10_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.9227,
+        2.2837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_11_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        10.2364,
+        1.0567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_11_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        9.2864,
+        3.0567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_11_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        11.1864,
+        3.0567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_11_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        9.2864,
+        1.9567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_12_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        12.6,
+        0.6788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_12_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        11.65,
+        2.6788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_12_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        13.55,
+        2.6788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_12_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        11.65,
+        1.5788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_01_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.6,
+        0.5634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_01_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.55,
+        2.5634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_01_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.65,
+        2.5634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_01_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.55,
+        1.4634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_02_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -10.2,
+        0.9707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_02_B",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.15,
+        2.9707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_02_C",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.25,
+        2.9707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_S_QD_02_D",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.15,
+        1.8707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_RAM",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        17.9772,
+        0.0,
+        -0.35
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_HELM",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.0236,
+        0.0,
+        4.3241
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_STATION_CAPTAIN",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.9563,
+        0.0,
+        4.4667
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_STATION_SECOND_CAPTAIN",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -6.8049,
+        -1.8,
+        4.1016
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_STATION_GUNNERY_OFFICER",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        1.0144,
+        0.0,
+        2.0123
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
       "name": "UCX_CORE_HULL_SHELL_00",
       "type": "MESH",
       "collection": "40_COLLISION",
@@ -2449,9 +4444,11 @@
       "SOCKET_CANNON_S_QD_02",
       "SOCKET_FIGUREHEAD",
       "SOCKET_FLAG_STERN",
+      "SOCKET_HELM",
       "SOCKET_MAST_FORE",
       "SOCKET_MAST_MAIN",
       "SOCKET_MAST_MIZZEN",
+      "SOCKET_RAM",
       "SOCKET_RIG_PRIMARY",
       "SOCKET_RUDDER",
       "SOCKET_STERN_MODULE",
@@ -2471,7 +4468,138 @@
       "SOCK_BUOY_14",
       "SOCK_BUOY_15",
       "SOCK_BUOY_16",
-      "SOCK_COM"
+      "SOCK_COM",
+      "SOCK_CREW_CHASE_BOW_P_A",
+      "SOCK_CREW_CHASE_BOW_P_B",
+      "SOCK_CREW_CHASE_BOW_P_C",
+      "SOCK_CREW_CHASE_BOW_P_D",
+      "SOCK_CREW_CHASE_BOW_S_A",
+      "SOCK_CREW_CHASE_BOW_S_B",
+      "SOCK_CREW_CHASE_BOW_S_C",
+      "SOCK_CREW_CHASE_BOW_S_D",
+      "SOCK_CREW_CHASE_STERN_P_A",
+      "SOCK_CREW_CHASE_STERN_P_B",
+      "SOCK_CREW_CHASE_STERN_P_C",
+      "SOCK_CREW_CHASE_STERN_P_D",
+      "SOCK_CREW_CHASE_STERN_S_A",
+      "SOCK_CREW_CHASE_STERN_S_B",
+      "SOCK_CREW_CHASE_STERN_S_C",
+      "SOCK_CREW_CHASE_STERN_S_D",
+      "SOCK_CREW_P_01_A",
+      "SOCK_CREW_P_01_B",
+      "SOCK_CREW_P_01_C",
+      "SOCK_CREW_P_01_D",
+      "SOCK_CREW_P_02_A",
+      "SOCK_CREW_P_02_B",
+      "SOCK_CREW_P_02_C",
+      "SOCK_CREW_P_02_D",
+      "SOCK_CREW_P_03_A",
+      "SOCK_CREW_P_03_B",
+      "SOCK_CREW_P_03_C",
+      "SOCK_CREW_P_03_D",
+      "SOCK_CREW_P_04_A",
+      "SOCK_CREW_P_04_B",
+      "SOCK_CREW_P_04_C",
+      "SOCK_CREW_P_04_D",
+      "SOCK_CREW_P_05_A",
+      "SOCK_CREW_P_05_B",
+      "SOCK_CREW_P_05_C",
+      "SOCK_CREW_P_05_D",
+      "SOCK_CREW_P_06_A",
+      "SOCK_CREW_P_06_B",
+      "SOCK_CREW_P_06_C",
+      "SOCK_CREW_P_06_D",
+      "SOCK_CREW_P_07_A",
+      "SOCK_CREW_P_07_B",
+      "SOCK_CREW_P_07_C",
+      "SOCK_CREW_P_07_D",
+      "SOCK_CREW_P_08_A",
+      "SOCK_CREW_P_08_B",
+      "SOCK_CREW_P_08_C",
+      "SOCK_CREW_P_08_D",
+      "SOCK_CREW_P_09_A",
+      "SOCK_CREW_P_09_B",
+      "SOCK_CREW_P_09_C",
+      "SOCK_CREW_P_09_D",
+      "SOCK_CREW_P_10_A",
+      "SOCK_CREW_P_10_B",
+      "SOCK_CREW_P_10_C",
+      "SOCK_CREW_P_10_D",
+      "SOCK_CREW_P_11_A",
+      "SOCK_CREW_P_11_B",
+      "SOCK_CREW_P_11_C",
+      "SOCK_CREW_P_11_D",
+      "SOCK_CREW_P_12_A",
+      "SOCK_CREW_P_12_B",
+      "SOCK_CREW_P_12_C",
+      "SOCK_CREW_P_12_D",
+      "SOCK_CREW_P_QD_01_A",
+      "SOCK_CREW_P_QD_01_B",
+      "SOCK_CREW_P_QD_01_C",
+      "SOCK_CREW_P_QD_01_D",
+      "SOCK_CREW_P_QD_02_A",
+      "SOCK_CREW_P_QD_02_B",
+      "SOCK_CREW_P_QD_02_C",
+      "SOCK_CREW_P_QD_02_D",
+      "SOCK_CREW_S_01_A",
+      "SOCK_CREW_S_01_B",
+      "SOCK_CREW_S_01_C",
+      "SOCK_CREW_S_01_D",
+      "SOCK_CREW_S_02_A",
+      "SOCK_CREW_S_02_B",
+      "SOCK_CREW_S_02_C",
+      "SOCK_CREW_S_02_D",
+      "SOCK_CREW_S_03_A",
+      "SOCK_CREW_S_03_B",
+      "SOCK_CREW_S_03_C",
+      "SOCK_CREW_S_03_D",
+      "SOCK_CREW_S_04_A",
+      "SOCK_CREW_S_04_B",
+      "SOCK_CREW_S_04_C",
+      "SOCK_CREW_S_04_D",
+      "SOCK_CREW_S_05_A",
+      "SOCK_CREW_S_05_B",
+      "SOCK_CREW_S_05_C",
+      "SOCK_CREW_S_05_D",
+      "SOCK_CREW_S_06_A",
+      "SOCK_CREW_S_06_B",
+      "SOCK_CREW_S_06_C",
+      "SOCK_CREW_S_06_D",
+      "SOCK_CREW_S_07_A",
+      "SOCK_CREW_S_07_B",
+      "SOCK_CREW_S_07_C",
+      "SOCK_CREW_S_07_D",
+      "SOCK_CREW_S_08_A",
+      "SOCK_CREW_S_08_B",
+      "SOCK_CREW_S_08_C",
+      "SOCK_CREW_S_08_D",
+      "SOCK_CREW_S_09_A",
+      "SOCK_CREW_S_09_B",
+      "SOCK_CREW_S_09_C",
+      "SOCK_CREW_S_09_D",
+      "SOCK_CREW_S_10_A",
+      "SOCK_CREW_S_10_B",
+      "SOCK_CREW_S_10_C",
+      "SOCK_CREW_S_10_D",
+      "SOCK_CREW_S_11_A",
+      "SOCK_CREW_S_11_B",
+      "SOCK_CREW_S_11_C",
+      "SOCK_CREW_S_11_D",
+      "SOCK_CREW_S_12_A",
+      "SOCK_CREW_S_12_B",
+      "SOCK_CREW_S_12_C",
+      "SOCK_CREW_S_12_D",
+      "SOCK_CREW_S_QD_01_A",
+      "SOCK_CREW_S_QD_01_B",
+      "SOCK_CREW_S_QD_01_C",
+      "SOCK_CREW_S_QD_01_D",
+      "SOCK_CREW_S_QD_02_A",
+      "SOCK_CREW_S_QD_02_B",
+      "SOCK_CREW_S_QD_02_C",
+      "SOCK_CREW_S_QD_02_D",
+      "SOCK_STATION_CAPTAIN",
+      "SOCK_STATION_GUNNERY_OFFICER",
+      "SOCK_STATION_SECOND_CAPTAIN"
     ],
     "collections": [
       "00_REFERENCE",
@@ -2487,390 +4615,175 @@
       "90_EXPORT"
     ]
   },
-  "collision": {
-    "count": 50,
-    "max_verts": 36,
-    "over_limit": [],
-    "by_purpose": {
-      "bulwark_port": 14,
-      "bulwark_starboard": 14,
-      "deck_forecastle": 2,
-      "deck_gun": 10,
-      "deck_quarter": 4,
-      "hull": 6
-    },
-    "total_tris": 976,
-    "parts": [
-      {
-        "name": "UCX_CORE_HULL_SHELL_00",
-        "purpose": "hull",
-        "verts": 32,
-        "tris": 60
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_01",
-        "purpose": "hull",
-        "verts": 34,
-        "tris": 64
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_02",
-        "purpose": "hull",
-        "verts": 36,
-        "tris": 68
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_03",
-        "purpose": "hull",
-        "verts": 36,
-        "tris": 68
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_04",
-        "purpose": "hull",
-        "verts": 36,
-        "tris": 68
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_05",
-        "purpose": "hull",
-        "verts": 30,
-        "tris": 56
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_06",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_07",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_08",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_09",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_10",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_11",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_12",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_13",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_14",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_15",
-        "purpose": "deck_gun",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_16",
-        "purpose": "deck_quarter",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_17",
-        "purpose": "deck_quarter",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_18",
-        "purpose": "deck_quarter",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_19",
-        "purpose": "deck_quarter",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_20",
-        "purpose": "deck_forecastle",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_21",
-        "purpose": "deck_forecastle",
-        "verts": 10,
-        "tris": 16
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_22",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_23",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_24",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_25",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_26",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_27",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_28",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_29",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_30",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_31",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_32",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_33",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_34",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_35",
-        "purpose": "bulwark_starboard",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_36",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_37",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_38",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_39",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_40",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_41",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_42",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_43",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_44",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_45",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_46",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_47",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_48",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      },
-      {
-        "name": "UCX_CORE_HULL_SHELL_49",
-        "purpose": "bulwark_port",
-        "verts": 8,
-        "tris": 12
-      }
+  "gameplay_sockets": {
+    "manifest_version": 2,
+    "guns": 32,
+    "crew_points": 128,
+    "stations": [
+      "SOCKET_HELM",
+      "SOCK_STATION_CAPTAIN",
+      "SOCK_STATION_SECOND_CAPTAIN",
+      "SOCK_STATION_GUNNERY_OFFICER"
     ],
-    "waist_open": true,
-    "viewport_hidden": true
+    "ram": "SOCKET_RAM",
+    "battery_groups": {
+      "CHASE_BOW": 2,
+      "CHASE_STERN": 2,
+      "PORT_MAIN": 12,
+      "PORT_QD": 2,
+      "STARBOARD_MAIN": 12,
+      "STARBOARD_QD": 2
+    },
+    "crew_points_outside_deck": [],
+    "cannon_rotation_fix": [
+      {
+        "socket": "SOCKET_CANNON_P_01",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_02",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_03",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_04",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_05",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_06",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_07",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_08",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_09",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_10",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_11",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_12",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_QD_01",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_P_QD_02",
+        "old_rz_deg": 90.0,
+        "new_rz_deg": -90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_01",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_02",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_03",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_04",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_05",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_06",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_07",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_08",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_09",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_10",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_11",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_12",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_QD_01",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      },
+      {
+        "socket": "SOCKET_CANNON_S_QD_02",
+        "old_rz_deg": -90.0,
+        "new_rz_deg": 90.0
+      }
+    ]
   },
   "pass": {
-    "name": "pass_v003_collision",
-    "source": "Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v002.blend",
+    "name": "pass_v004_gameplay_sockets",
+    "source": "Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v003.blend",
     "pass_changes": {
-      "removed": [
-        "UCX_CORE_HULL_SHELL_00",
-        "UCX_CORE_HULL_SHELL_01",
-        "UCX_CORE_HULL_SHELL_02",
-        "UCX_CORE_HULL_SHELL_03"
-      ],
-      "added": [
-        "UCX_CORE_HULL_SHELL_00",
-        "UCX_CORE_HULL_SHELL_01",
-        "UCX_CORE_HULL_SHELL_02",
-        "UCX_CORE_HULL_SHELL_03",
-        "UCX_CORE_HULL_SHELL_04",
-        "UCX_CORE_HULL_SHELL_05",
-        "UCX_CORE_HULL_SHELL_06",
-        "UCX_CORE_HULL_SHELL_07",
-        "UCX_CORE_HULL_SHELL_08",
-        "UCX_CORE_HULL_SHELL_09",
-        "UCX_CORE_HULL_SHELL_10",
-        "UCX_CORE_HULL_SHELL_11",
-        "UCX_CORE_HULL_SHELL_12",
-        "UCX_CORE_HULL_SHELL_13",
-        "UCX_CORE_HULL_SHELL_14",
-        "UCX_CORE_HULL_SHELL_15",
-        "UCX_CORE_HULL_SHELL_16",
-        "UCX_CORE_HULL_SHELL_17",
-        "UCX_CORE_HULL_SHELL_18",
-        "UCX_CORE_HULL_SHELL_19",
-        "UCX_CORE_HULL_SHELL_20",
-        "UCX_CORE_HULL_SHELL_21",
-        "UCX_CORE_HULL_SHELL_22",
-        "UCX_CORE_HULL_SHELL_23",
-        "UCX_CORE_HULL_SHELL_24",
-        "UCX_CORE_HULL_SHELL_25",
-        "UCX_CORE_HULL_SHELL_26",
-        "UCX_CORE_HULL_SHELL_27",
-        "UCX_CORE_HULL_SHELL_28",
-        "UCX_CORE_HULL_SHELL_29",
-        "UCX_CORE_HULL_SHELL_30",
-        "UCX_CORE_HULL_SHELL_31",
-        "UCX_CORE_HULL_SHELL_32",
-        "UCX_CORE_HULL_SHELL_33",
-        "UCX_CORE_HULL_SHELL_34",
-        "UCX_CORE_HULL_SHELL_35",
-        "UCX_CORE_HULL_SHELL_36",
-        "UCX_CORE_HULL_SHELL_37",
-        "UCX_CORE_HULL_SHELL_38",
-        "UCX_CORE_HULL_SHELL_39",
-        "UCX_CORE_HULL_SHELL_40",
-        "UCX_CORE_HULL_SHELL_41",
-        "UCX_CORE_HULL_SHELL_42",
-        "UCX_CORE_HULL_SHELL_43",
-        "UCX_CORE_HULL_SHELL_44",
-        "UCX_CORE_HULL_SHELL_45",
-        "UCX_CORE_HULL_SHELL_46",
-        "UCX_CORE_HULL_SHELL_47",
-        "UCX_CORE_HULL_SHELL_48",
-        "UCX_CORE_HULL_SHELL_49"
-      ],
-      "visibility": [
-        "40_COLLISION hide_viewport",
-        "CUT_GUNPORTS hide_viewport"
-      ]
+      "added_sockets": 133,
+      "rotated_sockets": 28
     },
     "geometry_changed": false
   }

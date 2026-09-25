@@ -1,11 +1,11 @@
-ship_id: OTTOMAN_FRIGATE_1700_ISTANBUL
+ship_id: OTTOMAN_FRIGATE_1780_ISTANBUL
 status: draft
 identity:
   # GÜNCEL YÖN (2026-09-25, 2. karar): kalyon DEĞİL — tek batarya güverteli üç direkli frigate; demo bölgesi gemisi.
   type: "hibrit / fantastik: Osmanlı esintili üç direkli frigate (tek batarya güverteli)"
   historical_accuracy_claim: false
   name: null
-  year: 1700  # klasör adından; tip 1740 sonrası (Médée 1741) — öneri: OTTOMAN_FRIGATE_1780_ISTANBUL (yeniden adlandırılmadı)
+  year: 1780  # 2026-09-25 kullanıcı kararıyla yeniden adlandırıldı (eski: OTTOMAN_FRIGATE_1700_ISTANBUL); tek batarya güverteli frigate 1740 sonrası, Osmanlı fırkateyni 1770 sonrası
   nation: "Osmanlı (esinti)"
   role: "oyun içi savaş gemisi — demo bölgesi"
   primary_visual_target: "references/HIBRIT_CHATGPT_03.webp (profil) + references/HIBRIT_GEMINI_02.webp (süsleme)"
@@ -15,7 +15,7 @@ identity:
     - "Seçenek A kadırga 1572 (küreksiz) — kullanıcı hibrit lehine değiştirdi"
     - "'Beyaz At başlı' kalyon ölçeği (41,69 m, 63 top) — kullanıcı 'kalyon istemiyorum' dedi (2026-09-25)"
   alternative_class: "brig (iki direkli) — ayrı gemi olarak, kendi Gate A'sıyla (reports/MODELLEME_PLANI.md §8)"
-  gate_a_status: "yön ONAYLANDI 2026-09-25; frigate ölçü revizyonu kullanıcı onayı bekliyor"
+  gate_a_status: "ONAYLANDI 2026-09-25 (yön + frigate ölçüleri)"
 historical_basis:
   period: "hibrit: 18. yy frigate gövdesi + 16.-18. yy Osmanlı süsleme esintisi"
   hypothesis_result: "doğrulandı: 16. yy fırkatası 10-17 oturaklı küçük çektiri; üç direkli fırkateyn Osmanlı'da 1770 sonrası (Kocakaplan 2024)"
@@ -42,11 +42,13 @@ historical_basis:
   armament:
     gun_deck: 24        # 12/borda — HMS Lyme 24 x 9-pdr
     quarterdeck: 4      # 2/borda — HMS Lyme 4 x 3-pdr
-    chase_ports_bow: 2  # batarya toplarından kaydırılır; ek top değil
+    chase_ports_bow: 2  # kullanıcı kararı 2026-09-25: 2 kalsın; batarya toplarından kaydırılır
     chase_ports_stern: 2
     swivels: 12         # HMS Lyme; v001'de modellenmedi
     gun_calibre_lb: {gun_deck: 9, quarterdeck: 3}
-    concept_difference: "konseptteki 3 burun kovalama topu -> 2 kovalama lumbarı (frigate düzeni)"
+    concept_difference: "konseptteki 3 burun kovalama topu -> 2 kovalama lumbarı (frigate düzeni; kullanıcı onayı)"
+  gameplay_modules:
+    ram: "MOD_RAM_* — pruva çarpma mahmuzu (oynanış; 18. yy frigate'inde tarihsel değil). Soket: SOCKET_RAM"
   archived_class_data_kadirga:  # Seçenek A (arşiv) — bu gemi için GEÇERSİZ
     oturak: 25
     oars_total: 49
@@ -62,7 +64,6 @@ historical_basis:
     - "FRIGATE REVİZYONU: frigate ölçüleri web arama özetlerinden; Wikipedia/RMG/threedecks/dergipark bu ortamda erişilemedi — yerelde doğrulanmalı"
     - "Su çekimi, batarya güvertesi yüksekliği, kasara yüksekliği ve lumbar ölçüleri TAHMİN"
     - "Direk boyları kaynaksız (null); RigSet aşamasında araştırılacak"
-    - "Tek batarya güverteli frigate 1740 sonrası; Osmanlı fırkateyni 1770 sonrası — klasör adındaki 1700 tiple uyumsuz"
     - "Beam, draft, fribord, direk yüksekliği, kürek uzunluğu ve top kalibresi için Osmanlı kaynağı yok"
     - "Boy: 41-42 m (TDV İA 'Gemi') vs 42-43 m (Bostan 2007); mahmuz dahil LOA bilinmiyor"
     - "Direk sayısı: 3 yelken (Bostan) vs tipik 2 direk (Guilmartin)"
@@ -90,7 +91,7 @@ dimensions_m:
   draft_estimate: 4.50        # TAHMİN: en x 0.41-0.48 (Vasa/Kronan) = 4.2-4.9 aralığının ortası
   approved_draft: null        # kaynaklı değer yok
   gun_deck_height_above_wl: 1.90  # TAHMİN
-  castle_deck_above_gun_deck: 2.00  # TAHMİN
+  castle_deck_above_gun_deck: 2.00  # TAHMİN; kullanıcı: şimdilik yeterli, az gelirse düzeltilecek
   freeboard: null
   mast_height_main: null      # kaynak yok (kalyon değeri 28 m artık geçersiz)
   mast_positions_ratio_from_stern: {mizzen: 0.245, main: 0.54, fore: 0.815}  # HIBRIT_CHATGPT_03 profilinden ölçüldü
@@ -117,12 +118,13 @@ water:
 approval:
   gate_a_decision: ONAYLA
   gate_a_notes: "2026-09-25 kullanıcı: önce 'A ama kürekleri olmasın'; Magnific konseptleri beğenilmedi; yön 'Karma (hibrit)' seçildi. 2026-09-25 kullanıcı: 'Onaylıyorum devam et' — plan: ChatGPT geometri/ölçü blueprint, Gemini süsleme/karakter, tarihsel gemilerle harmanlanacak (brief §16-17)."
-  gate_a_revision: "2026-09-25 kullanıcı: 'Kalyon istemiyorum, topları frigate'e göre düzenle; demo bölgesi gemisi (veya brig)'. Frigate ölçüleri onay bekliyor."
+  gate_a_revision: "2026-09-25 kullanıcı: 'Kalyon istemiyorum, topları frigate'e göre düzenle; demo bölgesi gemisi (veya brig)'. 2026-09-25 kullanıcı: 'Ölçüler iyi' -> ONAYLA (mevcut ölçüler korunur; güverte boyu düzeltmesi yapılmadı)."
+  playable_scope: "her yer — Assassin's Creed tarzı: tüm güverteler ve iç mekânlar gezilebilir, gövde/direk/arma/serenler tırmanılabilir (reports/URETIM_GEREKSINIMLERI.md §4)"
   gate_b_decision: pending
   gate_b_notes: null
 artifacts:
-  master_blend: null  # onaydan sonra Blender/OTTOMAN_FRIGATE_1700_ISTANBUL_master.blend
-  versions: ["Blender/versions/OTTOMAN_FRIGATE_1700_ISTANBUL_v001.blend"]
+  master_blend: null  # onaydan sonra Blender/OTTOMAN_FRIGATE_1780_ISTANBUL_master.blend
+  versions: ["Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v001.blend"]
   build_script: "scripts/build_hull_v001.py"
   prejoin_backup: null
   scene_audit_json: "reports/scene_audit_v001.json"

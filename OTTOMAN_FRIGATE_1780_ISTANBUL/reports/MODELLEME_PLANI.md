@@ -31,7 +31,7 @@ Kaynak kuralı: sayfalara doğrudan erişim bu ortamda ağ politikası yüzünde
 - *Lyme*, ele geçirilen Fransız *Tygre*'nin ölçüleri biraz küçültülmüş kopyasıdır [İKİNCİL].
 - **Osmanlı bağlamı:** Osmanlı fırkateynleri üç direkli ve tek ambarlıdır, 30-70 top taşır, boyları ortalama 35,5 zirâ (26,90 m) ile 57,5 zirâ (43,58 m) arasındadır. Osmanlı'da fırkateyn inşası 1770 Çeşme sonrasında, Cezayirli Gazi Hasan Paşa döneminde başladı. Kaynak: Ş. Kocakaplan, "III. Selim Dönemi Fırkateyn İnşa Faaliyetleri", *Istranca Tarih Araştırmaları Dergisi* 2/1 (2024) [İKİNCİL, arama özeti; tam metin açılamadı]. Seçilen 35,92 m bu aralığın içinde.
 
-**Anakronizm notu:** Tek batarya güverteli frigate 1740'lardan sonraki bir tiptir. Osmanlı fırkateyni ise 1770 sonrasına aittir. Klasör adındaki "1700" bu tiple uyuşmuyor. Gemi hibrit ve tarihsel doğruluk iddiası yok (`historical_accuracy_claim: false`). Yine de ad değişikliği önerisi: `OTTOMAN_FRIGATE_1780_ISTANBUL`. Yeniden adlandırma yapılmadı; karar kullanıcıda.
+**Anakronizm notu:** Tek batarya güverteli frigate 1740'lardan sonraki bir tiptir. Osmanlı fırkateyni ise 1770 sonrasına aittir. Gemi hibrit ve tarihsel doğruluk iddiası yok (`historical_accuracy_claim: false`). Eski klasör adındaki "1700" bu tiple uyuşmuyordu. **Kullanıcı kararıyla (2026-09-25) klasör `OTTOMAN_FRIGATE_1780_ISTANBUL` olarak yeniden adlandırıldı.** v001-v003 dosyaları da yeni adla yeniden adlandırıldı (içerikleri aynı).
 
 ## 3. Top düzeni (frigate)
 
@@ -118,6 +118,16 @@ Yeni düzen (`scripts/pass_v003_collision.py`; geometri değişmedi):
 | Arma | 1.541 nesne, yaklaşık 2,1 milyon üçgen; halatlar tek tek 24-28 bin üçgen | Oyun için fazla. Bizde halatlar kart/instanced mesh ve LOD ile, uzak mesafede sade |
 | Yelken | 400 nesne, 325 bin üçgen; kenar maskesi ve transmission dokuları | SailSkin ve SailSet'te transmission ve kenar maskesi kullanılacak |
 | Uyarı | Tarihsel kaynak değil; lisanslı, repoya girmez | Yalnız kalite kıyası |
+
+## 5e. Pass v004: oynanış soketleri (2026-09-25)
+
+`scripts/pass_v004_gameplay_sockets.py` (geometri değişmedi):
+- **Mahmuz:** `SOCKET_RAM` pruvada, su hattının 0,35 m altında (oynanış modülü `MOD_RAM_*`; tarihsel değil).
+- **Komuta:** `SOCKET_HELM`, `SOCK_STATION_CAPTAIN`, `SOCK_STATION_SECOND_CAPTAIN`, `SOCK_STATION_GUNNERY_OFFICER`. Komuta zinciri: oyuncu → 2. kaptan → topçu subayı.
+- **Mürettebat:** 32 top soketinin her birine 4 nokta, toplam 128 `SOCK_CREW_*`. Roller: nişancı, doldurucu, tokmakçı-süngerci, manivela. Tüm noktaların güverte içinde kaldığı doğrulandı.
+- **Top soketi özellikleri:** `battery_group` (`PORT_MAIN` 12, `STARBOARD_MAIN` 12, `PORT_QD` 2, `STARBOARD_QD` 2, `CHASE_BOW` 2, `CHASE_STERN` 2), `slot`, `mount_id` (UUID5), `manifest_version = 2`.
+- **Düzeltme:** v001-v003'te 28 borda top soketi gemi içine bakıyordu. Sancak topları +Y, iskele topları -Y yönüne çevrildi; manifest sürümü 1'den 2'ye çıktı.
+- Önizleme: `renders/v004/*soketler*.png`
 
 ## 6. Sıradaki adımlar
 

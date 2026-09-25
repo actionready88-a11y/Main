@@ -6,8 +6,8 @@ UV kanalları, texel yoğunluğu, LOD/collision adlandırması.
 
 Windows örneği (tek satır):
   "C:\\Program Files\\Blender Foundation\\Blender 5.2\\blender.exe" --background "D:\\yol\\ship.blend"
-      --python "C:\\Users\\Murat\\Main\\OTTOMAN_FRIGATE_1700_ISTANBUL\\scripts\\inspect_reference_blend.py"
-      -- --out "C:\\Users\\Murat\\Main\\OTTOMAN_FRIGATE_1700_ISTANBUL\\reports\\reference_audit\\age_of_sail" --render
+      --python "C:\\Users\\Murat\\Main\\OTTOMAN_FRIGATE_1780_ISTANBUL\\scripts\\inspect_reference_blend.py"
+      -- --out "C:\\Users\\Murat\\Main\\OTTOMAN_FRIGATE_1780_ISTANBUL\\reports\\reference_audit\\age_of_sail" --render
 
 Çıktı: <out>/reference_audit.json, <out>/reference_audit.md ve --render verilirse <out>/renders/*.png
 Repoya yalnız bu çıktılar gönderilir; .blend ve doku dosyaları gönderilmez.

@@ -1,7 +1,7 @@
-"""OTTOMAN_FRIGATE_1700_ISTANBUL — Hull Core v001 üretici.
+"""OTTOMAN_FRIGATE_1780_ISTANBUL — Hull Core v001 üretici.
 
 Çalıştırma (depo kökünden):
-    python3 OTTOMAN_FRIGATE_1700_ISTANBUL/scripts/build_hull_v001.py [--no-render]
+    python3 OTTOMAN_FRIGATE_1780_ISTANBUL/scripts/build_hull_v001.py [--no-render]
 
 Blender 5.x `bpy` modülüyle headless çalışır. Ölçüler ve kaynakları:
 reports/MODELLEME_PLANI.md §2. Eksen: X ileri (baş), Z yukarı, su hattı Z=0.
@@ -19,7 +19,7 @@ import bmesh
 import numpy as np
 from mathutils import Matrix, Vector
 
-SHIP_ID = "OTTOMAN_FRIGATE_1700_ISTANBUL"
+SHIP_ID = "OTTOMAN_FRIGATE_1780_ISTANBUL"
 VERSION = "v001"
 ROOT = Path(__file__).resolve().parents[1]
 

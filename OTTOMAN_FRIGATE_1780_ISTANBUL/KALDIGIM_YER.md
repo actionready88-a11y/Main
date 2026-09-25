@@ -1,6 +1,6 @@
-# Kaldığım Yer — Hull Core v003 (2026-09-25)
+# Kaldığım Yer — v004 (2026-09-25)
 
-Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1700_ISTANBUL/`)
+Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## Durum
 - **Gate A: ONAYLA** (yön: hibrit, "Osmanlı esintili frigate").
@@ -11,12 +11,21 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
   - Ayrıntı: `reports/MODELLEME_PLANI.md`.
 - `ship_spec.yaml` frigate'e göre güncellendi. Kalyon değerleri `archived_*` altında.
 - **Blender:** bulut oturumunda `bpy` 5.0.1 (headless) ile Hull Core v001 üretildi.
-  - `.blend`: `Blender/versions/OTTOMAN_FRIGATE_1700_ISTANBUL_v001.blend`
+  - `.blend`: `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v001.blend`
   - Betik: `scripts/build_hull_v001.py`. Yerelde `blender --background --python scripts/build_hull_v001.py` ile de çalışır.
   - Audit: `reports/scene_audit_v001.json`
   - Renderlar: `renders/v001/` (baş, kıç, iki profil, baş omzu, kıç omzu, güverte)
 
-## v003 (son sürüm)
+## Kararlar (2026-09-25)
+- Ölçüler ONAYLANDI. Klasör `OTTOMAN_FRIGATE_1780_ISTANBUL` oldu.
+- Baş kovalama lumbarı 2; ayrıca pruva mahmuzu (ram). Kasara yüksekliği 2,0 m.
+- Her yer gezilebilir ve tırmanılabilir (AC tarzı).
+- **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen. Sıradaki pass: v005.
+
+## v004 (son sürüm)
+- `scripts/pass_v004_gameplay_sockets.py`: mahmuz, dümen ve komuta istasyonları, 128 mürettebat noktası, batarya grupları; top soketi yönleri düzeltildi.
+
+## v003
 - `scripts/pass_v003_collision.py`: yalnız çarpışma yeniden kuruldu. 50 sade UCX: gövde, yürünebilir güverteler, küpeşte duvarları; bel açık. Çarpışma viewport'ta gizli.
 - Fab referans raporu geldi. Çıkarımlar `reports/MODELLEME_PLANI.md` §5d'de. Ana ders: dış kabuk hafif, detay dokuda. Bizim kabuk için LOD0 ve bake gerekli.
 
@@ -33,7 +42,6 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Kasara güvertesi yüksekliği: 2,0 m (tarihe yakın, UE kapsülü için dar) mı, 2,3 m (oynanış) mı?
 - Oynanabilir alan kapsamı: yalnız açık güverteler mi, alt güverte ve kıç kamarası da dahil mi?
 - Frigate ölçülerinin onayı (Gate A revizyonu): ONAYLA / DEĞİŞTİR.
-- Klasör adı: "1700" tiple uyumsuz. Öneri `OTTOMAN_FRIGATE_1780_ISTANBUL`; yeniden adlandırılmadı.
 - Burun: 2 kovalama lumbarı (frigate) mı, konseptteki 3 top mu (varyant)?
 
 ## Fab referansı

@@ -292,7 +292,7 @@ Kanıt sayılmayanlar: it.wikipedia "Galea sottile" (kaynaksız), hobi siteleri,
 | Sağ alttaki logo | Konsept | **Çıkar** | |
 
 ### Ad ve dosya
-- **Klasör adı:** Mevcut `OTTOMAN_FRIGATE_1700_ISTANBUL` korunabilir. 1700 hibrit için makul bir çapa yıldır ve yeniden adlandırma gerekmez.
+- **Klasör adı:** Mevcut `OTTOMAN_FRIGATE_1700_ISTANBUL` korunabilir. 1700 hibrit için makul bir çapa yıldır ve yeniden adlandırma gerekmez. *(Güncelleme 2026-09-25: frigate kararından sonra kullanıcı `OTTOMAN_FRIGATE_1780_ISTANBUL` adını seçti; klasör yeniden adlandırıldı.)*
 - **ship_spec:** `identity.type` = "hibrit / fantastik". Tarihsel alanlar referans amaçlı tutuldu.
 - **Low-poly yasağı ve kalite hedefi** aynen geçerli.
 

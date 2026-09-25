@@ -1,7 +1,7 @@
 """Pass v003 — oyun çarpışması (UCX) yeniden kurulumu (v002 üzerine; geometri değişmez).
 
 Çalıştırma (depo kökünden):
-    python3 OTTOMAN_FRIGATE_1700_ISTANBUL/scripts/pass_v003_collision.py [--no-render]
+    python3 OTTOMAN_FRIGATE_1780_ISTANBUL/scripts/pass_v003_collision.py [--no-render]
 
 Kullanıcı bulgusu (Blender viewport): gövde "tel örgü / yırtık" görünüyor.
 Kök neden: v001/v002 UCX parçaları yoğun render mesh'inin dışbükey kabuğuydu:

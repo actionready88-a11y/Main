@@ -1,6 +1,6 @@
 """Ortografik renderlara modelden ölçülen boyut çizgilerini ekler.
 
-Çalıştırma: python3 OTTOMAN_FRIGATE_1700_ISTANBUL/scripts/annotate_views.py v001
+Çalıştırma: python3 OTTOMAN_FRIGATE_1780_ISTANBUL/scripts/annotate_views.py v001
 Ölçüler .blend içindeki değerlendirilmiş (modifier uygulanmış) geometriden alınır.
 Kamera parametreleri build_hull_v001.py render_views() ile aynıdır.
 """
@@ -12,7 +12,7 @@ import bpy  # noqa: I001
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
-SHIP_ID = "OTTOMAN_FRIGATE_1700_ISTANBUL"
+SHIP_ID = "OTTOMAN_FRIGATE_1780_ISTANBUL"
 VER = sys.argv[-1] if sys.argv[-1].startswith("v0") else "v001"
 W, H, CAM_Z = 1600, 900, 1.0
 SCALE = {"bas": 26.0, "kic": 26.0, "iskele_profil": 50.0, "sancak_profil": 50.0}

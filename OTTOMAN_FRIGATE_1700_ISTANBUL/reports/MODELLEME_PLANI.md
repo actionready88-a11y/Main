@@ -76,8 +76,11 @@ Materyaller şimdilik **prosedürel PBR**: UV'ye bağlı tahta kaplama, ek yerle
 
 ## 6. Sıradaki adımlar
 
+**Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.
+
+
 1. **Kullanıcı incelemesi:** v001 renderları (`renders/v001/`) ve ölçüler (§2). Gate A revizyonu: ONAYLA / DEĞİŞTİR.
-2. **v002 gövde incelikleri:** kıç aynası ve galeri (`SternModule`), baş kasarası küpeştesi, lumbar kapakları, iç postalar ve güverte kirişleri, ırgat, ambar ağızları, merdivenler, bocurum/zincir tahtaları (chain wales).
+2. **v002 gövde incelikleri + oynanış altyapısı:** kasara yüksekliği kararı, yürüme çarpışması (`UCX_DECK_*`), merdivenler, mürettebat ve komuta soketleri, kıç aynası ve galeri (`SternModule`), baş kasarası küpeştesi, lumbar kapakları, iç postalar ve güverte kirişleri, ırgat, ambar ağızları, merdivenler, bocurum/zincir tahtaları (chain wales).
 3. **RigSet:** direk ve seren boyları için kaynak araştırması (Steel ya da Lavery oranları); cıvadıra dahil üç direk.
 4. **CannonBattery:** 9 librelik ve 3 librelik top + ahşap kızak; 28 soket.
 5. **SailSet ve SailSkin**, **LanternFlagSet**, **Figurehead** (at başı), **BoatSet**, **AnchorSet**.

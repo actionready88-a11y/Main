@@ -12,3 +12,7 @@ desktop.ini
 .DS_Store
 __pycache__/
 *.pyc
+
+# Lisanslı referans varlıklar (Fab vb.) repoya girmez; yalnız denetim çıktıları girer
+reports/reference_audit/**/*.blend
+reports/reference_audit/**/textures/

@@ -1,7 +1,7 @@
 # Osmanlı "Frigate" — Araştırma Brief'i (Gate A öncesi)
 
-Durum: **Gate A bekleniyor. Modelleme başlamadı.**
-**Gate A ONAYLANDI (2026-09-25). Güncel yön: §15 HİBRİT → nihai harman §17.4.** Kullanıcı 2026-09-25'te karma yönü seçti; §1-14 araştırma temeli olarak geçerliliğini korur.
+Durum: **Gate A ONAYLANDI (2026-09-25).** Güncel yön: §15 HİBRİT → §17.4 süsleme harmanı.
+**2. karar (2026-09-25): kalyon ölçeği iptal; gemi tek batarya güverteli frigate. Ölçü ve top düzeni: `reports/MODELLEME_PLANI.md`.** §17'nin boy/en/top değerleri geçersiz; süsleme kararları geçerli. §1-14 araştırma temeli olarak korunur.
 Tarih: 2026-09-25
 Kullanıcının dönem seçimi: 16. yy sonu, İspanyol-Osmanlı savaşları (yaklaşık 1560-1590).
 Ek girdi: `references/KULLANICI_KONSEPT_ottoman_armored_frigate.webp`. Bu görseli kullanıcı yapay zekâyla üretti ve "tam tutarlı olmayabilir" dedi. Görsel tarihsel kanıt değil, **stil referansı**dır. Aşağıdaki "Konsept × tarih harmanı" bölümünde her öğesi için karar verildi.

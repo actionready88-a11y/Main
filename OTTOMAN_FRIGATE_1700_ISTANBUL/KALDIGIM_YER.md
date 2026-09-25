@@ -1,21 +1,26 @@
-# Kaldığım Yer — Gate A ONAYLANDI (2026-09-25)
+# Kaldığım Yer — Hull Core v001 (2026-09-25)
 
-Branch: `research/gate-a-osmanli`
+Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1700_ISTANBUL/`)
 
 ## Durum
-- **Gate A: ONAYLA** (kullanıcı: "Onaylıyorum devam et"). Yön: hibrit, "Osmanlı esintili frigate".
-- Tarihsel harman tamamlandı. Ayrıntı: `reports/research_brief.md` §17.
-  - Çapa gemi: **"Beyaz At başlı" kalyon** (1714-15 kaydı), 55 zirâ = 41,69 m.
-  - En 13,64 m ve yükseklik 6,42 m (1715 belgesi). Ana direk yaklaşık 28 m (1672 kalyonu).
-  - Su çekimi tahmini 5,6-6,5 m (Vasa ve Kronan oranlarından türetildi).
-- Harman kuralı: ChatGPT = şekil ve ölçü; Gemini = süsleme ve karakter; tarih = ölçü, baş figürü (at), kırmızı kuşak, fener, sancak.
-- `ship_spec.yaml` ölçüleri dolduruldu ve doğrulandı.
-- Nihai harman promptu hazır: `references/GORSEL_PROMPTLARI.md`, H5.
-- **Blender'a girilmedi.**
+- **Gate A: ONAYLA** (yön: hibrit, "Osmanlı esintili frigate").
+- **2. karar:** Kullanıcı "kalyon istemiyorum, topları frigate'e göre düzenle; demo bölgesi gemisi (veya brig)" dedi.
+  - Tip: üç direkli, tek batarya güverteli frigate. Referansların hepsi üç direkli olduğu için brig değil.
+  - Çapa: HMS *Lyme* (1748): 35,92 m × 10,31 m. Su çekimi 4,5 m (tahmin).
+  - Top: 24 batarya (12/borda) + 4 kıç kasarası + 2+2 kovalama lumbarı.
+  - Ayrıntı: `reports/MODELLEME_PLANI.md`.
+- `ship_spec.yaml` frigate'e göre güncellendi. Kalyon değerleri `archived_*` altında.
+- **Blender:** bulut oturumunda `bpy` 5.0.1 (headless) ile Hull Core v001 üretildi.
+  - `.blend`: `Blender/versions/OTTOMAN_FRIGATE_1700_ISTANBUL_v001.blend`
+  - Betik: `scripts/build_hull_v001.py`. Yerelde `blender --background --python scripts/build_hull_v001.py` ile de çalışır.
+  - Audit: `reports/scene_audit_v001.json`
+  - Renderlar: `renders/v001/` (baş, kıç, iki profil, baş omzu, kıç omzu, güverte)
 
-## Açık karar (modelleme öncesi)
-- Borda topu: tek sıra (konsept) mi, iki sıra (tarih: 55 zirâ kalyonda 63 top) mı?
+## Açık kararlar
+- Frigate ölçülerinin onayı (Gate A revizyonu): ONAYLA / DEĞİŞTİR.
+- Klasör adı: "1700" tiple uyumsuz. Öneri `OTTOMAN_FRIGATE_1780_ISTANBUL`; yeniden adlandırılmadı.
+- Burun: 2 kovalama lumbarı (frigate) mı, konseptteki 3 top mu (varyant)?
 
 ## Sıradaki adım
-- Kullanıcı H5 ile nihai konsepti üretir ve `references/` altına ekler.
-- Modelleme ancak kullanıcı isterse başlar (Blender).
+- v002: kıç aynası ve galeri (`SternModule`), lumbar kapakları, güverte donanımı, bocurumlar.
+- Sonra: RigSet (direk boyları için kaynak), CannonBattery, SailSet.

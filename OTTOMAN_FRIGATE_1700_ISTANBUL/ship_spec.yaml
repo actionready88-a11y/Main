@@ -1,21 +1,28 @@
 ship_id: OTTOMAN_FRIGATE_1700_ISTANBUL
 status: draft
 identity:
-  # GÜNCEL YÖN (2026-09-25): HİBRİT — kullanıcı konsepti ana hedef, araştırma detay/ölçek katmanı.
-  type: "hibrit / fantastik: Osmanlı esintili üç direkli frigate"
+  # GÜNCEL YÖN (2026-09-25, 2. karar): kalyon DEĞİL — tek batarya güverteli üç direkli frigate; demo bölgesi gemisi.
+  type: "hibrit / fantastik: Osmanlı esintili üç direkli frigate (tek batarya güverteli)"
   historical_accuracy_claim: false
-  name: null  # esin: "Beyaz At başlı" kalyon (1714-15 kaydı)
-  year: 1700  # klasör adıyla uyumlu çapa yıl; tarihsel sınıf iddiası yok
+  name: null
+  year: 1700  # klasör adından; tip 1740 sonrası (Médée 1741) — öneri: OTTOMAN_FRIGATE_1780_ISTANBUL (yeniden adlandırılmadı)
   nation: "Osmanlı (esinti)"
-  role: "oyun içi savaş gemisi"
-  primary_visual_target: "references/KULLANICI_KONSEPT_ottoman_armored_frigate.webp"
+  role: "oyun içi savaş gemisi — demo bölgesi"
+  primary_visual_target: "references/HIBRIT_CHATGPT_03.webp (profil) + references/HIBRIT_GEMINI_02.webp (süsleme)"
   figurehead: "beyaz at başı (Osmanlı kalyonlarında baş figürü çoğunlukla at — Aydın 2007)"
-  swappable_modules_proposed: ["ArmorKit (zırh plakaları, varsayılan kapalı)", "FlagSet (ay-yıldız / 16. yy sancakları)"]
-  previous_proposal: "Seçenek A kadırga 1572 (küreksiz) — kullanıcı hibrit lehine değiştirdi"
-  gate_a_status: "ONAYLANDI 2026-09-25"
+  swappable_modules_proposed: ["ArmorKit (zırh plakaları, varsayılan kapalı)", "FlagSet (ay-yıldız / dönem sancakları)"]
+  previous_proposals:
+    - "Seçenek A kadırga 1572 (küreksiz) — kullanıcı hibrit lehine değiştirdi"
+    - "'Beyaz At başlı' kalyon ölçeği (41,69 m, 63 top) — kullanıcı 'kalyon istemiyorum' dedi (2026-09-25)"
+  alternative_class: "brig (iki direkli) — ayrı gemi olarak, kendi Gate A'sıyla (reports/MODELLEME_PLANI.md §8)"
+  gate_a_status: "yön ONAYLANDI 2026-09-25; frigate ölçü revizyonu kullanıcı onayı bekliyor"
 historical_basis:
-  period: "hibrit: 16.-18. yy Osmanlı esintisi (araştırma: 16. yy sonu 1560-1590 temeli)"
-  hypothesis_result: "doğrulandı: 16. yy fırkatası 10-17 oturaklı küçük çektiri; üç direkli firkateyn 18. yy sonu kalyon sınıfı"
+  period: "hibrit: 18. yy frigate gövdesi + 16.-18. yy Osmanlı süsleme esintisi"
+  hypothesis_result: "doğrulandı: 16. yy fırkatası 10-17 oturaklı küçük çektiri; üç direkli fırkateyn Osmanlı'da 1770 sonrası (Kocakaplan 2024)"
+  frigate_analogues:
+    - "HMS Lyme (1748), 28 toplu altıncı sınıf: 35,92 m gundeck, 10,31 m en, 3,00 m ambar; 24 x 9-pdr + 4 x 3-pdr + 12 swivel [İKİNCİL: Wikipedia/RMG, arama özeti; sayfa açılamadı]"
+    - "Médée (1741, Brest, B. Ollivier): 37,2 m gundeck, 31,8 m omurga, 9,9 m en; 26 x 8-pdr, yalnız üst güvertede [İKİNCİL: Wikipedia; USNI Naval History 2023]"
+    - "Osmanlı fırkateyni: üç direkli, tek ambarlı, 30-70 top, 26,90-43,58 m (Kocakaplan, Istranca Tarih Araştırmaları Dergisi 2/1, 2024) [İKİNCİL, arama özeti]"
   primary_sources:
     - "Kâtip Çelebi, Tuhfetü'l-Kibâr (1656), Fasl-ı Hâmis — Yakarçelik 2018 üzerinden aktarıldı (erişilemedi)"
     - "Tarihi Kadırga, İstanbul Deniz Müzesi (fiziksel; saray teknesi, savaş gemisi değil)"
@@ -31,18 +38,20 @@ historical_basis:
     - "Köprülü, O. F., 'Bayrak', TDV İA c.5 (1992) — okundu"
     - "Bostan, İ., 'Kılıç Ali Paşa', TDV İA c.25 — okundu"
     - "Museu Marítim de Barcelona, La Real replikası — okundu (karşılaştırma)"
-  class_data:
+    - "Kocakaplan, Ş., 'III. Selim Dönemi Fırkateyn İnşa Faaliyetleri', Istranca Tarih Araştırmaları Dergisi 2/1 (2024) — arama özeti; tam metin açılamadı"
+  armament:
+    gun_deck: 24        # 12/borda — HMS Lyme 24 x 9-pdr
+    quarterdeck: 4      # 2/borda — HMS Lyme 4 x 3-pdr
+    chase_ports_bow: 2  # batarya toplarından kaydırılır; ek top değil
+    chase_ports_stern: 2
+    swivels: 12         # HMS Lyme; v001'de modellenmedi
+    gun_calibre_lb: {gun_deck: 9, quarterdeck: 3}
+    concept_difference: "konseptteki 3 burun kovalama topu -> 2 kovalama lumbarı (frigate düzeni)"
+  archived_class_data_kadirga:  # Seçenek A (arşiv) — bu gemi için GEÇERSİZ
     oturak: 25
     oars_total: 49
-    rowers_per_oar: "4-5"
     rowers: 196
-    crew_total: 330  # yaklaşık; TDV İA "Gemi"
-    fighting_men: 100
-    sails: 3  # can kurtaran, orta, tirinkete (TDV İA "Gemi")
-    masts: null  # Osmanlı kaynağında açık değil; Akdeniz tipik 2 (Guilmartin 2002)
-    guns: 3  # 1 baş merkez + 2 yan (TDV İA "Gemi")
-    gun_calibre: null
-    rowing_system: null  # a scaloccio öneriliyor; Osmanlı geçiş yılı bilinmiyor
+    guns: 3
   alternatives:
     option_b:
       type: "barça (Osmanlı yelkenlisi, 2-3 direkli, düz tabanlı)"
@@ -50,6 +59,10 @@ historical_basis:
       proposed_folder_name: "BARCA_1570_ISTANBUL"
       risk: "orta — dönemde var (TDV İA 'Gemi'), ama muharip hatta değil; ölçü/top/arma kaynaksız"
   uncertainties:
+    - "FRIGATE REVİZYONU: frigate ölçüleri web arama özetlerinden; Wikipedia/RMG/threedecks/dergipark bu ortamda erişilemedi — yerelde doğrulanmalı"
+    - "Su çekimi, batarya güvertesi yüksekliği, kasara yüksekliği ve lumbar ölçüleri TAHMİN"
+    - "Direk boyları kaynaksız (null); RigSet aşamasında araştırılacak"
+    - "Tek batarya güverteli frigate 1740 sonrası; Osmanlı fırkateyni 1770 sonrası — klasör adındaki 1700 tiple uyumsuz"
     - "Beam, draft, fribord, direk yüksekliği, kürek uzunluğu ve top kalibresi için Osmanlı kaynağı yok"
     - "Boy: 41-42 m (TDV İA 'Gemi') vs 42-43 m (Bostan 2007); mahmuz dahil LOA bilinmiyor"
     - "Direk sayısı: 3 yelken (Bostan) vs tipik 2 direk (Guilmartin)"
@@ -69,17 +82,19 @@ historical_basis:
     - "Firkateyn ölçüsü (34-42 m) 18. yy sonu tipine ait; hibrit için ölçek çapası olarak kullanıldı"
     - "Küreksiz tasarım (arşiv, Seçenek A): galerilerin uzun seyirde yelkenle yürüdüğü kaynaklı (Guilmartin 2002); kürek modülü hiç olmaması oyun tercihi"
 dimensions_m:
-  # Hibrit çapa: 'Beyaz At başlı' kalyon, 1714-15 kaydı (Aydın 2007, Tablo 3). Brief §17.
-  length_overall: null  # bowsprit dahil kaynak yok
-  length_recorded: 41.69  # 55 zirâ (Aydın 2007, Tablo 3; BOA MAD 3171/2850)
-  length_range_anchor: [34.0, 42.0]  # TDV İA "Gemi" firkateyn
-  length_gundeck: null
-  beam: 13.64  # 18 arşın; 1715 belgesi, 51-55 zirâlık yeni kalyonlar (Aydın 2007, s.≈50)
-  depth: 6.42  # 25,5 karış "yükseklik"; ambar mı toplam mı belirsiz (Aydın 2007, s.≈50)
+  # FRIGATE REVİZYONU (2026-09-25). Çapa: HMS Lyme (1748). Ayrıntı: reports/MODELLEME_PLANI.md §2.
+  length_overall: null        # bowsprit dahil kaynak yok
+  length_gundeck: 35.92       # HMS Lyme [İKİNCİL]
+  beam: 10.31                 # HMS Lyme [İKİNCİL]
+  depth_in_hold: 3.00         # HMS Lyme [İKİNCİL]
+  draft_estimate: 4.50        # TAHMİN: en x 0.41-0.48 (Vasa/Kronan) = 4.2-4.9 aralığının ortası
+  approved_draft: null        # kaynaklı değer yok
+  gun_deck_height_above_wl: 1.90  # TAHMİN
+  castle_deck_above_gun_deck: 2.00  # TAHMİN
   freeboard: null
-  mast_height_main: 28.0  # 37 zirâ; 1672 kalyonu (Bostan 2004, s.84); ölçüm başlangıcı belirsiz
-  draft_estimate_range: [5.6, 6.5]  # TAHMİN, türetilmiş: en × 0.41-0.48 (Vasa/Kronan oranları)
-  approved_draft: null  # kaynaklı değer yok; tahmin aralığı yukarıda
+  mast_height_main: null      # kaynak yok (kalyon değeri 28 m artık geçersiz)
+  mast_positions_ratio_from_stern: {mizzen: 0.245, main: 0.54, fore: 0.815}  # HIBRIT_CHATGPT_03 profilinden ölçüldü
+  archived_kalyon_anchor: {length_recorded: 41.69, beam: 13.64, depth: 6.42, note: "Beyaz At başlı kalyon — GEÇERSİZ"}
   archived_option_a_kadirga:
     length_between_stems_range: [41.0, 42.0]  # TDV İA "Gemi"
 systems:
@@ -102,11 +117,14 @@ water:
 approval:
   gate_a_decision: ONAYLA
   gate_a_notes: "2026-09-25 kullanıcı: önce 'A ama kürekleri olmasın'; Magnific konseptleri beğenilmedi; yön 'Karma (hibrit)' seçildi. 2026-09-25 kullanıcı: 'Onaylıyorum devam et' — plan: ChatGPT geometri/ölçü blueprint, Gemini süsleme/karakter, tarihsel gemilerle harmanlanacak (brief §16-17)."
+  gate_a_revision: "2026-09-25 kullanıcı: 'Kalyon istemiyorum, topları frigate'e göre düzenle; demo bölgesi gemisi (veya brig)'. Frigate ölçüleri onay bekliyor."
   gate_b_decision: pending
   gate_b_notes: null
 artifacts:
-  master_blend: null
+  master_blend: null  # onaydan sonra Blender/OTTOMAN_FRIGATE_1700_ISTANBUL_master.blend
+  versions: ["Blender/versions/OTTOMAN_FRIGATE_1700_ISTANBUL_v001.blend"]
+  build_script: "scripts/build_hull_v001.py"
   prejoin_backup: null
-  scene_audit_json: null
-  renders: []
+  scene_audit_json: "reports/scene_audit_v001.json"
+  renders: ["renders/v001/"]
   final_report: null

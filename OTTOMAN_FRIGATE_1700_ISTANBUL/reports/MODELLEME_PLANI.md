@@ -88,6 +88,37 @@ Kullanıcı bulgusu (v001 ölçülü pafta): kıçta su hattında dümen gövded
 
 Değişen nesneler: `CORE_HULL_SHELL`, `CORE_KEEL`, `CORE_STEM`, `CORE_STERNPOST`, `MOD_RUDDER_STERNPOST_A`, `UCX_CORE_HULL_SHELL_00..03`. Diğer nesneler v001'den aynen alındı. Soket taşınmadı (`reports/scene_audit_v002.json` → `pass`).
 
+## 5c. Pass v003: oyun çarpışması (2026-09-25)
+
+Kullanıcı bulgusu: Blender'da gövde "tel örgü / yırtık" görünüyor. Görünen, gövde değil v001-v002'nin çarpışma parçalarıydı. Sorunları:
+- viewport'ta görünür bırakılmışlardı,
+- yoğun mesh'in dışbükey kabuğu oldukları için yaklaşık 24 bin ince üçgen içeriyorlardı,
+- beli kasaralar arasında kapak gibi örtüyorlardı.
+
+Yeni düzen (`scripts/pass_v003_collision.py`; geometri değişmedi):
+
+| Amaç | Parça | Not |
+|---|---|---|
+| `hull` | 6 | Omurga altından batarya güvertesine; fizik ve yüzdürme gövdesi |
+| `deck_gun` / `deck_quarter` / `deck_forecastle` | 10 / 4 / 2 | Sheer ve kamburluğu izleyen yürüme yüzeyleri |
+| `bulwark_port` / `bulwark_starboard` | 14 / 14 | Küpeşte duvarları, düşmeyi engeller |
+
+- Toplam 50 UCX, parça başına en fazla 36 köşe (sınır 64), toplam 976 üçgen. Bel açık.
+- `40_COLLISION` ve `CUT_GUNPORTS` viewport'ta varsayılan gizli.
+- Önizleme: `renders/v003/*collision*.png`
+- Eksik: bel ile kasaralar arası merdiven ve rampa çarpışması (merdivenler modellenince eklenecek).
+
+## 5d. Fab "Age of Sail" referansından çıkarımlar (`reports/reference_audit/age_of_sail/`)
+
+| Konu | Fab gemisi | Bize etkisi |
+|---|---|---|
+| Gövde bölünmesi | `Hull` koleksiyonu 14 nesne, yaklaşık 79 bin üçgen: `HullBelow` 2,9 bin, `SidesWalls` 6,5 bin, `SidesPlanks`, `SidesDecoration`, `gunportEdges`, `Keel`, `Deck` 26 bin, `Structure` 35 bin, `InternalWalls` | Dış kabuk hafif, detay dokuda. Bizim `CORE_HULL_SHELL` render seviyesinde 139 bin üçgen; **oyun LOD0 için alt seviye + bake edilmiş normal** gerekli |
+| Modifier düzeni | Mirror + Solidify + "Auto Smooth" (geometry nodes) | Bizde ayna yarımı elle üretiliyor. Export öncesi aynı sonucu verir; ek iş gerekmiyor |
+| Doku | 45 doku, çoğu 2K-3K; albedo, roughness ve normal ayrı; bir parçada DirectX normal | Hedefimiz (BaseColor + DX Normal + ORM, 2K-4K) ile uyumlu. Prosedürel materyaller bu çözünürlükte bake edilecek |
+| Arma | 1.541 nesne, yaklaşık 2,1 milyon üçgen; halatlar tek tek 24-28 bin üçgen | Oyun için fazla. Bizde halatlar kart/instanced mesh ve LOD ile, uzak mesafede sade |
+| Yelken | 400 nesne, 325 bin üçgen; kenar maskesi ve transmission dokuları | SailSkin ve SailSet'te transmission ve kenar maskesi kullanılacak |
+| Uyarı | Tarihsel kaynak değil; lisanslı, repoya girmez | Yalnız kalite kıyası |
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

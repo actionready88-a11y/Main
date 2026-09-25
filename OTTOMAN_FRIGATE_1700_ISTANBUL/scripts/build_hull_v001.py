@@ -312,7 +312,7 @@ def build_hull_shell(col, M):
                 t = j / NZ
                 z = ZK + (top - ZK) * (0.5 - 0.5 * math.cos(math.pi * t)) ** 0.9
                 x, y = hull_point(s, z)
-                y = max(y, 0.12)  # omurga yarı genişliği
+                y = max(y, 0.15)  # omurga yarı genişliği (0.12 iç yüzlerin çakışmasına yol açıyordu)
                 co = Vector((x, side * y, z))
                 if side == 1:
                     if prev is not None:
@@ -341,7 +341,7 @@ def build_hull_shell(col, M):
                     loop[uv_layer].uv = (loop.vert.co.x, girth[a, b] * side)
     # kıç aynası: yalnız ayna bölgesi (y > 0.15), ızgara halinde (n-gon yok)
     NC = 10
-    rows = [j for j in range(NZ + 1) if grid[(1, 0, j)].co.y > 0.15]
+    rows = [j for j in range(NZ + 1) if grid[(1, 0, j)].co.y > 0.18]
     tgrid = {}
     for j in rows:
         a, b = grid[(1, 0, j)], grid[(-1, 0, j)]
@@ -355,7 +355,8 @@ def build_hull_shell(col, M):
     for j0, j1 in zip(rows[:-1], rows[1:]):
         for c in range(NC):
             f = bm.faces.new([tgrid[(j0, c)], tgrid[(j0, c + 1)], tgrid[(j1, c + 1)], tgrid[(j1, c)]])
-            f.material_index = 2
+            zc = sum(v.co.z for v in f.verts) / 4
+            f.material_index = 2 if zc > Z_TR - 0.05 else 0
             for loop in f.loops:
                 loop[uv_layer].uv = (loop.vert.co.y, loop.vert.co.z)
     # ayna alt kenarı: iki yarıyı bağlayan tek şerit
@@ -368,6 +369,17 @@ def build_hull_shell(col, M):
     for i in range(NS):
         f = bm.faces.new([grid[(1, i, 0)], grid[(-1, i, 0)], grid[(-1, i + 1, 0)], grid[(1, i + 1, 0)]])
         f.material_index = 0
+    crease = bm.edges.layers.float.new("crease_edge")
+    for side in (1, -1):
+        for j in range(NZ):
+            for i in (0, NS):
+                e = bm.edges.get([grid[(side, i, j)], grid[(side, i, j + 1)]])
+                if e:
+                    e[crease] = 1.0
+        for i in range(NS):
+            e = bm.edges.get([grid[(side, i, 0)], grid[(side, i + 1, 0)]])
+            if e:
+                e[crease] = 1.0
     bmesh.ops.remove_doubles(bm, verts=bm.verts, dist=1e-4)
     bm.normal_update()
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
@@ -503,16 +515,17 @@ def sweep_profile(name, pts, width, col, mat, depth_out=0.0):
 
 
 def build_backbone(col, M):
-    keel_pts = [(stern_x(-T) + 0.1, 0, -T + 0.25)]
-    keel_pts += [(x, 0, -T + 0.25) for x in np.linspace(stern_x(-T) + 0.6, bow_x(-T) - 0.4, 24)]
-    keel = sweep_profile("CORE_KEEL", keel_pts, 0.42, col, M["timber"], depth_out=0.25)
+    x0 = stern_x(-T) - 0.25            # kıç bodoslamasının arka yüzü (topuk)
+    x1 = bow_x(-T + 0.25) + 0.15       # bodoslamanın alt ucuyla bindirme
+    keel_pts = [(x, 0, -T + 0.25) for x in np.linspace(x0, x1, 26)]
+    keel = sweep_profile("CORE_KEEL", keel_pts, 0.42, col, M["hull"], depth_out=0.25)
     # bodoslama: baş eğrisi boyunca, omurgadan küpeşteye
     stem_pts = []
     for z in np.linspace(-T + 0.25, top_z(1.0) - 0.1, 36):
         stem_pts.append((bow_x(z) + 0.02, 0, z))
-    stem = sweep_profile("CORE_STEM", stem_pts, 0.40, col, M["timber"], depth_out=0.18)
+    stem = sweep_profile("CORE_STEM", stem_pts, 0.40, col, M["hull"], depth_out=0.18)
     post_pts = [(stern_x(z) + 0.02, 0, z) for z in np.linspace(-T + 0.25, Z_TR + 0.7, 20)]
-    post = sweep_profile("CORE_STERNPOST", post_pts, 0.40, col, M["timber"], depth_out=-0.22)
+    post = sweep_profile("CORE_STERNPOST", post_pts, 0.40, col, M["hull"], depth_out=0.25)  # gövde çizgisinin 0,25 m iç ve 0,25 m dışı
     return [keel, stem, post]
 
 
@@ -663,7 +676,7 @@ def build_rudder(col, M):
             bm.faces.new([rings[i][k], rings[i + 1][k], rings[i + 1][(k + 1) % 4], rings[i][(k + 1) % 4]])
     bm.faces.new(rings[0]); bm.faces.new(list(reversed(rings[-1])))
     bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
-    ob = obj_from_bmesh("MOD_RUDDER_STERNPOST_A", bm, col, [M["timber"]])
+    ob = obj_from_bmesh("MOD_RUDDER_STERNPOST_A", bm, col, [M["hull"]])
     bev = ob.modifiers.new("Bevel", "BEVEL"); bev.width = 0.04; bev.segments = 2
     build_uv_fallback(ob)
     return ob

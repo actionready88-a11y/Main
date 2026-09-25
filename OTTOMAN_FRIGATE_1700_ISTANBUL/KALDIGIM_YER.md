@@ -1,4 +1,4 @@
-# Kaldığım Yer — Hull Core v001 (2026-09-25)
+# Kaldığım Yer — Hull Core v002 (2026-09-25)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1700_ISTANBUL/`)
 
@@ -16,6 +16,11 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
   - Audit: `reports/scene_audit_v001.json`
   - Renderlar: `renders/v001/` (baş, kıç, iki profil, baş omzu, kıç omzu, güverte)
 
+## v002 (son sürüm)
+- `scripts/pass_v002_fix_stern_keel.py`: v001'i açar ve yalnız gövde kabuğu, omurga, bodoslamalar, dümen ve UCX'i yeniden üretir.
+- Kullanıcı bulguları (kıç/dümen kopukluğu, baş omurga açıklığı) giderildi. Ayrıntı: `reports/MODELLEME_PLANI.md` §5b.
+- Renderlar: `renders/v002/`, ölçülü pafta: `renders/v002/olculu/`
+
 ## Kalıcı kurallar
 - `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit, gerekmedikçe tüm gemiyi yeniden kurmama.
 - Toplar mürettebatla yönetilir. Komuta zinciri: oyuncu → 2. kaptan → topçu subayı.
@@ -26,6 +31,9 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Frigate ölçülerinin onayı (Gate A revizyonu): ONAYLA / DEĞİŞTİR.
 - Klasör adı: "1700" tiple uyumsuz. Öneri `OTTOMAN_FRIGATE_1780_ISTANBUL`; yeniden adlandırılmadı.
 - Burun: 2 kovalama lumbarı (frigate) mı, konseptteki 3 top mu (varyant)?
+
+## Bekleyen dış iş
+- Fab "Age of Sail Blender ship" kalite referansı: kullanıcının Remote Control oturumu `scripts/inspect_reference_blend.py` ile inceleyip yalnız raporu `reports/reference_audit/age_of_sail/` altına push edecek. Varlığın kendisi repoya girmez.
 
 ## Sıradaki adım
 - v002: kıç aynası ve galeri (`SternModule`), lumbar kapakları, güverte donanımı, bocurumlar.

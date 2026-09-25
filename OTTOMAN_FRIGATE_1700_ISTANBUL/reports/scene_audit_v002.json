@@ -1,0 +1,1592 @@
+{
+  "ship_id": "OTTOMAN_FRIGATE_1700_ISTANBUL",
+  "version": "v002",
+  "blender": "5.0.1",
+  "unit_scale": 1.0,
+  "objects": [
+    {
+      "name": "CUT_GUNPORTS",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 256,
+      "tris": 384,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "CORE_GUNPORT_FRAMES",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 896,
+      "tris": 1344,
+      "materials": [
+        "MAT_Trim_YellowOchre"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "CORE_HEAD_KNEE",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 392,
+      "tris": 780,
+      "materials": [
+        "MAT_Timber_Oak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_HEAD_RAIL_S",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 96,
+      "tris": 184,
+      "materials": [
+        "MAT_Trim_Gilt"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "CORE_HEAD_RAIL_P",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 96,
+      "tris": 184,
+      "materials": [
+        "MAT_Trim_Gilt"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "CORE_WALE_MAIN",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 1984,
+      "tris": 3464,
+      "materials": [
+        "MAT_Hull_TarredOak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_WALE_LOWER",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 1984,
+      "tris": 3464,
+      "materials": [
+        "MAT_Hull_TarredOak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_MOULDING_BAND_LOW",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 1984,
+      "tris": 3464,
+      "materials": [
+        "MAT_Trim_Gilt"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_MOULDING_RAIL",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 1984,
+      "tris": 3464,
+      "materials": [
+        "MAT_Trim_YellowOchre"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_DECK_GUN",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 3094,
+      "tris": 6184,
+      "materials": [
+        "MAT_Deck_Pine"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "SOLIDIFY"
+      ]
+    },
+    {
+      "name": "CORE_DECK_QUARTER",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 3094,
+      "tris": 6184,
+      "materials": [
+        "MAT_Deck_Pine"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "SOLIDIFY"
+      ]
+    },
+    {
+      "name": "CORE_DECK_FORECASTLE",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 3094,
+      "tris": 6184,
+      "materials": [
+        "MAT_Deck_Pine"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "SOLIDIFY"
+      ]
+    },
+    {
+      "name": "CORE_BREAST_RAIL_QD",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 2056,
+      "tris": 3996,
+      "materials": [
+        "MAT_Trim_YellowOchre"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_BREAST_RAIL_FC",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 1624,
+      "tris": 3156,
+      "materials": [
+        "MAT_Trim_YellowOchre"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_HULL_SHELL",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 71040,
+      "tris": 142210,
+      "materials": [
+        "MAT_Hull_TarredOak",
+        "MAT_Bulwark_InnerRed",
+        "MAT_Hull_RedBand",
+        "MAT_Bulwark_InnerRed"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "SUBSURF",
+        "SOLIDIFY",
+        "BOOLEAN"
+      ]
+    },
+    {
+      "name": "CORE_KEEL",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 344,
+      "tris": 684,
+      "materials": [
+        "MAT_Hull_TarredOak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_STEM",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 464,
+      "tris": 924,
+      "materials": [
+        "MAT_Hull_TarredOak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_STERNPOST",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 272,
+      "tris": 540,
+      "materials": [
+        "MAT_Hull_TarredOak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "MOD_RUDDER_STERNPOST_A",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 296,
+      "tris": 588,
+      "materials": [
+        "MAT_Hull_TarredOak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "SOCKET_MAST_FORE",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        11.9942,
+        0.0,
+        2.3666
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_MAST_MAIN",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        1.7429,
+        0.0,
+        1.9214
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_MAST_MIZZEN",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.1398,
+        0.0,
+        2.1179
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_RIG_PRIMARY",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        1.5125,
+        0.0,
+        1.9214
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_RUDDER",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -18.0955,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_FIGUREHEAD",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        21.819,
+        0.0,
+        4.1
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_STERN_MODULE",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -18.818,
+        0.0,
+        4.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.4,
+        2.5255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.4,
+        -2.5255,
+        2.4334
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_02",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.0364,
+        2.9723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_02",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -11.0364,
+        -2.9723,
+        2.2415
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_03",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -8.6727,
+        3.3957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_03",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -8.6727,
+        -3.3957,
+        2.0923
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_04",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -6.3091,
+        3.6805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_04",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -6.3091,
+        -3.6805,
+        1.9856
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_05",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -3.9455,
+        3.5617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_05",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -3.9455,
+        -3.5617,
+        1.9215
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_06",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -1.5818,
+        3.5634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_06",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -1.5818,
+        -3.5634,
+        1.9
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_07",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        0.7818,
+        3.5626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_07",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        0.7818,
+        -3.5626,
+        1.91
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_08",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        3.1455,
+        3.5566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_08",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        3.1455,
+        -3.5566,
+        1.9464
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_09",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        5.5091,
+        3.4774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_09",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        5.5091,
+        -3.4774,
+        2.0134
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_10",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        7.8727,
+        3.2837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_10",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        7.8727,
+        -3.2837,
+        2.1137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_11",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        10.2364,
+        2.9567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_11",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        10.2364,
+        -2.9567,
+        2.2494
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_12",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        12.6,
+        2.5788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_12",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        12.6,
+        -2.5788,
+        2.422
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_QD_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.6,
+        2.4634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_QD_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -12.6,
+        -2.4634,
+        4.3428
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_S_QD_02",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -10.2,
+        2.8707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_P_QD_02",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -10.2,
+        -2.8707,
+        4.1725
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_CHASE_BOW_S",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        16.0506,
+        1.0,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_CHASE_BOW_P",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        16.0506,
+        -1.0,
+        2.8325
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_CHASE_STERN_S",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.079,
+        1.6,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CANNON_CHASE_STERN_P",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.079,
+        -1.6,
+        2.95
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_ANCHOR_STARBOARD",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        15.2358,
+        3.2942,
+        3.2395
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_ANCHOR_PORT",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        15.2358,
+        -3.2942,
+        3.2395
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_BOAT_PRIMARY",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        0.5,
+        0.0,
+        2.2059
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_FLAG_STERN",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -19.46,
+        0.0,
+        6.05
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_COM",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.6,
+        0.0,
+        -1.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.3006,
+        1.7235,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_02",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -13.3006,
+        -1.7235,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_03",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.3855,
+        2.5609,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_04",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -9.3855,
+        -2.5609,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_05",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -5.4703,
+        2.9283,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_06",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -5.4703,
+        -2.9283,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_07",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -1.5551,
+        2.9464,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_08",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -1.5551,
+        -2.9464,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_09",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        2.36,
+        2.9463,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_10",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        2.36,
+        -2.9463,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_11",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.2752,
+        2.8203,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_12",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        6.2752,
+        -2.8203,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_13",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        10.1904,
+        2.4111,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_14",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        10.1904,
+        -2.4111,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_15",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        14.1055,
+        1.6591,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_BUOY_16",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        14.1055,
+        -1.6591,
+        -1.2
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 313,
+      "tris": 622,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_01",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 3420,
+      "tris": 6836,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_02",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 4124,
+      "tris": 8244,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_03",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 3594,
+      "tris": 7184,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    }
+  ],
+  "checks": {
+    "render_tris_total": 186998,
+    "bounds_m": {
+      "x": [
+        -19.1,
+        22.573
+      ],
+      "half_beam_max": 5.187,
+      "z": [
+        -4.5,
+        6.223
+      ]
+    },
+    "waterline_z": 0.0,
+    "draft_from_bounds_m": 4.5,
+    "missing_uv": [],
+    "missing_material": [],
+    "images_missing": [],
+    "non_unit_scale": [],
+    "sockets": [
+      "SOCKET_ANCHOR_PORT",
+      "SOCKET_ANCHOR_STARBOARD",
+      "SOCKET_BOAT_PRIMARY",
+      "SOCKET_CANNON_CHASE_BOW_P",
+      "SOCKET_CANNON_CHASE_BOW_S",
+      "SOCKET_CANNON_CHASE_STERN_P",
+      "SOCKET_CANNON_CHASE_STERN_S",
+      "SOCKET_CANNON_P_01",
+      "SOCKET_CANNON_P_02",
+      "SOCKET_CANNON_P_03",
+      "SOCKET_CANNON_P_04",
+      "SOCKET_CANNON_P_05",
+      "SOCKET_CANNON_P_06",
+      "SOCKET_CANNON_P_07",
+      "SOCKET_CANNON_P_08",
+      "SOCKET_CANNON_P_09",
+      "SOCKET_CANNON_P_10",
+      "SOCKET_CANNON_P_11",
+      "SOCKET_CANNON_P_12",
+      "SOCKET_CANNON_P_QD_01",
+      "SOCKET_CANNON_P_QD_02",
+      "SOCKET_CANNON_S_01",
+      "SOCKET_CANNON_S_02",
+      "SOCKET_CANNON_S_03",
+      "SOCKET_CANNON_S_04",
+      "SOCKET_CANNON_S_05",
+      "SOCKET_CANNON_S_06",
+      "SOCKET_CANNON_S_07",
+      "SOCKET_CANNON_S_08",
+      "SOCKET_CANNON_S_09",
+      "SOCKET_CANNON_S_10",
+      "SOCKET_CANNON_S_11",
+      "SOCKET_CANNON_S_12",
+      "SOCKET_CANNON_S_QD_01",
+      "SOCKET_CANNON_S_QD_02",
+      "SOCKET_FIGUREHEAD",
+      "SOCKET_FLAG_STERN",
+      "SOCKET_MAST_FORE",
+      "SOCKET_MAST_MAIN",
+      "SOCKET_MAST_MIZZEN",
+      "SOCKET_RIG_PRIMARY",
+      "SOCKET_RUDDER",
+      "SOCKET_STERN_MODULE",
+      "SOCK_BUOY_01",
+      "SOCK_BUOY_02",
+      "SOCK_BUOY_03",
+      "SOCK_BUOY_04",
+      "SOCK_BUOY_05",
+      "SOCK_BUOY_06",
+      "SOCK_BUOY_07",
+      "SOCK_BUOY_08",
+      "SOCK_BUOY_09",
+      "SOCK_BUOY_10",
+      "SOCK_BUOY_11",
+      "SOCK_BUOY_12",
+      "SOCK_BUOY_13",
+      "SOCK_BUOY_14",
+      "SOCK_BUOY_15",
+      "SOCK_BUOY_16",
+      "SOCK_COM"
+    ],
+    "collections": [
+      "00_REFERENCE",
+      "10_HULL_CORE",
+      "20_MODULES_RIG",
+      "21_MODULES_SAILS",
+      "22_MODULES_CANNONS",
+      "23_MODULES_DECK",
+      "24_MODULES_DECOR",
+      "30_SOCKETS",
+      "40_COLLISION",
+      "50_LODS",
+      "90_EXPORT"
+    ]
+  },
+  "pass": {
+    "name": "pass_v002_fix_stern_keel",
+    "source": "Blender/versions/OTTOMAN_FRIGATE_1700_ISTANBUL_v001.blend",
+    "pass_changes": {
+      "replaced": [
+        "CORE_HULL_SHELL",
+        "CORE_KEEL",
+        "CORE_STEM",
+        "CORE_STERNPOST",
+        "MOD_RUDDER_STERNPOST_A"
+      ],
+      "regenerated_collision": [
+        "UCX_CORE_HULL_SHELL_00",
+        "UCX_CORE_HULL_SHELL_01",
+        "UCX_CORE_HULL_SHELL_02",
+        "UCX_CORE_HULL_SHELL_03"
+      ],
+      "unchanged": "diğer tüm nesneler v001'den aynen"
+    },
+    "reason": "kıç/dümen kopukluğu ve baş omurga açıklığı (kullanıcı bulgusu)",
+    "sockets_moved": []
+  }
+}

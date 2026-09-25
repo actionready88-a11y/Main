@@ -74,6 +74,20 @@ Materyaller şimdilik **prosedürel PBR**: UV'ye bağlı tahta kaplama, ek yerle
 
 Üretici betik: `scripts/build_hull_v001.py`. Aynı betik `.blend`, audit JSON ve renderları yeniden üretir.
 
+## 5b. Pass v002: kıç ve omurga bağlantı düzeltmesi (2026-09-25)
+
+Kullanıcı bulgusu (v001 ölçülü pafta): kıçta su hattında dümen gövdeden kopuk görünüyor, başta omurga ile bodoslama arasında açıklık var.
+
+| Bulgu | Kök neden | Düzeltme |
+|---|---|---|
+| Kıçta boşluk | Kıç bodoslaması 0,03 m'lik ince levha olarak üretilmişti (kesit yönü hatası) ve gövdenin 0,22 m arkasında kalıyordu. Ayrıca Subdivision, gövdenin kıç ve baş kenarlarını içeri çekiyordu | Bodoslama 0,48 m kalınlıkta, gövdeye ve dümene bindirmeli. Gövde kenarlarına crease (kıç, bodoslama, omurga dikişi) |
+| Baş omurga açıklığı | Omurga bodoslamadan yaklaşık 0,9 m önce bitiyordu | Omurga bodoslamanın alt ucuna bindirildi, kıçta topuğa kadar uzatıldı |
+| Açık renkli bodoslama ve dümen boşluk gibi okunuyordu | Ham meşe malzemesi | Omurga, bodoslama, kıç bodoslaması ve dümen katranlı gövde malzemesinde (su hattı tonu dahil) |
+| Kıç altında benek | İki yarının iç yüzeyleri tam çakışıyordu (z-fighting) | Orta hat payı 0,12 → 0,15 m |
+| Kırmızı ayna rengi su altına iniyordu | Ayna malzemesi tüm kıç yüzeyindeydi | Ayna alt kenarı (Z_TR = 1,05 m) altı koyu gövde rengi |
+
+Değişen nesneler: `CORE_HULL_SHELL`, `CORE_KEEL`, `CORE_STEM`, `CORE_STERNPOST`, `MOD_RUDDER_STERNPOST_A`, `UCX_CORE_HULL_SHELL_00..03`. Diğer nesneler v001'den aynen alındı. Soket taşınmadı (`reports/scene_audit_v002.json` → `pass`).
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.
@@ -88,7 +102,7 @@ Materyaller şimdilik **prosedürel PBR**: UV'ye bağlı tahta kaplama, ek yerle
 
 ## 7. Bilinen sınırlamalar (v001)
 
-- Kıç aynası düz bir kapak; galeri ve pencereler yok. Kıç bodoslamasının alt ucunda küçük bir gölgelendirme artefaktı var (ayna şeridi ile bodoslama birleşimi).
+- Kıç aynası düz bir kapak; galeri ve pencereler yok. (Kıç altı artefaktı v002'de giderildi.)
 - Baş kıvrımı (knee of the head) ve yan rayları gövdeye bağlanmıyor, havada duruyor. v002'de baş platformu ve grating ile yeniden kurulacak.
 - Gövde silüeti hâlâ dolgun: alt gövde uçlarda yükselmiyor (deadwood yok). Hat planı (lines plan) kaynağı bulununca kesitler güncellenecek.
 - Lumbar kapakları, iç yapı, merdiven ve güverte donanımı yok.

@@ -69,7 +69,8 @@ def build_lods(sc, min_tris=2000, ratios=None, col_name="50_LODS", only=None):
             final.name = tmp.name
             bpy.data.meshes.remove(old)
             if not shared:
-                tmp.matrix_world = o.matrix_world.copy()
+                # gizli nesnede (ör. sürücüyle gizlenen açık yelken) matrix_world hesaplanmaz → ebeveynsizde matrix_basis
+                tmp.matrix_world = (o.matrix_basis if o.parent is None else o.matrix_world).copy()
             tmp["lod_of"], tmp["lod_index"], tmp["lod_ratio"] = key, i, r
             tmp.hide_viewport = tmp.hide_render = True
             entry["lods"].append({"name": tmp.name, "tris": _tris(final)})

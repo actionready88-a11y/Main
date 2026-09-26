@@ -1,4 +1,4 @@
-# Kaldığım Yer — v011 (2026-09-26)
+# Kaldığım Yer — v012 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,10 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v011 (son sürüm)
+## v012 (son sürüm)
+- `scripts/pass_v012_guns20.py`: 20 borda (10/borda) + 4 kovalama. Alt güverte topları ileride yükseltme olarak eklenecek (yüksek bordalı Hull varyantı gerekir).
+
+## v011
 - `scripts/pass_v011_lower_stern.py`: kıç kasarası yok; tek yükseltilmiş kıç üstü (ana güverte + 2,64 m) + altında kaptan kamarası (kapı belde); köşe merdivenleri; 22 ana top + 4 kovalama. Ayrıntı: MODELLEME_PLANI §5l.
 - **Kaptan kamarası = kıç üstü altı.** Ek kamara yok.
 

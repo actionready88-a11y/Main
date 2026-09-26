@@ -40,7 +40,8 @@ historical_basis:
     - "Museu Marítim de Barcelona, La Real replikası — okundu (karşılaştırma)"
     - "Kocakaplan, Ş., 'III. Selim Dönemi Fırkateyn İnşa Faaliyetleri', Istranca Tarih Araştırmaları Dergisi 2/1 (2024) — arama özeti; tam metin açılamadı"
   armament:
-    gun_deck: 22        # 11/borda (v011: kıç yapısı değişince); HMS Lyme 24 x 9-pdr
+    gun_deck: 20        # 10/borda (v012 kullanıcı kararı "20+4"); HMS Lyme 24 x 9-pdr
+    upgrade_lower_deck: "oyun yükseltmesi — bordası yüksek ayrı Hull varyantı gerekir (plan)"
     quarterdeck: 0      # v011: kıç kasarası kaldırıldı (Lyme: 4 x 3-pdr)
     chase_ports_bow: 2  # kullanıcı kararı 2026-09-25: 2 kalsın; batarya toplarından kaydırılır
     chase_ports_stern: 2  # v011: kaptan kamarası kıç pencerelerinden

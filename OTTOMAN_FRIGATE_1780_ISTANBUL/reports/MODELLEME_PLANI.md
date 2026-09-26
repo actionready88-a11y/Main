@@ -245,6 +245,13 @@ Kullanıcı kararı: "Kamara, dümenin altındaki kapılı kısımda olacak; eks
 - 36 soket silindi (kıç kasarası topları ve mürettebatı, 12. top soketleri, eski navlink'ler). Top ve istasyon soketleri taşındı (manifest 9).
 - Çarpışma yeni profille yeniden kuruldu; baş kasarası merdiven ve korkuluk UCX'leri korundu.
 
+## 5m. Pass v012: 20 + 4 top (2026-09-26)
+
+Kullanıcı kararı: "Toplam top sayısını 20'ye indir; oyunda yükseltme ile alt güverteye ekstra toplar eklenebilir." Netleştirme: **20 + 4**.
+- **Toplar:** 20 borda topu (bordada 10, üst güvertede, belde; x = -11,06 … 10,50 m dünya) + 2 baş kovalama + 2 kıç kovalama (kamara pencerelerinden). Baş kasarası altındaki sıkışık top çifti kaldırıldı.
+- `scripts/pass_v012_guns20.py`: lumbar kesicisi yerinde yenilendi, çerçeveler yeniden üretildi, 10 soket (top + mürettebat) silindi. Gövde değişmedi (manifest 10).
+- **Alt güverte yükseltmesi (plan):** Mevcut gövdede alt güverte lumbarları su hattının altında kalıyor. Yükseltme, bordası ~2,2 m yüksek ayrı bir Hull varyantı olarak yapılmalı (`MODULAR_SHIP_STANDARD`: yapısal gövde değişimi yeni hull sınıfıdır). Ayrı pass ve onay gerekiyor.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

@@ -48,6 +48,8 @@ historical_basis:
     gun_calibre_lb: {gun_deck: 9, quarterdeck: 3}
     concept_difference: "konseptteki 3 burun kovalama topu -> 2 kovalama lumbarı (frigate düzeni; kullanıcı onayı)"
   gameplay_modules:
+    poop_deck: "kıç üstü güverte, kıç kasarasının 2,0 m üstü; altında kaptan kamarası; iki merdiven (kullanıcı isteği 2026-09-26; hibrit)"
+    helm: "MOD_HELM_WHEEL_A — poop üzerinde; SOCKET_HELM"
     ram: "MOD_RAM_* — pruva çarpma mahmuzu (oynanış; 18. yy frigate'inde tarihsel değil). Soket: SOCKET_RAM"
   archived_class_data_kadirga:  # Seçenek A (arşiv) — bu gemi için GEÇERSİZ
     oturak: 25

@@ -14,8 +14,8 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 SHIP_ID = "OTTOMAN_FRIGATE_1780_ISTANBUL"
 VER = sys.argv[-1] if sys.argv[-1].startswith("v0") else "v001"
-W, H, CAM_Z = 1600, 900, 1.0
-SCALE = {"bas": 26.0, "kic": 26.0, "iskele_profil": 50.0, "sancak_profil": 50.0}
+W, H, CAM_Z = 1600, 900, 2.3
+SCALE = {"bas": 28.0, "kic": 28.0, "iskele_profil": 50.0, "sancak_profil": 50.0}
 CX = {"x": 0.0}  # profil kamerasının X merkezi (ölçümden)
 FONT = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 22)
 FONT_S = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)

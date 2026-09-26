@@ -1,4 +1,4 @@
-# Kaldığım Yer — v004 (2026-09-25)
+# Kaldığım Yer — v005 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -20,9 +20,12 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Ölçüler ONAYLANDI. Klasör `OTTOMAN_FRIGATE_1780_ISTANBUL` oldu.
 - Baş kovalama lumbarı 2; ayrıca pruva mahmuzu (ram). Kasara yüksekliği 2,0 m.
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
-- **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen. Sıradaki pass: v005.
+- **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v004 (son sürüm)
+## v005 (son sürüm)
+- `scripts/pass_v005_stern.py`: poop + kamara + 2 merdiven + balüsterler + kafesli kıç/yan galeriler + güneş tepelik + fener + dümen; kıç kasarası topları ileri alındı; 68 UCX. Ayrıntı: MODELLEME_PLANI §5f.
+
+## v004
 - `scripts/pass_v004_gameplay_sockets.py`: mahmuz, dümen ve komuta istasyonları, 128 mürettebat noktası, batarya grupları; top soketi yönleri düzeltildi.
 
 ## v003

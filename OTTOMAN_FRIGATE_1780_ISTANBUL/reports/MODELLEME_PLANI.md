@@ -129,6 +129,30 @@ Yeni düzen (`scripts/pass_v003_collision.py`; geometri değişmedi):
 - **Düzeltme:** v001-v003'te 28 borda top soketi gemi içine bakıyordu. Sancak topları +Y, iskele topları -Y yönüne çevrildi; manifest sürümü 1'den 2'ye çıktı.
 - Önizleme: `renders/v004/*soketler*.png`
 
+## 5f. Pass v005: yüksek kıç, merdivenler, dümen, kıç galerisi (2026-09-26)
+
+Kullanıcı isteği (görsel referansla): kıç normalden yüksek, merdivenle çıkılan bir alan olsun ve orada şimdilik dümen dursun. `scripts/pass_v005_stern.py`:
+
+| Öğe | Değer | Not |
+|---|---|---|
+| Kıç üstü güverte (poop) | Kıç kasarası güvertesinin 2,0 m üstünde; ön bölme x = -13,90 m; güverte boyu 5,24 m | Oynanış ve stil; 18. yy frigate'inde tipik değil (hibrit) |
+| Kaptan kamarası | Poop altında; net tavan (orta hat, ön) 1,88 m; kapı 0,90 × 1,85 m | Gezilebilir iç mekân |
+| Merdivenler | İki adet, kapının iki yanında (\|y\| 0,85-1,75 m); 10 basamak, basamak yüksekliği 21,6 cm, eğim 42° | UE varsayılan yürünebilir açı 44,76° altında. İki yanda tırabzan |
+| Korkuluk | Torna balüsterler (0,70 m) 0,30 m dolu küpeşte üstünde; yanlar, kıç ve ön kenar | Ön kenarda merdiven boşlukları |
+| Kıç aynası | 5 kafesli pencere (gerçek açıklık: `CUT_STERN_WINDOWS`), pilastr, eşik ve korniş | `MOD_STERN_GALLERY_A` (SternModule) |
+| Yan galeriler | İki yanda 3'er kafesli pencere, saçaklı çatı, altın topuzlu sarkıt | SternModule içinde |
+| Tepelik ve fener | Kemerli pano + güneş motifi (§17.4 kararı); üstünde altıgen kıç feneri, tepe yüksekliği 9,51 m | `MOD_LANTERN_STERN_A` (LanternFlagSet), `SOCKET_LANTERN_STERN` |
+| Dümen | Tamburlu dümen dolabı, 10 parmaklı dümen (Ø ~1,6 m tutamaklarla), A-ayaklar, dümenci ızgarası | `MOD_HELM_WHEEL_A`, `SOCKET_HELM`; kaptan istasyonu dümenin arkasında |
+| Kıç kasarası topları | x = -12,6 / -10,2 → **-10,3 / -7,9** | Merdivenlere yer açmak için; lumbarlar da taşındı |
+
+Gövde kabuğu yeniden üretildi, çünkü üst kenar kıçta 1,2 m yükseldi. Kesit formülü eski üst kenarın altında birebir aynı. Ayrıca kırmızı kuşak sınırına denk gelen bir satır eklendi (`row_z`); kıçta testere dişi görünen malzeme sınırı artık düz.
+
+Soketler (manifest 3):
+- **Taşınan:** `SOCKET_HELM`, `SOCK_STATION_CAPTAIN` (poop), `SOCK_STATION_SECOND_CAPTAIN` (kıç kasarası ön kenarı, orta hat), `SOCKET_FLAG_STERN`, kıç kasarası top soketleri ve mürettebatları.
+- **Eklenen:** `SOCKET_LANTERN_STERN`, `SOCK_NAVLINK_POOP_STAIR_{P,S}_{BOTTOM,TOP}`, `SOCK_NAVLINK_CABIN_DOOR_{OUT,IN}`.
+
+Çarpışma: 68 UCX. Yeni amaçlar: `deck_poop` (2), `transom` (1), `bulkhead` (3), `stairs` (2 rampa), `rail_poop` (10). Önceki sürümlerde kıç aynası duvarı çarpışması yoktu; eklendi.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

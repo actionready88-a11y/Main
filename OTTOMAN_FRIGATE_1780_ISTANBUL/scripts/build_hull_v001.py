@@ -123,6 +123,11 @@ def half_breadth(s, z):
     return max(y * stern_close(s, z), 0.0)
 
 
+def row_z(s, t, top):
+    """Kesit satırının yüksekliği (t: 0..1). Pass'ler bu fonksiyonu değiştirebilir."""
+    return ZK + (top - ZK) * (0.5 - 0.5 * math.cos(math.pi * t)) ** 0.9
+
+
 def hull_point(s, z):
     x = stern_x(z) + s * (bow_x(z) - stern_x(z))
     return x, half_breadth(s, z)
@@ -310,7 +315,7 @@ def build_hull_shell(col, M):
             for j in range(NZ + 1):
                 # alt tarafta daha sık örnekleme
                 t = j / NZ
-                z = ZK + (top - ZK) * (0.5 - 0.5 * math.cos(math.pi * t)) ** 0.9
+                z = row_z(s, t, top)
                 x, y = hull_point(s, z)
                 y = max(y, 0.15)  # omurga yarı genişliği (0.12 iç yüzlerin çakışmasına yol açıyordu)
                 co = Vector((x, side * y, z))
@@ -777,6 +782,11 @@ def setup_render(sc, fast=False):
     fo.location = (-25, -30, 12)
     fo.rotation_euler = (math.radians(70), 0, math.radians(-40))
     sc.collection.objects.link(fo)
+    fill2 = bpy.data.lights.new("FillStarboard", "SUN")
+    fill2.energy = 1.6
+    f2 = bpy.data.objects.new("LGT_FillStarboard", fill2)
+    f2.rotation_euler = (math.radians(58), math.radians(-10), math.radians(150))
+    sc.collection.objects.link(f2)
 
 
 def camera(sc, name, loc, target, ortho=None, lens=50):

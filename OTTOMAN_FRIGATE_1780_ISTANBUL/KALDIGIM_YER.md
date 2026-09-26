@@ -1,40 +1,132 @@
-# Kaldığım Yer — v046 (2026-09-26)
+# Kaldığım Yer — v046 (2026-09-26) — CLAUDE DESKTOP'A DEVİR
 
-Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
+- Repo: `actionready88-a11y/Main`, dal `claude/amazing-meitner-keq46t` (main'e birleştirilmedi), klasör `OTTOMAN_FRIGATE_1780_ISTANBUL/`.
+- Bu dosya bulut oturumunda (Claude Code, claude.ai/code) yapılan her şeyin özetidir. Yeni oturum buradan başlar.
+- Önce `CLAUDE.md`'yi, sonra bu dosyanın ► bölümlerini, gerekirse aşağıdaki sürüm bölümlerini oku.
 
-## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v046.blend` + `..._v046_LOD.blend` (her pass önceki sürümü açar, yenisini kaydeder;
-  var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
-  (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
-- **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
-  `..._1_blend_betik_belge.zip` (son blend, betikler, raporlar, belgeler, Tersane skill) ve `..._2_doku_referans_fbx.zip`.
-  İkisini aynı klasöre açınca proje klasörü tamamlanır. (GitHub'da branch → Code → Download ZIP de tüm geçmişi verir.)
-- **Blender içi anahtarlar:** `00_CONTROLS/CTRL_YELKEN.yelken_acik` (0 sarılı/1 açık; N paneli "Gemi" sekmesinde buton),
-  `00_CONTROLS/CTRL_SUSLEME.susleme_acik` (1 süslemeler açık / 0 sade).
-- **Kurallar:** Türkçe çıktı; kaynaksız sayı yok ([BİRİNCİL]/[İKİNCİL]/TAHMİN); Gate A insan onayı; low-poly yasağı ölçülür:
-  her pass sonunda `python3.11 ../skills/tersane/scripts/quality_audit.py <blend> --out reports/kalite_testi_vNNN.json`
-  (faset = kiriş sapması > 1,5 mm; düz gölge; havada ada). Yuvarlak parça dilimi: `resegment.required_segments(r)`.
-- **Sıradaki işler (öncelik sırası):**
-  1. Kalan küçük fasetler (v037 sonrası 3 nesne, `reports/kalite_testi_v037.json`): gövde kıç "tuck" (su altı, çoğu ≈ 2 mm,
-     en kötü 7 mm; subsurf 3 gövdeyi 2,2 M üçgene çıkarır → bölgesel çözüm gerek), kıç galerisi (2,6 mm; Catmull-Clark
-     12,7 mm saptırdığı için geri alındı), filika (1,8 mm).
-  2. Bozkurt figürü: v039'da kullanıcının Meshy AI modeli (`MOD_FIGUREHEAD_BOZKURT_C`). Lisans planı (ücretsiz → CC BY 4.0
-     atıf / ücretli → kullanıcıya ait) kullanıcı tarafından doğrulanacak. UE: BC/N/ORM `Textures/Figurehead/`.
-  3. Top C modülü UV + bake (`Textures/Modules/Cannon_C/`), gövde/modül FBX dışa aktarımı, UE malzemeleri.
-  4. Direk çanaklık kenarı sıklaştırma; gövde kıç "tuck" bölgesi; Gate B incelemesi; arma oranlarını Lees ile doğrula.
-- **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
-  düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
-  Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+## ► 0. YEREL KURULUM (Claude Desktop / kendi bilgisayarın)
+1. **Depoyu güncelle** (GitHub Desktop: Fetch → Pull; ya da komut satırı):
+   ```
+   git fetch origin
+   git checkout claude/amazing-meitner-keq46t
+   git pull origin claude/amazing-meitner-keq46t
+   git lfs install
+   git lfs pull          # .glb dosyaları Git LFS'te (figür modelleri); bu olmadan 133 baytlık işaretçi kalır
+   ```
+2. **Commit sayısı:**
+   - Bu dal 73 commit (v001 → v046); `main`'in 71 commit önünde. Tam liste: `reports/COMMIT_GECMISI.md`.
+   - GitHub Desktop'ta görülen "592" büyük ihtimalle yerel **Changes** sayısıdır: senin bilgisayarında değişmiş ya da izlenmeyen
+     dosyalar. Bunlar buluttan görünmez. Yeni oturum önce `git status` ile bunlara baksın.
+   - Yerelde kaydedilmesi gereken iş varsa commit'lenir. Blender'ın kendiliğinden oluşturduğu dosyalar (`*.blend1`, `__pycache__`)
+     ve yeniden adlandırma artıkları commit'lenmez. **Pull etmeden önce yerel değişiklikleri commit'le ya da stash'le**
+     (çakışmada blend dosyaları birleştirilemez).
+3. **Açılacak dosya:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v046.blend` (Blender 4.x/5.x).
+   - LOD'lar ayrı dosyada: `..._v046_LOD.blend`. Gerekince File → Append → `..._v046_LOD.blend` → Collection → `50_LODS`.
+   - **Pembe malzeme:** v044 ve öncesinde doku yolları bulut yoluyla (`/home/user/Main/...`) kayıtlıydı. Bu yüzden
+     bilgisayarında pembe görünürler. Çözüm: File → External Data → Find Missing Files → proje içindeki `Textures` klasörü.
+     v045 ve sonrasında yollar göreli (`//../../Textures/...`), sorun yok.
+4. **Betikler:** `scripts/pass_vNNN_*.py`.
+   - Bulutta `python3.11` + `bpy 5.0.1` ile çalıştı. Yerelde: `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
+   - Her pass önceki sürümü açar ve yeni sürüm kaydeder. Kayıtlı bir sürümün üzerine **asla** yazılmaz; çıktı varsa betik durur.
+   - Kayıt `skills/tersane/scripts/lod_store.py` ile yapılır: `load(önceki)` ve `save_split(yeni)`.
+     LOD'lar ayrı dosyaya gider, doku yolları göreli yazılır.
+5. **TESLIM/ zip'leri eski:** v036'da kaldılar. Güncel iş için depoyu kullan.
 
-## ► KIZIL SANCAK UYARLAMASI (onaylı plan: `reports/KIZIL_SANCAK_UYARLAMA_PLANI.md`)
-- Gemi, kullanıcının oyunundaki **Kızıl Sancak İmparatorluğu** donanmasına ait.
-  - Ana üs Sancakkale, donanma kurumu Kızıl Deniz Meclisi, oyun içi adı "Kızıl Pençe" (şimdilik).
-  - Kimlik bilgisi: `00_CONTROLS/SHIP_IDENTITY`.
-- Birebir Osmanlı sembolleri (ay-yıldız sancak, tuğra) kullanılmaz ("Yüzde Yetmiş Özgünlük Kuralı").
-- Arma kullanıcı konseptinden alındı: hilal + mızrak + gök yıldızı + dalgalar (`scripts/kizil_sancak.py`).
-- Sıradaki işler:
-  1. İç düzen tamamlandı (v041–v044). Sıradaki: v045 genel iç/dış render turu, UE notları.
-  2. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+## ► 1. KURALLAR (değişmez)
+- **Dil:** Türkçe çıktı.
+- **Sayılar:** kaynaksız sayı yazılmaz; [BİRİNCİL]/[İKİNCİL]/[TAHMİN] etiketi konur.
+- **Onaylar:** Gate A insan onayı gerektirir, otomatik onay yok. `_context/` salt okunur.
+- **Low-poly yasağı** ölçülür: her pass'te `quality_audit` çalışır. Faset = kiriş sapması > 1,5 mm; düz gölge ve havada ada da sayılır.
+- **Git:** kendi dalında çalış; main'e merge yok, force push yok. Her adım commit + push edilir.
+- **Varlıklar:**
+  - Fab ya da lisanslı varlık depoya konmaz.
+  - Kullanıcının tasarım paketi ("Project Pirate Tasarım") depoya konmaz; yalnız özet ve sayfa göndermeleri yazılır.
+  - Meshy çıktısı kullanıcıya ait; lisans planı kullanıcıdan sorulacak (ücretsiz plan → CC BY 4.0, "Meshy AI" atfı gerekir).
+- **Magnific ücretli:** hesapta 0 kredi var, harcama yapılmaz.
+- **Kızıl Sancak kimliği** ("Yüzde Yetmiş Özgünlük Kuralı"): gemi kullanıcının oyunundaki **Kızıl Sancak İmparatorluğu**'na ait.
+  - Osmanlı'dan esinli ama kopya değil. Birebir ay-yıldız sancak, tuğra gibi semboller kullanılmaz.
+  - Onaylı plan: `reports/KIZIL_SANCAK_UYARLAMA_PLANI.md` (§0 kullanıcı kararları).
+- **Top düzeni:** 20 borda + 2 baş = 22 top. Kıç topları kaldırıldı.
+- **Çırak yatakhanesi** kaptan dairesinde değil; subay kabinlerinden de ayrı, alt güvertenin baş tarafında.
+
+## ► 2. GEMİNİN ŞU ANKİ DURUMU (v046)
+- **Kimlik:**
+  - Oyun içi ad "Kızıl Pençe" (şimdilik); ana üs Sancakkale; donanma kurumu Kızıl Deniz Meclisi.
+  - Kimlik bilgisi `00_CONTROLS/SHIP_IDENTITY` boşunda.
+  - Arma kullanıcının konseptinden: hilal, mızrak, gök yıldızı, dalgalar (`scripts/kizil_sancak.py`).
+- **Dış görünüm:**
+  - Kızıl sancak ve flandra.
+  - Ana mayistra ve ana gabyada kızıl bant ve arma.
+  - Kıç arması ve "KIZIL PENÇE" ad levhası.
+  - Toplarda tuğra yerine mühür.
+  - Açık yelkenler B (dolgun karın, kıvrımlar, kanvas dokusu).
+- **Pruva:**
+  - Kurt figürü D (`MOD_FIGUREHEAD_KURT_D`, 450k üçgen). Alın ve omuzlardaki ay-yıldızdan yıldızlar silindi, hilaller kaldı.
+  - Figür, mahmuzun (`MOD_BOW_RAM_A`) yuvasına oturuyor. Baş kıvrımı ve baş parmaklıkları kaldırıldı.
+  - `SOCKET_RAM` mahmuz burnunda.
+- **İç düzen:**
+  - Kıç kamarası: CaptainOffice (makam) ve kaptan kamarası ayrı.
+  - Alt güverte: hamaklar, sofralar, subay odası (4 kabin), revir, marangoz ve yelkenci atölyesi, ocak, çırak yatakhanesi.
+  - Ambar: kurşun kaplı cephanelik, fener odası, hazırlama odası, erzak odası, gülle sandıkları.
+  - Top güvertesi: 8 hazır servis dolabı ve rüzgâr hortumu.
+  - Hasar kontrol: her güvertede 2 istasyon + ambarda 1.
+  - Oda kimlikleri: `35_ROOMS` koleksiyonundaki boşlar (CompartmentID, RoomLabel, OperationalStationID, WatertightZoneID).
+- **Blender içi anahtarlar:**
+  - `00_CONTROLS/CTRL_YELKEN.yelken_acik`: 0 sarılı / 1 açık. N panelinde "Gemi" sekmesinde buton.
+  - `00_CONTROLS/CTRL_SUSLEME.susleme_acik`: süslemeler açık / kapalı.
+- **Kalite testi:** yalnız eski 5 hata var:
+  - gövde kıç "tuck" bölgesi 7,3 mm (su altı);
+  - filika 1,8 mm;
+  - kıç galerisi 2,6 mm;
+  - ocak 2,5 mm;
+  - kıç arması 3,0 mm.
+
+## ► 3. SIRADAKİ İŞLER (öncelik sırası)
+1. **Dümen dolabı** (kullanıcı isteği, AC Black Flag görseli): bizdeki dümen `MOD_HELM_WHEEL_A` (x ≈ −17,4, z 6,65) tek başına
+   bir öğe gibi duruyor. Güverteyle bütünleştir:
+   - kaide / podyum;
+   - dümen halatlarının tamburdan güverteye inişi;
+   - pusula dolabı (binnacle);
+   - çevre küpeşte, halat bağları, eşyalar.
+2. **Mahmuz / figür ince ayarı:** kullanıcı onayı bekleniyor. Figürün arka montaj bloğunun üst kenarı yandan hâlâ az görünüyor;
+   gerekirse `DISH_TAB`'ın arka değerleri artırılır.
+3. **Kullanıcıya sorulacak:**
+   - Meshy lisans planı.
+   - Aynı 119 MB figür dosyasının depoda 3 kopyası var: `Imports/Meshy/Kurt Gemi Figürü.glb`, `Imports/Meshy/..._cle_...glb`
+     ve kök klasörde `Kurt Gemi Figürü.glb`. Fazlalar silinsin mi?
+4. **Kalan fasetler:** yukarıdaki 5 eski hata.
+5. **UE hazırlığı:** Top C modülü UV + bake, FBX dışa aktarımı, UE malzeme notları.
+6. **Tersane skill:** güncel (`skills/tersane/SKILL.md`, günlük v044'e kadar). v045–v046 dersleri eklenebilir:
+   yıldız silme yöntemi (ışın + zemin düzlemi + UV maske dolgusu), yay uzunluğu + eğrilik ağırlıklı kesit örnekleme.
+
+## ► 4. TUZAKLAR (bu oturumda öğrenilenler)
+- **Dosya boyutu:** GitHub tek dosyada 100 MB sınırı var. LOD'lar ana blend'den ayrıldı (`lod_store.py`).
+  Figür modelleri (`*.glb`) Git LFS'te.
+- **Pembe malzeme:** doku yolları mutlak kaydedilmişti. Kayıttan önce `lod_store.make_relative` çağrılır.
+- **Gizli nesneler:** sürücüyle gizlenen nesnelerde `matrix_world` değerlendirilmez. Ebeveynsizse `matrix_basis` kullan.
+- **Render'da gizleme:** görünürlük sürücüleri `hide_render`'ı ezer. Render adımında önce sürücüyü sil (kaydetme).
+- **Bekleme döngüsü:** `until ! pgrep -f X` kendi komut satırını da yakalar ve sonsuz döngüye girer.
+  PID ile bekle ya da arka plan görevini kullan.
+- **Yerleştirme:** çakışma testi üçgen düzeyinde yapılır (BVH). Parça atılırsa nesne nesne test edip `clash_with` raporla.
+- **Faset:** süperelips kesitlerde noktalar köşede sıklaşır, ortada seyrekleşir. Yay uzunluğu + 0,15 × dönüş açısı ağırlığıyla
+  yeniden örnekle. Dik profilde kesitleri yerel olarak sıklaştır.
+- **Kullanıcı ince çubuk görünümünü sevmiyor** (baş parmaklıkları, altın silme tüpleri). Süsleri gövdeye gömülü yap.
+- Ayrıntılı ders listesi: `skills/tersane/SKILL.md` §17.
+
+## ► 5. SÜRÜM ÖZETİ (her sürümün ayrıntısı aşağıda ya da `reports/MODELLEME_PLANI.md`'de)
+| Sürüm | İş |
+|---|---|
+| v001–v004 | gövde çekirdeği, paftalar, sade çarpışma, oynanış soketleri |
+| v005–v011 | yüksek kıç, merdivenler, dümen, kıç galerisi, kaptan kamarası |
+| v012–v019 | toplar, Hull_B alt güverte, arma, filika, çapa, ırgat, UCX |
+| v020–v027 | gerçekçi top, bozkurt blockout, yelken + motifler, sancak, ambar, LOD, bake, frigat kararı |
+| v028–v033 | Osmanlı tunç topu C, yelken anahtarı, kalite testi, Osmanlı süslemeleri, faset temizliği |
+| v034–v037 | bozkurt figürü B–B3 (SDF), baş parmaklıkları, faset temizliği 2 |
+| v038–v039 | açık yelkenler B, Meshy figür C |
+| v040 | Kızıl Sancak dış kimliği |
+| v041–v044 | Kızıl Sancak iç düzeni (kamara, alt güverte yaşamı, ambar/cephanelik, hazır dolaplar, hasar kontrol, havalandırma) |
+| v045 | Kurt figürü D (yıldızlar silindi) |
+| v046 | pruva mahmuzu + figür yuvası, baş parmaklıkları kaldırıldı |
 
 ## v046 — pruva mahmuzu (ram) + figür yuvası; baş parmaklıkları kaldırıldı
 - Betik: `scripts/pass_v046_bow_ram_cradle.py`.

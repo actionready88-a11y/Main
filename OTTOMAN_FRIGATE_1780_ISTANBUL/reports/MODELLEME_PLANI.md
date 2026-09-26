@@ -343,6 +343,44 @@ Kullanıcı: "yelkenler sarılı olacak"; "yelkenlerin üstüne buradaki Osmanl�
 - **Motifler (modüler, gizli; açık yelkenle birlikte):** `MOD_SAIL_EMBLEM_RUMI_A_*` pruva ve ana alt yelkenlerde, `MOD_SAIL_EMBLEM_LALE_A_*` gabya yelkenleri ve randada. Her biri yelken yüzeyini izleyen iki yüzlü decal. Soketler `SOCKET_SAIL_EMBLEM_*`. Dokular `Textures/emblems/T_SailEmblem_{Lale,Rumi}_A.png` (`scripts/make_sail_emblems.py` ile prosedürel çizim). Referans görselin tarzında (kırmızı dolgu, altın kontur); tarihsel desen kopyası değil.
 - Sarılı yelkende desen görünmez (bez rulo). Desenler açık yelken durumunda görünür.
 
+## 5x. Pass v023: hareketli arma ve makaralar (2026-09-26)
+
+- 45 makara, 47 halat: her serende iki kaldırıcı; gabya ve babafingo mandarları; brasyalar (makaralarla öndeki/arkadaki direğe; ana alt seren brasyaları kıç omuzluktaki küpeşte koçboynuzlarına); randanın pik ve boğaz mandarı ve bumba iskotası; flok mandarı.
+- Pruva, ana ve mizana direklerinin önünde palanga parmaklıkları (`CORE_FIFE_RAILS`, her birinde 9 armadora pini) ve `CORE_KEVELS`. Parmaklık çevresinde mürettebat/tulumba/merdiven çakışması yok.
+- `MOD_RIG_RUNNING_{FORE,MAIN,MIZZEN}_A` (her biri ~6,8 bin üçgen). UE'de kablo/spline ile değiştirilebilir.
+
+## 5y. Pass v024: bayraklar (2026-09-26)
+
+- Sancak `MOD_FLAG_ENSIGN_OTTOMAN_A` (3,6 × 2,4 m, TAHMİN): kırmızı zemin, beyaz hilal ve sekiz köşeli yıldız. Bu biçim 1793'te donanmada resmîleşti; ay-yıldız III. Mustafa döneminden beri kullanılıyordu [İKİNCİL: tr.wikipedia "Osmanlı bayrakları"; dergipark "Tarihsel süreçte bayrak ve sancaklarımız" — arama özeti]. Gemi 1780 tarihli; 13 yıllık fark oyun kararı olarak not edildi.
+- Randa bumbası kıçtaki bayrak direği soketinin üstünden geçtiği için sancak gaf ucundan çekildi (`SOCKET_FLAG_GAFF_PEAK`); `SOCKET_FLAG_STERN` limanda bayrak direği seçeneği olarak kaldı.
+- Flama `MOD_FLAG_PENNANT_OTTOMAN_A` (8,0 × 0,5 m, kırlangıç kuyruklu) ana direk topuzunda. Dokular `Textures/flags/` (`scripts/make_flags.py`).
+
+## 5z. Pass v025: ambar iç mekânı (2026-09-26)
+
+- Ambar tabanı alt güvertenin 2,53 m altında (su hattından -1.64 m); alt güverte kirişleri altında net 2.222 m. Taban gövdenin orta bölümünde (s 0,12–0,88).
+- Erişim: alt güvertede üst ana ambar ağzının tam altında ambar ağzı, koaming ve merdiven (57.8°).
+- Direk topukları omurgaya kadar (`MOD_RIG_MAST_*_HEEL_A`) ve ıskaça takozları; iki yanda iki kat fıçı istifi (orta yol boş), pruvada palamar kangalları, ana direk dibinde gülle dolabı, kıçta sandık istifi (`MOD_HOLD_CARGO_A`, 59 bin üçgen). 4 fener soketi, ambar navlink'i.
+- Çarpışma: ambar altı dolu dilimler tabana kadar, ambar borda duvarları, taban, 43 yük bloğu; alt güverte UCX'i ambar ağzı delikli yeniden kuruldu.
+
+## 5aa. Pass v026: LOD zinciri + doku bake (2026-09-26)
+
+- **LOD:** 2.000 üçgenin üstündeki 51 benzersiz mesh için LOD1 (%50) ve LOD2 (%20); gövde kabuğu için LOD3 (%8). Modifier yığını uygulanmış kopyadan Decimate ile üretildi. `50_LODS` koleksiyonunda, gizli, ad `<Kaynak>_LOD<n>`. Benzersiz mesh toplamı LOD0 533,772 → LOD1 266,882 → LOD2 106,700 üçgen.
+- **Doku bake** (`scripts/bake_tile_textures.py`): 11 prosedürel malzeme 4 × 4 m'lik döşenebilir setlere çevrildi, 2048². Her set BaseColor, Normal (DirectX) ve ORM (R=AO, G=Roughness, B=Metallic). UE'de UV × 0,25 ile döşenir. Çıktı `Textures/tiles/` ve `reports/texture_manifest_v026.json`. 19 sabit malzeme (yaldız, boya, cam…) manifestte parametre olarak listelendi.
+- **Sınırlar:** gürültü desenleri periyodik değil, 4 m'de bir hafif dikiş olabilir. Gövdenin su hattı altı tonu UE'de dünya konumuyla verilmeli. Kurt figürü bake edilmedi.
+
+## 5ab. Top varyantları — ayrı paket, gemide kullanılmaz (2026-09-26)
+
+Kullanıcı: "birkaç ekstra varyant üret ama bu gemide kullanma, FBX olarak kalsın". Verilen YouTube videosu bu ortamdan açılamadı; kullanıcı "dönem varyantlarını üret" seçeneğini seçti.
+- `scripts/make_cannon_variants.py` → `Blender/versions/CANNON_VARIANTS_v001.blend`, `FBX/Modules/Cannons/SM_*.fbx`, `FBX/export_manifest_cannon_variants.json`, `renders/cannon_variants/`.
+- Varyantlar:
+  - `MOD_CANNON_BRONZE_OTTOMAN_A`: süslü tunç uzun top; yunus kulplar, rumi kabartma kuşaklar, lale ağız, truck kızak.
+  - `MOD_CARRONADE_A`: sürgü kızaklı, yükseliş vidalı karronad.
+  - `MOD_SWIVEL_GUN_A`: çatal ve millik döner top.
+  - `MOD_FIELD_GUN_SAHI_A`: parmaklı tekerlekli, uzun kuyruklu şahi sahra topu.
+  - `MOD_MORTAR_A`: blok yataklı havan.
+- Her varyantta namlu ve kundak ayrı; namlu pivotu muylu ekseninde. Mesh soketleri MUZZLE ve TOUCHHOLE; her varyantta 1 UCX. Ölçüler TAHMİN.
+- Blender temiz sahneye re-import kontrolü geçti (ölçek 1, soketler ve UCX yerinde). Unreal re-import kullanıcı ortamında yapılacak.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

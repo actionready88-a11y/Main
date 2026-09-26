@@ -1,4 +1,4 @@
-# Kaldığım Yer — v022 (2026-09-26)
+# Kaldığım Yer — v026 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,21 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v022 (son sürüm)
+## v026 (son sürüm)
+- `scripts/pass_v026_lods.py`: LOD zinciri (`50_LODS`). `scripts/bake_tile_textures.py`: 11 malzeme için BaseColor/Normal/ORM tile dokuları (`Textures/tiles/`). §5aa.
+- Top varyantları (gemide kullanılmaz): `FBX/Modules/Cannons/`, `Blender/versions/CANNON_VARIANTS_v001.blend`. §5ab.
+- Kullanıcının belirlediği sıra tamamlandı: yelkenler, toplar, bozkurt (blockout), halat ve makaralar, bayrak, ambar, LOD ve bake.
+
+## v025
+- `scripts/pass_v025_hold.py`: ambar iç mekânı. §5z.
+
+## v024
+- `scripts/pass_v024_flags.py`: sancak (gaf ucunda) ve flama. §5y.
+
+## v023
+- `scripts/pass_v023_running_rigging.py`: hareketli arma ve makaralar. §5x.
+
+## v022
 - `scripts/pass_v022_sailset.py`: sarılı yelkenler (varsayılan) + açık yelken varyantı + lale/rumi motif modülleri. §5w.
 - Kullanıcının belirlediği sıra (aksi söylenmedikçe): halat ve makaralar → bayrak → ambar içi → LOD ve doku bake.
 

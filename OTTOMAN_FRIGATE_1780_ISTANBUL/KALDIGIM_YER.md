@@ -1,6 +1,30 @@
-# Kaldığım Yer — v027 (2026-09-26)
+# Kaldığım Yer — v032 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
+
+## ► MASAÜSTÜNDE DEVAM (buradan başla)
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v032.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+  var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
+  (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
+- **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
+  `..._1_blend_betik_belge.zip` (son blend, betikler, raporlar, belgeler, Tersane skill) ve `..._2_doku_referans_fbx.zip`.
+  İkisini aynı klasöre açınca proje klasörü tamamlanır. (GitHub'da branch → Code → Download ZIP de tüm geçmişi verir.)
+- **Blender içi anahtarlar:** `00_CONTROLS/CTRL_YELKEN.yelken_acik` (0 sarılı/1 açık; N paneli "Gemi" sekmesinde buton),
+  `00_CONTROLS/CTRL_SUSLEME.susleme_acik` (1 süslemeler açık / 0 sade).
+- **Kurallar:** Türkçe çıktı; kaynaksız sayı yok ([BİRİNCİL]/[İKİNCİL]/TAHMİN); Gate A insan onayı; low-poly yasağı ölçülür:
+  her pass sonunda `python3.11 ../skills/tersane/scripts/quality_audit.py <blend> --out reports/kalite_testi_vNNN.json`
+  (faset = kiriş sapması > 1,5 mm; düz gölge; havada ada). Yuvarlak parça dilimi: `resegment.required_segments(r)`.
+- **Sıradaki işler (öncelik sırası):**
+  1. Kalan küçük fasetler (bu oturumda sürüyor; bitmediyse `reports/kalite_testi_v032.json` → `fail: true` olanlar).
+  2. Bozkurt figürü nihai model (`references/KONSEPT_PRUVA_BOZKURT_01.webp`; şu an `MOD_FIGUREHEAD_BOZKURT_A` BLOCKOUT).
+  3. Top C modülü UV + bake (`Textures/Modules/Cannon_C/`), gövde/modül FBX dışa aktarımı, UE malzemeleri.
+  4. Direk çanaklık kenarı sıklaştırma; gövde kıç "tuck" bölgesi; Gate B incelemesi; arma oranlarını Lees ile doğrula.
+- **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
+  düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
+  Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## v032 — friz kesintisiz, kıç arması yönü
+- Gövde rumi frizi yalnız lumbar arkasında kesilir; kıç armasında yıldız hilalin açık tarafında (arkadan bakana göre).
 
 ## Durum
 - **Gate A: ONAYLA** (yön: hibrit, "Osmanlı esintili frigate").

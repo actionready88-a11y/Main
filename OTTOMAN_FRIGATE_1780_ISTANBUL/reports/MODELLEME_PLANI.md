@@ -206,6 +206,13 @@ Kullanıcı kararı: "Her yer gezilebilir" için önce ana güverteden kıç kas
 - **Kontrol:** Merdiven ayak izi ile mürettebat noktası çakışması yok. Kontrol, merdivenin alt yüzü baş hizasının üstündeyse o noktayı çakışma saymıyor.
 - **Erişim zinciri:** bel → kıç kasarası → kıç üstü ve bel → baş kasarası. Açık güvertelerin tamamına merdivenle çıkılabiliyor.
 
+## 5j. Pass v009: baş kasarası merdivenleri köşelere (2026-09-26)
+
+Kullanıcı isteği (görselle): baş kasarası merdivenleri, kıç üstündekiler gibi sağ ve sol köşede, borda duvarına yaslı olsun. `scripts/pass_v009_fc_stairs_corners.py`:
+- **Merdivenler:** \|y\| 2,62-3,61 m (dünya), eğim 41,4°. Ön korkuluk ortada tek parça.
+- **Ana batarya:** 1-11. toplar x = -13,4 … 9,55 (tasarım) aralığına eşit dizildi. Top aralığı 2,36 m'den 2,30 m'ye indi, 11. top 0,69 m geri geldi. 12. top baş kasarası altında kaldı. Toplam 20 top soketi ve mürettebatı taşındı, lumbar kesicisi ve çerçeveler yenilendi.
+- **Kontrol:** Dört erişim merdiveninin hiçbirinde mürettebat çakışması yok. Çarpışmada eski baş kasarası merdiven ve korkuluk UCX'leri kaldırıldı, yenileri eklendi; UCX adları sıralı yeniden düzenlendi.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

@@ -81,6 +81,7 @@ en iyi referans. Özellikle: `build_hull_v001.py` (gövde üreticisi), `pass_v01
 | `stairs.py` | çakışmasız merdiven (kırpılmış kiriş), mevcut merdivenden parametre çıkarma |
 | `ship_checks.py` | BVH çakışma, delik ışın testi, UCX denetimi, soketleri güverteye oturtma, boolean listesi (CLI) |
 | `lods.py` | LOD zinciri (%50/%20, gövde +%8) `50_LODS` koleksiyonunda |
+| `lod_store.py` | LOD'ları ayrı `<blend>_LOD.blend` dosyasına yazar / geri yükler (GitHub 100 MB dosya sınırı) |
 | `quality_audit.py` | **Kalite testi**: faset (kiriş sapması + süreklilik), düz gölge, havada ada, istisna listesi (CLI) |
 | `resegment.py` | Mesh düzeyinde yeniden dilimleme: lathe/tube halkaları, elipsoitler, profil/yol ve süpürme sıklaştırma |
 | `sdf_sculpt.py` | SDF yontu: elipsoit/konik kapsül/zincir, yumuşak birleşim/oyma, bölge malzemesi, yüzeye yansıtma, tüy tohumları, marching cubes → tek parça mesh (figür, arma) |
@@ -125,6 +126,10 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
 | Eski üreticiyi çağırınca parça 3–13 m kaydı | pass zinciri yamaları | mesh düzeyinde düzelt (resegment) ya da konum karşılaştır |
 | Figür oyuncak/damla gibi (metaball) | ayrıntı yok, oranlar tahmini | SDF yontu + anatomik oran + yüzeye yatan tüy tutamı (`sdf_sculpt.py`) |
 | Parmaklık gemiden ayrı ama test temiz | bir ucu figüre değiyor, diğeri havada | iki ucun da hedefe değdiğini ayrı ölç (bağlantı uçları) |
+| Push reddi: blend > 100 MB | türetilmiş LOD'lar ana dosyada (≈ %55) | `lod_store.save_split` → `_LOD.blend` ayrı |
+| Gizli nesne yanlış yerde ölçülür | sürücüyle gizli nesnede `matrix_world` değerlendirilmez | ebeveynsizse `matrix_basis` |
+| Renderda tavan gizlenmiyor | görünürlük sürücüsü `hide_render`'ı ezer | render adımında önce sürücüyü sil (kaydetme) |
+| Parça atılıyor, sebep belirsiz | çakışma BVH'si tek parça | nesne nesne yeniden test et, `clash_with` raporla |
 | Sürücü testi başsızda hep eski değer | sonuç orijinale yazılmaz, evaluate önbellekli | sürücü yapısını/ifadesini doğrula |
 
 ## Değişiklik günlüğü
@@ -136,6 +141,10 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
   faset temizliği, bozkurt figürü tek parça (metaball + gömme + EXACT birleşim).
 - **v035–v036:** bozkurt figürü SDF yontusu (`sdf_sculpt.py`; tek alan → tek parça), yele yumuşak kaynak + patinalı
   bronz (altın kenar = solucan etkisi), malzeme çoğunluk süzgeci; baş parmaklıkları bordaya gömülü.
+- **v038–v044 (Kızıl Sancak uyarlaması):** açık yelken B (Coons yaması, karın/kıvrım/camadan); Meshy figür içe
+  aktarımı (ada birleştirme, decimate, doku PNG dönüşümü); arma dokuları PIL raster, top mührü Delaunay kabartma;
+  iç düzen kiti `interior_kit.py` (bölme, hamak, perde, oda kimliği boşu); üçgen düzeyi çakışma + kaydırma/içe alma
+  denemeleri; paylaşılan mesh örnekleri (UE ISM); v044'ten itibaren LOD'lar ayrı dosyada (`lod_store.py`).
 - **v037:** eğik çanaklık topolojiyle bulunur (eksene dik varsayma); halat dönüşü `fillet_kinks`; seçici kıvrımlı
   Catmull-Clark + ölç/geri al (`pass_v037_facet_cleanup2.cc_subdivide`). Kalite testi 23 → 3 nesne.
 - **v030 (kalite testi):** low-poly yasağı ölçülebilir hale geldi (kiriş sapması, bevel ≥ 3, subsurf seviye eşitliği);

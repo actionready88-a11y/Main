@@ -1,0 +1,380 @@
+{
+  "ship_id": "OTTOMAN_FRIGATE_1780_ISTANBUL",
+  "version": "v026",
+  "tile_m": 4.0,
+  "resolution": 2048,
+  "ue_usage": "UV × 0.25 ile döşe; ORM: R=AO G=Roughness B=Metallic; Normal: DirectX (G ters)",
+  "baked": {
+    "MAT_Boat_PaintWhite": {
+      "BC": "Textures/tiles/T_Boat_PaintWhite_BC.png",
+      "N": "Textures/tiles/T_Boat_PaintWhite_N.png",
+      "ORM": "Textures/tiles/T_Boat_PaintWhite_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.769
+    },
+    "MAT_Bulwark_InnerRed": {
+      "BC": "Textures/tiles/T_Bulwark_InnerRed_BC.png",
+      "N": "Textures/tiles/T_Bulwark_InnerRed_N.png",
+      "ORM": "Textures/tiles/T_Bulwark_InnerRed_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.796
+    },
+    "MAT_Carriage_RedOchre": {
+      "BC": "Textures/tiles/T_Carriage_RedOchre_BC.png",
+      "N": "Textures/tiles/T_Carriage_RedOchre_N.png",
+      "ORM": "Textures/tiles/T_Carriage_RedOchre_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.827
+    },
+    "MAT_Deck_Pine": {
+      "BC": "Textures/tiles/T_Deck_Pine_BC.png",
+      "N": "Textures/tiles/T_Deck_Pine_N.png",
+      "ORM": "Textures/tiles/T_Deck_Pine_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.898
+    },
+    "MAT_Furniture_Mahogany": {
+      "BC": "Textures/tiles/T_Furniture_Mahogany_BC.png",
+      "N": "Textures/tiles/T_Furniture_Mahogany_N.png",
+      "ORM": "Textures/tiles/T_Furniture_Mahogany_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.627
+    },
+    "MAT_Hull_RedBand": {
+      "BC": "Textures/tiles/T_Hull_RedBand_BC.png",
+      "N": "Textures/tiles/T_Hull_RedBand_N.png",
+      "ORM": "Textures/tiles/T_Hull_RedBand_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.769
+    },
+    "MAT_Hull_TarredOak": {
+      "BC": "Textures/tiles/T_Hull_TarredOak_BC.png",
+      "N": "Textures/tiles/T_Hull_TarredOak_N.png",
+      "ORM": "Textures/tiles/T_Hull_TarredOak_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.808
+    },
+    "MAT_Iron_Cast": {
+      "BC": "Textures/tiles/T_Iron_Cast_BC.png",
+      "N": "Textures/tiles/T_Iron_Cast_N.png",
+      "ORM": "Textures/tiles/T_Iron_Cast_ORM.png",
+      "metallic_const": 0.85,
+      "roughness_mean": 0.735
+    },
+    "MAT_Sail_Canvas": {
+      "BC": "Textures/tiles/T_Sail_Canvas_BC.png",
+      "N": "Textures/tiles/T_Sail_Canvas_N.png",
+      "ORM": "Textures/tiles/T_Sail_Canvas_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.953
+    },
+    "MAT_Spar_Pine": {
+      "BC": "Textures/tiles/T_Spar_Pine_BC.png",
+      "N": "Textures/tiles/T_Spar_Pine_N.png",
+      "ORM": "Textures/tiles/T_Spar_Pine_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.769
+    },
+    "MAT_Timber_Oak": {
+      "BC": "Textures/tiles/T_Timber_Oak_BC.png",
+      "N": "Textures/tiles/T_Timber_Oak_N.png",
+      "ORM": "Textures/tiles/T_Timber_Oak_ORM.png",
+      "metallic_const": 0.0,
+      "roughness_mean": 0.855
+    }
+  },
+  "constant": {
+    "MAT_Brass": {
+      "base_color_linear": [
+        0.7,
+        0.52,
+        0.22
+      ],
+      "roughness": 0.3,
+      "metallic": 1.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Canvas": {
+      "base_color_linear": [
+        0.62,
+        0.57,
+        0.46
+      ],
+      "roughness": 0.95,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Fabric_Crimson": {
+      "base_color_linear": [
+        0.28,
+        0.03,
+        0.03
+      ],
+      "roughness": 0.9,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Figure_EyeAmber": {
+      "base_color_linear": [
+        0.55,
+        0.3,
+        0.04
+      ],
+      "roughness": 0.15,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Figure_Ivory": {
+      "base_color_linear": [
+        0.75,
+        0.7,
+        0.58
+      ],
+      "roughness": 0.35,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Figure_NoseBlack": {
+      "base_color_linear": [
+        0.015,
+        0.014,
+        0.014
+      ],
+      "roughness": 0.3,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Figure_Tongue": {
+      "base_color_linear": [
+        0.4,
+        0.06,
+        0.06
+      ],
+      "roughness": 0.45,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Flag_OttomanNavy1793_A": {
+      "image": "//../../Textures/flags/T_Flag_OttomanNavy1793_A.png",
+      "base_color_linear": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Glass_Lantern": {
+      "base_color_linear": [
+        0.9,
+        0.7,
+        0.4
+      ],
+      "roughness": 0.2,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        0.62,
+        0.28
+      ],
+      "emission_strength": 6.0
+    },
+    "MAT_Glass_Window": {
+      "base_color_linear": [
+        0.02,
+        0.024,
+        0.028
+      ],
+      "roughness": 0.06,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Iron_Black": {
+      "base_color_linear": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "roughness": 0.5,
+      "metallic": 0.9,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Paint_Black": {
+      "base_color_linear": [
+        0.018,
+        0.017,
+        0.016
+      ],
+      "roughness": 0.6,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Paper_Chart": {
+      "base_color_linear": [
+        0.74,
+        0.66,
+        0.5
+      ],
+      "roughness": 0.9,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Pennant_OttomanNavy_A": {
+      "image": "//../../Textures/flags/T_Pennant_OttomanNavy_A.png",
+      "base_color_linear": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Rope_Tarred": {
+      "base_color_linear": [
+        0.035,
+        0.028,
+        0.02
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_SailEmblem_Lale_A": {
+      "image": "//../../Textures/emblems/T_SailEmblem_Lale_A.png",
+      "base_color_linear": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_SailEmblem_Rumi_A": {
+      "image": "//../../Textures/emblems/T_SailEmblem_Rumi_A.png",
+      "base_color_linear": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "roughness": 0.85,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Trim_Gilt": {
+      "base_color_linear": [
+        0.62,
+        0.43,
+        0.14
+      ],
+      "roughness": 0.35,
+      "metallic": 0.85,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "MAT_Trim_YellowOchre": {
+      "base_color_linear": [
+        0.52,
+        0.34,
+        0.08
+      ],
+      "roughness": 0.55,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    }
+  },
+  "not_baked": {
+    "MAT_Figure_WolfGrey": "renk yüzey normaline bağlı (figür); UE'de ayrı malzeme"
+  }
+}

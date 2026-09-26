@@ -1,0 +1,18 @@
+# Superseded drafts stay local; the old brief contains invented terms.
+_archive/
+
+# Blender autosaves / backups
+*.blend1
+*.blend@
+*.blend.bak
+
+# OS / tooling noise
+Thumbs.db
+desktop.ini
+.DS_Store
+__pycache__/
+*.pyc
+
+# Lisanslı referans varlıklar (Fab vb.) repoya girmez; yalnız denetim çıktıları girer
+reports/reference_audit/**/*.blend
+reports/reference_audit/**/textures/

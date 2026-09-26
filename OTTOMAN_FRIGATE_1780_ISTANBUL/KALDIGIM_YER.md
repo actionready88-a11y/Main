@@ -1,9 +1,9 @@
-# Kaldığım Yer — v045 (2026-09-26)
+# Kaldığım Yer — v046 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v045.blend` + `..._v045_LOD.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v046.blend` + `..._v046_LOD.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -35,6 +35,24 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Sıradaki işler:
   1. İç düzen tamamlandı (v041–v044). Sıradaki: v045 genel iç/dış render turu, UE notları.
   2. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+
+## v046 — pruva mahmuzu (ram) + figür yuvası; baş parmaklıkları kaldırıldı
+- Betik: `scripts/pass_v046_bow_ram_cradle.py`.
+- Kullanıcı: "figür emanet gibi duruyor; bir Ram yap, yuva yapıp figürü oraya yerleştir; çubukları kaldır".
+- **Çubuklar:** figürün yanındaki altın çubuklar baş parmaklıklarıydı (CORE_HEAD_RAIL_S/P); LOD'larıyla kaldırıldı.
+- **MOD_BOW_RAM_A:**
+  - Bodoslamadan öne uzanan tek parça mahmuz. Alt kenarı su hattından öne-yukarı süpürülüyor.
+  - Burun x 25,95'te, bronz kaplı.
+  - Üstünde figürün alt çizgisini izleyen yuva var. Arka yarıda 72 cm'lik yan duvarlar figürün bloğunu ve göğsünü sarıyor; pençeler burnun üstünde.
+  - Süsler:
+    - kalas dokusu;
+    - yuva ağzında altın dudak ve altında kızıl bant;
+    - alt kenarda bronz sakal şeridi;
+    - burunda iki bronz halka.
+  - Kesitler süperelips biçiminde. Çevre noktaları yay uzunluğu + eğrilik ağırlığıyla dağıtıldı (192 nokta). Kesit aralığı 2,5 cm, dik inişte 8 mm.
+  - 157k üçgen; faset yok.
+- **SOCKET_RAM:** mahmuz burnuna taşındı (x 25,95, z 3,5); oyunda çarpma noktası.
+- **Ölçüler:** [TAHMİN]. Osmanlı kadırga "mahmuz"undan esinli, birebir değil.
 
 ## v045 — pruva figürü D: Kurt Gemi Figürü (yıldızlar silindi), bordaya gömülü
 - Betikler:

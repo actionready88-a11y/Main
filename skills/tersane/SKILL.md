@@ -83,6 +83,7 @@ en iyi referans. Özellikle: `build_hull_v001.py` (gövde üreticisi), `pass_v01
 | `lods.py` | LOD zinciri (%50/%20, gövde +%8) `50_LODS` koleksiyonunda |
 | `quality_audit.py` | **Kalite testi**: faset (kiriş sapması + süreklilik), düz gölge, havada ada, istisna listesi (CLI) |
 | `resegment.py` | Mesh düzeyinde yeniden dilimleme: lathe/tube halkaları, elipsoitler, profil/yol ve süpürme sıklaştırma |
+| `sdf_sculpt.py` | SDF yontu: elipsoit/konik kapsül/zincir, yumuşak birleşim/oyma, bölge malzemesi, yüzeye yansıtma, tüy tohumları, marching cubes → tek parça mesh (figür, arma) |
 | `bake_tile_textures.py` | Prosedürel malzemeleri tile BC/N/ORM'e bake (DirectX normal) + manifest (CLI) |
 
 Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs, ship_checks, lods`
@@ -122,6 +123,8 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
 | Kanca/bigot/başlık havada | konum hesabı yüzeyi ıskaladı | `quality_audit` havada ada + hedefe taşı |
 | Halat havada V çiziyor | makarasız kırılma noktası | kırılmaya yönlendirme makarası |
 | Eski üreticiyi çağırınca parça 3–13 m kaydı | pass zinciri yamaları | mesh düzeyinde düzelt (resegment) ya da konum karşılaştır |
+| Figür oyuncak/damla gibi (metaball) | ayrıntı yok, oranlar tahmini | SDF yontu + anatomik oran + yüzeye yatan tüy tutamı (`sdf_sculpt.py`) |
+| Parmaklık gemiden ayrı ama test temiz | bir ucu figüre değiyor, diğeri havada | iki ucun da hedefe değdiğini ayrı ölç (bağlantı uçları) |
 | Sürücü testi başsızda hep eski değer | sonuç orijinale yazılmaz, evaluate önbellekli | sürücü yapısını/ifadesini doğrula |
 
 ## Değişiklik günlüğü

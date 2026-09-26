@@ -1,9 +1,9 @@
-# Kaldığım Yer — v034 (2026-09-26)
+# Kaldığım Yer — v035 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v034.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v035.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -19,13 +19,21 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
      "tuck" (su altı, 7 mm), filika (7 mm; yumuşak alt bölme denendi → şişirdi, geri alındı), ana/mizana çanaklık kenarı
      (16 mm; `pass_v033` `mast_tops()` yalnız ön direkte adayı buldu → seçim ölçütünü genişlet), hareketli armada halat
      makara içinde döner (örtülü, kabul).
-  2. Bozkurt figürü: v034'te `MOD_FIGUREHEAD_BOZKURT_B` (tek parça). İstenirse ince yontu (sculpt) masaüstünde; UE için
-     normal/ORM bake (malzeme pointiness kullanıyor — UE'de yok).
+  2. Bozkurt figürü: v035'te SDF yontusu (`scripts/wolf_sdf.py`, parametreler dosyada). Kullanıcı onayı bekliyor; beğenilmezse
+     ücretsiz hazır varlık (CC0/CC-BY kurt heykeli) araştır. UE için normal/ORM bake (malzeme pointiness kullanıyor — UE'de yok).
   3. Top C modülü UV + bake (`Textures/Modules/Cannon_C/`), gövde/modül FBX dışa aktarımı, UE malzemeleri.
   4. Direk çanaklık kenarı sıklaştırma; gövde kıç "tuck" bölgesi; Gate B incelemesi; arma oranlarını Lees ile doğrula.
 - **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
   düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
   Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## v035 — bozkurt figürü B2 (SDF yontusu) + baş parmaklıkları
+- v034 figürü (metaball) kullanıcıya göre çok kötüydü → SDF yontusu: anatomik kurt başı (kafatası %55/burun %45), açık çene,
+  kavisli köpek dişleri, burun delikleri, hırlama kıvrımları, çatık kaş, oyuklu kulaklar, yüzeye yatan 319 tüy tutamı
+  (boyun/yele, yanak, tepe, boğaz), altın gadroon kuşaklı + rumi sarmallı kaide. Tek SDF alanı → tek ada, kapalı mesh;
+  260k üçgen (hero), UCX 57 köşe. Araç: `skills/tersane/scripts/sdf_sculpt.py` (gerekli: scikit-image).
+- Baş parmaklıkları gemiden ayrıydı (arka uç bordadan 0,67 m uzak, 4 köşeli kesit) → kaideden başlayıp bordaya (x 20,1)
+  gömülen Bezier yol, yuvarlatılmış silme profili, her yanda baş kıvrımına inen 2 destek.
 
 ## v034 — bozkurt figürü B (tek parça)
 - Konsept "Sea Wolf": öne uzanan, ağzı açık hırlayan kurt başı, geriye savrulan yele, koyu tunç + altın (çıkıntılar).

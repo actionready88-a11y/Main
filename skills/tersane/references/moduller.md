@@ -31,3 +31,10 @@
 - Metaball yüzeyi eleman yarıçapının ≈ 0,67'sinde oluşur (threshold 0,6, stiffness 2): yarıçapları buna göre büyüt, gövde
   zincirine köprü elemanları koy. "En büyük adayı tut" adımı kopuk göğsü/kaideyi sessizce atabilir → atılan sayısını raporla.
 - Kaide, çevredeki baş parmaklıkları ve baş kıvrımına oturmalı (kalite testi "havada ada" ile doğrula).
+
+### Figür — SDF yontusu (v035 dersi)
+- Metaball ile yapılan kurt "oyuncak" göründü; kullanıcı reddetti. `sdf_sculpt.py` ile: temel hacimler (kafatası, burun, çene)
+  yumuşak birleşim; oymalar (burun deliği, dudak, kulak içi) yumuşak çıkarma; dişler/göz/dil ayrı malzeme kimliğiyle aynı
+  alanda → tek parça. Tüy: tohum → yüzeye yansıt → eşit aralık → akış yönünde uzun, sivri, basık tutam (boy/en ≈ 5).
+- Önizleme döngüsü: figürü boş sahnede 3 açıdan 16 örnekle render et (≈ 1 dk), oranları gözle düzelt; 3–5 tur gerekir.
+- Uzak alan sabit değer → yüzeye yansıtmada birleşim bölgelerine ≥ 10 cm pay ver; başlangıç noktaları yüzeye yakın.

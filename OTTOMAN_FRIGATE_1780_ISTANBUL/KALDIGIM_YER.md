@@ -22,6 +22,9 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
+## Skill
+- `skills/tersane/SKILL.md`: bu gemide öğrenilenler (gemi bitene kadar güncellenir; kullanıcı daha sonra skill'lere ekleyecek).
+
 ## v027 (son sürüm)
 - `scripts/pass_v027_frigate_lower_stairs.py`: FRIGATE kararı (hat gemisi ayrıntısı yok); alt güverte yükseltmesi 3+3 top, dengeli ve şaşırtmalı, ortak salvo grubu; ambar ağızları yeniden açıldı; merdiven çakışmaları giderildi. §5ac.
 

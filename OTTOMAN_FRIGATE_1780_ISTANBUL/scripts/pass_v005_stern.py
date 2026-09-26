@@ -435,6 +435,12 @@ def build_stairs(col, M):
     return obs, info
 
 
+def front_rail_segments(wf):
+    """Kıç üstü güverte ön kenarındaki korkuluk parçaları (merdiven boşlukları hariç; kısa parçalar atılır)."""
+    segs = [(-wf + 0.22, -STAIR_Y[1]), (-STAIR_Y[0], STAIR_Y[0]), (STAIR_Y[1], wf - 0.22)]  # köşede yan korkulukla çakışmasın
+    return [(a, b) for a, b in segs if b - a > 0.30]
+
+
 BALUSTER = [(0.0, 0.0), (0.050, 0.0), (0.050, 0.06), (0.036, 0.08), (0.030, 0.16), (0.052, 0.28), (0.056, 0.34),
             (0.040, 0.44), (0.026, 0.52), (0.026, 0.58), (0.040, 0.62), (0.046, 0.66), (0.046, 0.70), (0.0, 0.70)]
 
@@ -481,7 +487,7 @@ def build_balustrade(col, M, bk):
     xf = X_FRONT - 0.06
     zp_edge = bk["zp"]
     wf = bk["half_p"] - 0.02
-    segs = [(-wf + 0.22, -STAIR_Y[1]), (-STAIR_Y[0], STAIR_Y[0]), (STAIR_Y[1], wf - 0.22)]  # köşede yan korkulukla çakışmasın
+    segs = front_rail_segments(wf)
     plinth = bmesh.new()
     for y0, y1 in segs:
         za, zb_ = deck_top(xf, y0, "poop") - 0.03, deck_top(xf, y1, "poop") - 0.03
@@ -847,7 +853,7 @@ def rebuild_collision(col, bk, stairs_info):
     yt = H.half_breadth(0.004, zt)
     pts = [Vector((xt + dx, y, zt + dz)) for dx in (-0.08, 0.08) for y in (-yt, yt) for dz in (0.0, RAIL_H + 0.9)]
     parts.append((pts, "rail_poop"))
-    for y0, y1 in ((-bk["half_p"], -STAIR_Y[1]), (-STAIR_Y[0], STAIR_Y[0]), (STAIR_Y[1], bk["half_p"])):
+    for y0, y1 in front_rail_segments(bk["half_p"] + 0.22):
         pts = [Vector((x, y, z)) for x in (X_FRONT - 0.14, X_FRONT) for y in (y0, y1) for z in (zp, zp + RIM_H + RAIL_H + 0.1)]
         parts.append((pts, "rail_poop"))
     made = [C3.convex(f"UCX_CORE_HULL_SHELL_{k:02d}", p, col, purpose) for k, (p, purpose) in enumerate(parts)]

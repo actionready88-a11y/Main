@@ -153,6 +153,17 @@ Soketler (manifest 3):
 
 Çarpışma: 68 UCX. Yeni amaçlar: `deck_poop` (2), `transom` (1), `bulkhead` (3), `stairs` (2 rampa), `rail_poop` (10). Önceki sürümlerde kıç aynası duvarı çarpışması yoktu; eklendi.
 
+## 5g. Pass v006: merdivenler köşelere (2026-09-26)
+
+Kullanıcı geri bildirimi: "Şu an ikisi de ortada gibi duruyor; biri sağ, biri sol köşede duracak."
+
+`scripts/pass_v006_stairs_corners.py` (gövde kabuğu değişmedi):
+- **Merdivenler:** Kapının yanından borda duvarına yaslı köşelere taşındı: sancak \|y\| 2,20-3,10 m, iskele simetriği. Dış kenar, iç borda yüzünün en dar yerinden 5 cm içeride. 10 basamak, eğim 41,8°.
+- **Ön korkuluk:** Kapının üstünde tek orta parça; köşeler merdiven boşluğu.
+- **Kıç kasarası topları:** Merdiven ayağı ile mürettebat arasında pay kalsın diye ileri alındı: x = -10,3 / -7,9 → **-10,0 / -7,7**. Lumbar kesicisi yerinde güncellendi, gövdedeki boolean bağı korundu. Mürettebat noktası ile merdiven çakışması yok (audit: `stairs.crew_conflicts = []`).
+- **Soketler (manifest 4):** 4 top soketi, 16 mürettebat noktası ve 4 merdiven navlink'i taşındı.
+- **Çarpışma:** 66 UCX (ön korkulukta 3 yerine 1 parça).
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

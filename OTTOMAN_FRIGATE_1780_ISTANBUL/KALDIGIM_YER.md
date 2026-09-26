@@ -1,9 +1,9 @@
-# Kaldığım Yer — v043 (2026-09-26)
+# Kaldığım Yer — v044 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v043.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v044.blend` + `..._v044_LOD.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -33,9 +33,31 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Birebir Osmanlı sembolleri (ay-yıldız sancak, tuğra) kullanılmaz ("Yüzde Yetmiş Özgünlük Kuralı").
 - Arma kullanıcı konseptinden alındı: hilal + mızrak + gök yıldızı + dalgalar (`scripts/kizil_sancak.py`).
 - Sıradaki işler:
-  1. İç düzen v044: top güvertesinde toplar arası ready-service dolapları (Ek Cilt II s. 115), top ve alt güvertede
-     2'şer hasar kontrol istasyonu (s. 87), havalandırma (rüzgâr hortumu + ızgaralar), oda kimlikleri güncellemesi.
+  1. İç düzen tamamlandı (v041–v044). Sıradaki: v045 genel iç/dış render turu, UE notları.
   2. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+
+## v044 — top güvertesi hazır dolaplar, hasar kontrol, havalandırma; LOD'lar ayrı dosyada
+- Betik: `scripts/pass_v044_gundeck_ready_damage_vent.py` (v043 → v044).
+- **Dosya boyutu:** v043 ana blend 99,5 MB idi (GitHub sınırı 100 MB). LOD'lar artık ayrı dosyada:
+  - `OTTOMAN_FRIGATE_1780_ISTANBUL_v044.blend`: 45 MB, sahne, LOD'suz.
+  - `OTTOMAN_FRIGATE_1780_ISTANBUL_v044_LOD.blend`: 60 MB, yalnız `50_LODS` koleksiyonu.
+  - UE dışa aktarımı için LOD dosyası ana dosyaya Append edilir (File → Append → Collection → 50_LODS).
+  - Betikler `skills/tersane/scripts/lod_store.py` ile yükler ve ayırır.
+- **Hazır servis dolapları** (Ek Cilt II s. 112/115):
+  - 8 adet, top çiftleri 2-3, 4-5, 6-7, 8-9 arasında, bordaya dayalı.
+  - Paylaşılan mesh `SM_PROP_READY_LOCKER_A` (UE ISM), `27_GUNDECK_INSTANCES`.
+  - Kızıl kapak, bakır kenar, asma kilit, halat kulp; kapasite 6 torba [TAHMİN].
+- **Hasar kontrol istasyonları** (s. 87), güverte başına 2 + ambar:
+  - top güvertesi (−9,0; 1,5) ve (4,3; 1,6);
+  - alt güverte (−11,0; 2,4) ve (8,4; 1,8);
+  - ambar (v043).
+- **Havalandırma** (s. 97): kanvas rüzgâr hortumu (`MOD_VENT_WINDSAIL_A`).
+  - Ana ambar ızgarasında kasalı ağızdan alt güverteye iner.
+  - Mizana istralyasına asılı, kanatlı ağız pruvaya bakar, iki gergi halatı güverte halkasına bağlı.
+  - Ana direğe uzanan ilk deneme istralyayla çakıştı.
+- **Oda kimlikleri:** STATION_READY_SERVICE_P1–4/S1–4, STATION_DAMAGE_CONTROL_GUN_A/F, LOWER_A/F, HOLD, STATION_VENT_WINDSAIL.
+- **Kalite testi:** yalnız eski 5 hata kaldı. Yeni nesnelerde faset yok, havada parça yok.
+- **Renderlar:** `renders/v044/`.
 
 ## v043 — ambar: cephanelik, hazırlama odası, erzak ve gülle
 - Betik: `scripts/pass_v043_hold_magazine.py` (v042 → v043).

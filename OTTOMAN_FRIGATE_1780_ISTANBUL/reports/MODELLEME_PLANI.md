@@ -460,3 +460,7 @@ Katalog: "Brig esas olarak 18. yy için güvenlidir" (`_context/GEMI_SINIFLARI_U
 ## 5ak. Pass v043: ambar — cephanelik, hazırlama, erzak, gülle (2026-09-26)
 - Ek Cilt II s. 111–115 ayrımı fiziksel olarak kuruldu: kurşun kaplı cephanelik, fener odası (camlı), hazırlama odası
   (ıslak perde). Ek Cilt II s. 87: ambar hasar kontrol stoku. Ölçüler [TAHMİN].
+
+## 5al. Pass v044: hazır servis dolapları, hasar kontrol, rüzgâr hortumu; LOD ayrı dosya (2026-09-26)
+- İç düzen planındaki (KIZIL_SANCAK_UYARLAMA_PLANI §4) bütün alanlar kuruldu. Ölçüler [TAHMİN].
+- LOD'lar `_LOD.blend` dosyasında (GitHub 100 MB tek dosya sınırı).

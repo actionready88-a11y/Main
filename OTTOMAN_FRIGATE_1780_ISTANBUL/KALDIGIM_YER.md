@@ -25,7 +25,16 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 ## Skill
 - `skills/tersane/SKILL.md`: bu gemide öğrenilenler (gemi bitene kadar güncellenir; kullanıcı daha sonra skill'lere ekleyecek).
 
-## v029 (son sürüm) — yelken anahtarı
+## v030 (son sürüm) — kalite testi (low-poly yasağı denetimi)
+- Rapor: `reports/KALITE_TESTI_v030.md` (+ `kalite_testi_v029.json` / `kalite_testi_v030.json`). Hatalı nesne 86 → 23,
+  faset kenar 15.249 m → 343 m, havada parça 35 → 0. Araçlar Tersane skill'inde: `quality_audit.py`, `resegment.py`.
+- Küpeşte/silme/bordalar yeni profil; lumbar çerçeveleri gövdeye oturuyor (artık çubuk giderildi); halat/seren/direk/bigot
+  kiriş sapması ≤ 1,5 mm; gövde Subdivision viewport = render = 2; fıçılar tek mesh + 282 örnek; merdivenler güverteye
+  basıyor; 17 yönlendirme makarası; gabya bigotları/bumba çatalı/cıvadıra başlığı/raf kancaları/palanga halkası yerinde.
+- Kalan (raporda): direk çanaklık D köşeleri, gövde kıç tuck bölgesi, filika uçları, eşiğe yakın küçükler; figür BLOCKOUT.
+- Sıradaki: v031 Osmanlı süslemeleri (iç + dış) — dokular hazır: `Textures/ornaments/` (`scripts/make_ottoman_ornaments.py`).
+
+## v029 — yelken anahtarı
 - Outliner → `00_CONTROLS/CTRL_YELKEN` seç → Object Properties → Custom Properties → `yelken_acik` 0 = sarılı, 1 = açık.
 - Ya da 3D Görünüm → N → "Gemi" sekmesi → "Yelkenleri Aç/Sar" (Auto Run kapalıysa Scripting → `yelken_anahtari.py` → Run Script).
 - Yedek: Outliner'da `21_MODULES_SAILS/SAILS_SARILI` ve `SAILS_ACIK` koleksiyonlarının onay kutuları.

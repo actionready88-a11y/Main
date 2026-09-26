@@ -6,8 +6,8 @@ Tüm fonksiyonlar dünya ya da yerel koordinatta çalışır; birim metre.
 
 import math
 
+import bpy  # noqa: I001  (bpy önce yüklenmeli)
 import bmesh
-import bpy
 from mathutils import Matrix, Vector
 
 V = Vector

@@ -1,0 +1,1970 @@
+{
+ "summary": {
+  "objects": 109,
+  "fail": 86,
+  "facet_m_total": 15249.1,
+  "floating_objects": 35
+ },
+ "worst_by_facet_density": [
+  "MOD_RIG_GAFF_MIZZEN_A",
+  "MOD_SAIL_FURLED_FORE_STAYSAIL_A",
+  "MOD_RIG_YARD_FORE_TOPGALLANT_A",
+  "MOD_SAIL_FURLED_JIB_A",
+  "MOD_SAIL_FURLED_MIZZEN_TOPGALLANT_A",
+  "MOD_SAIL_FURLED_FORE_TOPGALLANT_A",
+  "MOD_SAIL_FURLED_MAIN_TOPGALLANT_A",
+  "MOD_RIG_YARD_MAIN_TOPGALLANT_A",
+  "MOD_RIG_YARD_MIZZEN_TOPSAIL_A",
+  "MOD_SAIL_FURLED_SPANKER_A",
+  "CORE_POOP_BALUSTRADE",
+  "MOD_RIG_YARD_MIZZEN_TOPGALLANT_A",
+  "MOD_RIG_YARD_FORE_TOPSAIL_A",
+  "MOD_SAIL_FURLED_MIZZEN_TOPSAIL_A",
+  "MOD_RIG_YARD_MIZZEN_COURSE_A",
+  "MOD_RIG_BOOM_MIZZEN_A",
+  "MOD_RIG_YARD_MAIN_TOPSAIL_A",
+  "MOD_SAIL_FURLED_FORE_TOPSAIL_A",
+  "MOD_SAIL_FURLED_MAIN_TOPSAIL_A",
+  "MOD_SAIL_FURLED_MIZZEN_COURSE_A",
+  "MOD_SAIL_FURLED_FORE_COURSE_A",
+  "MOD_RIG_YARD_FORE_COURSE_A",
+  "MOD_SAIL_FURLED_MAIN_COURSE_A",
+  "MOD_RIG_YARD_MAIN_COURSE_A",
+  "MOD_RIG_BOWSPRIT_A",
+  "MOD_LANTERN_HANGING_A_01",
+  "MOD_PUMP_ELM_A_S",
+  "CORE_FIFE_RAILS",
+  "CORE_BREAST_RAIL_FC",
+  "CORE_RING_BOLTS",
+  "MOD_FIGUREHEAD_BOZKURT_A",
+  "CORE_SHOT_RACKS",
+  "MOD_HOLD_CARGO_A",
+  "MOD_RIG_MAST_FORE_HEEL_A",
+  "MOD_RIG_MAST_MIZZEN_HEEL_A",
+  "MOD_RIG_MAST_MAIN_HEEL_A",
+  "MOD_RIG_MAST_MIZZEN_A",
+  "MOD_RIG_MAST_FORE_A",
+  "MOD_RIG_MAST_MAIN_A",
+  "MOD_FLAG_PENNANT_OTTOMAN_A",
+  "MOD_LANTERN_STERN_A",
+  "MOD_RUDDER_STERNPOST_A",
+  "CORE_WALE_MAIN",
+  "CORE_HEAD_KNEE",
+  "CORE_WALE_LOWER_TIER"
+ ],
+ "objects": [
+  {
+   "name": "CORE_HEAD_KNEE",
+   "users": 1,
+   "tris": 780,
+   "facet_m": 31.08,
+   "worst_sag_mm": 2.8,
+   "facet_density": 3.038,
+   "flat_ratio": 0.0,
+   "area_m2": 10.23,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_HEAD_RAIL_S",
+   "users": 1,
+   "tris": 184,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 1.94,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_HEAD_RAIL_P",
+   "users": 1,
+   "tris": 184,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 1.94,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_DECK_FORECASTLE",
+   "users": 1,
+   "tris": 6184,
+   "facet_m": 0.2,
+   "worst_sag_mm": 10.6,
+   "facet_density": 0.003,
+   "flat_ratio": 0.0,
+   "area_m2": 74.97,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_KEEL",
+   "users": 1,
+   "tris": 684,
+   "facet_m": 141.27,
+   "worst_sag_mm": 2.4,
+   "facet_density": 2.075,
+   "flat_ratio": 0.0,
+   "area_m2": 68.09,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_STEM",
+   "users": 1,
+   "tris": 924,
+   "facet_m": 70.87,
+   "worst_sag_mm": 6.1,
+   "facet_density": 2.906,
+   "flat_ratio": 0.0,
+   "area_m2": 24.39,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_STERNPOST",
+   "users": 1,
+   "tris": 540,
+   "facet_m": 32.72,
+   "worst_sag_mm": 5.9,
+   "facet_density": 2.422,
+   "flat_ratio": 0.0,
+   "area_m2": 13.51,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_STAIRS_FC_S",
+   "users": 1,
+   "tris": 2864,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 17.31,
+   "floating_islands": [
+    [
+     12.88,
+     3.61,
+     4.41
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_STAIRS_FC_P",
+   "users": 1,
+   "tris": 2864,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 17.31,
+   "floating_islands": [
+    [
+     12.88,
+     -3.61,
+     4.41
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_BREAST_RAIL_FC",
+   "users": 1,
+   "tris": 4304,
+   "facet_m": 144.82,
+   "worst_sag_mm": 3.0,
+   "facet_density": 7.938,
+   "flat_ratio": 0.0,
+   "area_m2": 18.25,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_HULL_SHELL",
+   "users": 1,
+   "tris": 141864,
+   "facet_m": 2211.11,
+   "worst_sag_mm": 22.7,
+   "facet_density": 1.094,
+   "flat_ratio": 0.0,
+   "area_m2": 2020.45,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_WALE_MAIN",
+   "users": 1,
+   "tris": 3464,
+   "facet_m": 170.21,
+   "worst_sag_mm": 4.9,
+   "facet_density": 3.364,
+   "flat_ratio": 0.0,
+   "area_m2": 50.59,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_WALE_LOWER",
+   "users": 1,
+   "tris": 3464,
+   "facet_m": 85.5,
+   "worst_sag_mm": 3.1,
+   "facet_density": 2.197,
+   "flat_ratio": 0.0,
+   "area_m2": 38.92,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_MOULDING_BAND_LOW",
+   "users": 1,
+   "tris": 3464,
+   "facet_m": 1.84,
+   "worst_sag_mm": 6.7,
+   "facet_density": 0.11,
+   "flat_ratio": 0.0,
+   "area_m2": 16.66,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_MOULDING_RAIL",
+   "users": 1,
+   "tris": 3464,
+   "facet_m": 82.47,
+   "worst_sag_mm": 18.4,
+   "facet_density": 2.817,
+   "flat_ratio": 0.0,
+   "area_m2": 29.27,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_DECK_GUN",
+   "users": 1,
+   "tris": 6304,
+   "facet_m": 4.17,
+   "worst_sag_mm": 20.6,
+   "facet_density": 0.006,
+   "flat_ratio": 0.0,
+   "area_m2": 699.94,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_DECK_POOP",
+   "users": 1,
+   "tris": 6184,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 69.6,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_POOP_BULKHEAD",
+   "users": 1,
+   "tris": 156,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 42.54,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_POOP_BULKHEAD_TRIM",
+   "users": 1,
+   "tris": 432,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 7.26,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_STAIRS_POOP_S",
+   "users": 1,
+   "tris": 2972,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 19.43,
+   "floating_islands": [
+    [
+     -13.53,
+     3.38,
+     4.58
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_STAIRS_POOP_P",
+   "users": 1,
+   "tris": 2972,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 19.43,
+   "floating_islands": [
+    [
+     -13.53,
+     -3.38,
+     4.58
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_POOP_BALUSTRADE",
+   "users": 1,
+   "tris": 16168,
+   "facet_m": 536.7,
+   "worst_sag_mm": 3.0,
+   "facet_density": 17.321,
+   "flat_ratio": 0.0,
+   "area_m2": 30.99,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_POOP_BREAST_PLINTH",
+   "users": 1,
+   "tris": 108,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 4.64,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_GUNPORT_FRAMES",
+   "users": 1,
+   "tris": 960,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 1.0,
+   "area_m2": 17.42,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_WALE_LOWER_TIER",
+   "users": 1,
+   "tris": 3464,
+   "facet_m": 148.73,
+   "worst_sag_mm": 3.1,
+   "facet_density": 3.011,
+   "flat_ratio": 0.0,
+   "area_m2": 49.39,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_DECK_LOWER",
+   "users": 1,
+   "tris": 6212,
+   "facet_m": 3.96,
+   "worst_sag_mm": 22.8,
+   "facet_density": 0.006,
+   "flat_ratio": 0.0,
+   "area_m2": 709.95,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_HATCH_COAMINGS",
+   "users": 1,
+   "tris": 1296,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 18.57,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_HATCH_GRATING_MAIN",
+   "users": 1,
+   "tris": 264,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 8.49,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_LADDER_LOWER_AFT",
+   "users": 1,
+   "tris": 2756,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 12.65,
+   "floating_islands": [
+    [
+     -7.47,
+     0.0,
+     3.31
+    ],
+    [
+     -6.64,
+     0.44,
+     1.84
+    ],
+    [
+     -6.64,
+     -0.44,
+     1.84
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_LADDER_LOWER_FORE",
+   "users": 1,
+   "tris": 2756,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 12.43,
+   "floating_islands": [
+    [
+     6.28,
+     0.0,
+     3.32
+    ],
+    [
+     7.11,
+     0.44,
+     1.94
+    ],
+    [
+     7.11,
+     -0.44,
+     1.94
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_DECK_BEAMS_UPPER",
+   "users": 1,
+   "tris": 29808,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 187.54,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_GUNROOM_BULKHEAD",
+   "users": 1,
+   "tris": 2160,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 45.39,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_BOAT_SKIDS",
+   "users": 1,
+   "tris": 1080,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 22.41,
+   "floating_islands": [
+    [
+     5.36,
+     0.0,
+     5.36
+    ],
+    [
+     9.76,
+     -0.0,
+     5.36
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_CATHEADS",
+   "users": 1,
+   "tris": 432,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 6.47,
+   "floating_islands": [
+    [
+     17.26,
+     4.71,
+     7.15
+    ],
+    [
+     17.26,
+     -4.71,
+     7.15
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_SHOT_RACKS",
+   "users": 1,
+   "tris": 18648,
+   "facet_m": 148.8,
+   "worst_sag_mm": 2.2,
+   "facet_density": 7.277,
+   "flat_ratio": 0.0,
+   "area_m2": 20.45,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_FIFE_RAILS",
+   "users": 1,
+   "tris": 12036,
+   "facet_m": 61.23,
+   "worst_sag_mm": 4.3,
+   "facet_density": 8.268,
+   "flat_ratio": 0.0,
+   "area_m2": 7.41,
+   "floating_islands": [
+    [
+     14.21,
+     0.0,
+     4.66
+    ],
+    [
+     2.92,
+     0.0,
+     4.11
+    ],
+    [
+     -9.13,
+     0.0,
+     4.26
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "CORE_KEVELS",
+   "users": 1,
+   "tris": 648,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 0.46,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_HOLD_FLOOR",
+   "users": 1,
+   "tris": 6184,
+   "facet_m": 1.0,
+   "worst_sag_mm": 41.2,
+   "facet_density": 0.002,
+   "flat_ratio": 0.0,
+   "area_m2": 474.17,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_DECK_BEAMS_LOWER",
+   "users": 1,
+   "tris": 25920,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 182.71,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_HATCH_COAMING_HOLD",
+   "users": 1,
+   "tris": 432,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 6.2,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_LADDER_HOLD",
+   "users": 1,
+   "tris": 2864,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 13.23,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_GUNPORT_FRAMES_LOWER",
+   "users": 1,
+   "tris": 288,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 1.0,
+   "area_m2": 3.94,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "CORE_KNEES_LOWER_DECK",
+   "users": 1,
+   "tris": 7296,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 38.08,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "CORE_RING_BOLTS",
+   "users": 1,
+   "tris": 7176,
+   "facet_m": 23.11,
+   "worst_sag_mm": 4.0,
+   "facet_density": 7.909,
+   "flat_ratio": 0.0,
+   "area_m2": 2.92,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_MAST_FORE_A",
+   "users": 1,
+   "tris": 7836,
+   "facet_m": 570.19,
+   "worst_sag_mm": 15.7,
+   "facet_density": 5.342,
+   "flat_ratio": 0.0,
+   "area_m2": 106.74,
+   "floating_islands": [
+    [
+     13.36,
+     0.35,
+     17.01
+    ],
+    [
+     13.36,
+     -0.35,
+     17.01
+    ],
+    [
+     14.55,
+     -0.0,
+     17.18
+    ],
+    [
+     13.47,
+     -0.0,
+     19.58
+    ],
+    [
+     13.89,
+     -0.0,
+     30.18
+    ],
+    [
+     13.74,
+     0.2,
+     28.53
+    ],
+    [
+     13.74,
+     -0.2,
+     28.53
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_FORE_COURSE_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 277.93,
+   "worst_sag_mm": 7.3,
+   "facet_density": 12.654,
+   "flat_ratio": 0.0,
+   "area_m2": 21.96,
+   "floating_islands": [
+    [
+     13.96,
+     4.45,
+     14.54
+    ],
+    [
+     13.96,
+     -4.45,
+     14.54
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_FORE_TOPSAIL_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 198.93,
+   "worst_sag_mm": 5.4,
+   "facet_density": 16.768,
+   "flat_ratio": 0.0,
+   "area_m2": 11.86,
+   "floating_islands": [
+    [
+     14.31,
+     3.26,
+     26.53
+    ],
+    [
+     14.31,
+     -3.26,
+     26.53
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_FORE_TOPGALLANT_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 116.84,
+   "worst_sag_mm": 3.7,
+   "facet_density": 20.897,
+   "flat_ratio": 0.0,
+   "area_m2": 5.59,
+   "floating_islands": [
+    [
+     14.45,
+     2.22,
+     33.04
+    ],
+    [
+     14.45,
+     -2.22,
+     33.04
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_STANDING_FORE_A",
+   "users": 1,
+   "tris": 11168,
+   "facet_m": 70.14,
+   "worst_sag_mm": 4.9,
+   "facet_density": 0.453,
+   "flat_ratio": 0.0,
+   "area_m2": 154.76,
+   "floating_islands": [
+    [
+     13.74,
+     1.26,
+     16.36
+    ],
+    [
+     13.74,
+     -1.26,
+     16.36
+    ],
+    [
+     12.35,
+     2.17,
+     17.55
+    ],
+    [
+     12.91,
+     2.17,
+     17.55
+    ],
+    [
+     13.48,
+     2.17,
+     17.55
+    ],
+    [
+     14.04,
+     2.17,
+     17.55
+    ],
+    [
+     12.35,
+     -2.17,
+     17.55
+    ],
+    [
+     12.91,
+     -2.17,
+     17.55
+    ],
+    [
+     13.48,
+     -2.17,
+     17.55
+    ],
+    [
+     14.04,
+     -2.17,
+     17.55
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_MAST_MAIN_A",
+   "users": 1,
+   "tris": 8332,
+   "facet_m": 710.8,
+   "worst_sag_mm": 15.9,
+   "facet_density": 5.309,
+   "flat_ratio": 0.0,
+   "area_m2": 133.89,
+   "floating_islands": [
+    [
+     1.68,
+     0.38,
+     19.53
+    ],
+    [
+     1.68,
+     -0.38,
+     19.53
+    ],
+    [
+     3.01,
+     0.0,
+     19.73
+    ],
+    [
+     1.72,
+     -0.0,
+     22.41
+    ],
+    [
+     1.87,
+     0.0,
+     34.4
+    ],
+    [
+     1.76,
+     0.22,
+     32.54
+    ],
+    [
+     1.76,
+     -0.22,
+     32.54
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_MAIN_COURSE_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 318.51,
+   "worst_sag_mm": 8.3,
+   "facet_density": 11.247,
+   "flat_ratio": 0.0,
+   "area_m2": 28.32,
+   "floating_islands": [
+    [
+     2.39,
+     5.06,
+     17.08
+    ],
+    [
+     2.39,
+     -5.06,
+     17.08
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_MAIN_TOPSAIL_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 229.09,
+   "worst_sag_mm": 6.1,
+   "facet_density": 15.061,
+   "flat_ratio": 0.0,
+   "area_m2": 15.21,
+   "floating_islands": [
+    [
+     2.42,
+     3.7,
+     30.56
+    ],
+    [
+     2.42,
+     -3.7,
+     30.56
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_MAIN_TOPGALLANT_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 132.93,
+   "worst_sag_mm": 4.2,
+   "facet_density": 18.746,
+   "flat_ratio": 0.0,
+   "area_m2": 7.09,
+   "floating_islands": [
+    [
+     2.38,
+     2.51,
+     37.92
+    ],
+    [
+     2.38,
+     -2.51,
+     37.92
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_STANDING_MAIN_A",
+   "users": 1,
+   "tris": 12288,
+   "facet_m": 68.23,
+   "worst_sag_mm": 4.9,
+   "facet_density": 0.477,
+   "flat_ratio": 0.0,
+   "area_m2": 143.09,
+   "floating_islands": [
+    [
+     2.12,
+     1.42,
+     18.89
+    ],
+    [
+     2.12,
+     -1.42,
+     18.89
+    ],
+    [
+     0.52,
+     2.45,
+     20.04
+    ],
+    [
+     1.16,
+     2.45,
+     20.05
+    ],
+    [
+     1.79,
+     2.45,
+     20.07
+    ],
+    [
+     2.43,
+     2.45,
+     20.09
+    ],
+    [
+     0.52,
+     -2.45,
+     20.04
+    ],
+    [
+     1.16,
+     -2.45,
+     20.05
+    ],
+    [
+     1.79,
+     -2.45,
+     20.07
+    ],
+    [
+     2.43,
+     -2.45,
+     20.09
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_MAST_MIZZEN_A",
+   "users": 1,
+   "tris": 7556,
+   "facet_m": 511.34,
+   "worst_sag_mm": 15.6,
+   "facet_density": 5.499,
+   "flat_ratio": 0.0,
+   "area_m2": 92.98,
+   "floating_islands": [
+    [
+     -10.59,
+     0.34,
+     16.37
+    ],
+    [
+     -10.59,
+     -0.34,
+     16.37
+    ],
+    [
+     -9.54,
+     0.0,
+     16.59
+    ],
+    [
+     -10.61,
+     -0.0,
+     18.85
+    ],
+    [
+     -10.7,
+     -0.0,
+     28.01
+    ],
+    [
+     -10.75,
+     0.19,
+     26.54
+    ],
+    [
+     -10.75,
+     -0.19,
+     26.54
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_MIZZEN_COURSE_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 222.79,
+   "worst_sag_mm": 5.9,
+   "facet_density": 15.439,
+   "flat_ratio": 0.0,
+   "area_m2": 14.43,
+   "floating_islands": [
+    [
+     -9.89,
+     3.6,
+     13.93
+    ],
+    [
+     -9.89,
+     -3.6,
+     13.93
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_MIZZEN_TOPSAIL_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 140.86,
+   "worst_sag_mm": 4.4,
+   "facet_density": 17.864,
+   "flat_ratio": 0.0,
+   "area_m2": 7.88,
+   "floating_islands": [
+    [
+     -10.13,
+     2.65,
+     24.57
+    ],
+    [
+     -10.13,
+     -2.65,
+     24.57
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_YARD_MIZZEN_TOPGALLANT_A",
+   "users": 1,
+   "tris": 788,
+   "facet_m": 63.78,
+   "worst_sag_mm": 3.1,
+   "facet_density": 16.791,
+   "flat_ratio": 0.0,
+   "area_m2": 3.8,
+   "floating_islands": [
+    [
+     -10.29,
+     1.81,
+     30.31
+    ],
+    [
+     -10.29,
+     -1.81,
+     30.31
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_GAFF_MIZZEN_A",
+   "users": 1,
+   "tris": 72,
+   "facet_m": 102.23,
+   "worst_sag_mm": 2.4,
+   "facet_density": 21.482,
+   "flat_ratio": 0.0,
+   "area_m2": 4.76,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_BOOM_MIZZEN_A",
+   "users": 1,
+   "tris": 72,
+   "facet_m": 167.28,
+   "worst_sag_mm": 4.0,
+   "facet_density": 15.064,
+   "flat_ratio": 0.0,
+   "area_m2": 11.1,
+   "floating_islands": [
+    [
+     -17.69,
+     -0.0,
+     9.72
+    ],
+    [
+     -10.62,
+     0.36,
+     9.36
+    ],
+    [
+     -10.62,
+     -0.36,
+     9.36
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_STANDING_MIZZEN_A",
+   "users": 1,
+   "tris": 6216,
+   "facet_m": 38.81,
+   "worst_sag_mm": 4.9,
+   "facet_density": 0.485,
+   "flat_ratio": 0.0,
+   "area_m2": 79.94,
+   "floating_islands": [
+    [
+     -10.21,
+     1.13,
+     15.74
+    ],
+    [
+     -10.21,
+     -1.13,
+     15.74
+    ],
+    [
+     -11.52,
+     1.92,
+     16.86
+    ],
+    [
+     -10.76,
+     1.92,
+     16.9
+    ],
+    [
+     -10.01,
+     1.92,
+     16.94
+    ],
+    [
+     -11.52,
+     -1.92,
+     16.86
+    ],
+    [
+     -10.76,
+     -1.92,
+     16.9
+    ],
+    [
+     -10.01,
+     -1.92,
+     16.94
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_BOWSPRIT_A",
+   "users": 1,
+   "tris": 1688,
+   "facet_m": 342.76,
+   "worst_sag_mm": 10.8,
+   "facet_density": 10.844,
+   "flat_ratio": 0.0,
+   "area_m2": 31.61,
+   "floating_islands": [
+    [
+     30.78,
+     0.0,
+     12.28
+    ],
+    [
+     27.38,
+     0.0,
+     10.6
+    ],
+    [
+     28.77,
+     -0.0,
+     11.25
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_STAYS_A",
+   "users": 1,
+   "tris": 608,
+   "facet_m": 1.79,
+   "worst_sag_mm": 28.7,
+   "facet_density": 0.055,
+   "flat_ratio": 0.0,
+   "area_m2": 32.58,
+   "floating_islands": [
+    [
+     19.05,
+     0.0,
+     12.99
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_RUNNING_FORE_A",
+   "users": 1,
+   "tris": 6804,
+   "facet_m": 20.77,
+   "worst_sag_mm": 131.7,
+   "facet_density": 0.491,
+   "flat_ratio": 0.0,
+   "area_m2": 42.27,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_RUNNING_MAIN_A",
+   "users": 1,
+   "tris": 6736,
+   "facet_m": 18.85,
+   "worst_sag_mm": 109.7,
+   "facet_density": 0.42,
+   "flat_ratio": 0.0,
+   "area_m2": 44.85,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_RUNNING_MIZZEN_A",
+   "users": 1,
+   "tris": 6744,
+   "facet_m": 22.13,
+   "worst_sag_mm": 126.6,
+   "facet_density": 0.582,
+   "flat_ratio": 0.0,
+   "area_m2": 38.03,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_MAST_FORE_HEEL_A",
+   "users": 1,
+   "tris": 92,
+   "facet_m": 89.47,
+   "worst_sag_mm": 3.8,
+   "facet_density": 6.46,
+   "flat_ratio": 0.0,
+   "area_m2": 13.85,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_MAST_MAIN_HEEL_A",
+   "users": 1,
+   "tris": 92,
+   "facet_m": 79.72,
+   "worst_sag_mm": 4.3,
+   "facet_density": 5.683,
+   "flat_ratio": 0.0,
+   "area_m2": 14.03,
+   "floating_islands": [
+    [
+     2.08,
+     0.0,
+     -3.34
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RIG_MAST_MIZZEN_HEEL_A",
+   "users": 1,
+   "tris": 92,
+   "facet_m": 84.17,
+   "worst_sag_mm": 3.7,
+   "facet_density": 6.455,
+   "flat_ratio": 0.0,
+   "area_m2": 13.04,
+   "floating_islands": [
+    [
+     -9.71,
+     0.0,
+     -3.35
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_FORE_COURSE_A",
+   "users": 1,
+   "tris": 2948,
+   "facet_m": 280.84,
+   "worst_sag_mm": 13.5,
+   "facet_density": 12.718,
+   "flat_ratio": 0.0,
+   "area_m2": 22.08,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_FORE_STAYSAIL_A",
+   "users": 1,
+   "tris": 1648,
+   "facet_m": 76.14,
+   "worst_sag_mm": 8.9,
+   "facet_density": 21.255,
+   "flat_ratio": 0.0,
+   "area_m2": 3.58,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_FORE_TOPGALLANT_A",
+   "users": 1,
+   "tris": 2048,
+   "facet_m": 115.51,
+   "worst_sag_mm": 7.2,
+   "facet_density": 19.674,
+   "flat_ratio": 0.0,
+   "area_m2": 5.87,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_FORE_TOPSAIL_A",
+   "users": 1,
+   "tris": 2448,
+   "facet_m": 202.24,
+   "worst_sag_mm": 11.0,
+   "facet_density": 14.915,
+   "flat_ratio": 0.0,
+   "area_m2": 13.56,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_JIB_A",
+   "users": 1,
+   "tris": 1848,
+   "facet_m": 86.88,
+   "worst_sag_mm": 8.0,
+   "facet_density": 20.51,
+   "flat_ratio": 0.0,
+   "area_m2": 4.24,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_MAIN_COURSE_A",
+   "users": 1,
+   "tris": 3248,
+   "facet_m": 315.64,
+   "worst_sag_mm": 14.0,
+   "facet_density": 12.491,
+   "flat_ratio": 0.0,
+   "area_m2": 25.27,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_MAIN_TOPGALLANT_A",
+   "users": 1,
+   "tris": 2148,
+   "facet_m": 128.75,
+   "worst_sag_mm": 7.5,
+   "facet_density": 19.229,
+   "flat_ratio": 0.0,
+   "area_m2": 6.7,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_MAIN_TOPSAIL_A",
+   "users": 1,
+   "tris": 2648,
+   "facet_m": 227.29,
+   "worst_sag_mm": 11.4,
+   "facet_density": 14.66,
+   "flat_ratio": 0.0,
+   "area_m2": 15.5,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_MIZZEN_COURSE_A",
+   "users": 1,
+   "tris": 2648,
+   "facet_m": 232.99,
+   "worst_sag_mm": 12.8,
+   "facet_density": 13.145,
+   "flat_ratio": 0.0,
+   "area_m2": 17.73,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_MIZZEN_TOPGALLANT_A",
+   "users": 1,
+   "tris": 1848,
+   "facet_m": 94.95,
+   "worst_sag_mm": 6.9,
+   "facet_density": 20.265,
+   "flat_ratio": 0.0,
+   "area_m2": 4.69,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_MIZZEN_TOPSAIL_A",
+   "users": 1,
+   "tris": 2248,
+   "facet_m": 168.85,
+   "worst_sag_mm": 10.6,
+   "facet_density": 15.494,
+   "flat_ratio": 0.0,
+   "area_m2": 10.9,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_SAIL_FURLED_SPANKER_A",
+   "users": 1,
+   "tris": 1948,
+   "facet_m": 128.4,
+   "worst_sag_mm": 9.1,
+   "facet_density": 17.711,
+   "flat_ratio": 0.0,
+   "area_m2": 7.25,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_PORT_LID_LOWER_S_01",
+   "users": 6,
+   "tris": 72,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 1.78,
+   "floating_islands": [
+    [
+     -5.06,
+     5.76,
+     1.86
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_CANNON_OTTOMAN_C_CHASE_BOW_P",
+   "users": 28,
+   "tris": 17330,
+   "facet_m": 1.03,
+   "worst_sag_mm": 5.2,
+   "facet_density": 0.123,
+   "flat_ratio": 0.0,
+   "area_m2": 8.36,
+   "floating_islands": [
+    [
+     16.84,
+     -1.1,
+     4.5
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_CANNON_OTTOMAN_C_CHASE_BOW_P_BARREL",
+   "users": 24,
+   "tris": 16776,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 3.56,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "MOD_CANNON_BREECHING_S_A",
+   "users": 1,
+   "tris": 1520,
+   "facet_m": 17.03,
+   "worst_sag_mm": 9.8,
+   "facet_density": 2.446,
+   "flat_ratio": 0.0,
+   "area_m2": 6.96,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_CANNON_BREECHING_P_A",
+   "users": 1,
+   "tris": 1520,
+   "facet_m": 17.03,
+   "worst_sag_mm": 9.8,
+   "facet_density": 2.446,
+   "flat_ratio": 0.0,
+   "area_m2": 6.96,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_CANNON_TACKLES_TOOLS_A",
+   "users": 1,
+   "tris": 8360,
+   "facet_m": 38.4,
+   "worst_sag_mm": 1.7,
+   "facet_density": 1.901,
+   "flat_ratio": 0.0,
+   "area_m2": 20.2,
+   "floating_islands": [
+    [
+     -9.31,
+     4.37,
+     4.63
+    ],
+    [
+     -5.62,
+     4.75,
+     4.44
+    ],
+    [
+     -4.52,
+     4.75,
+     4.44
+    ],
+    [
+     -0.82,
+     4.76,
+     4.4
+    ],
+    [
+     0.27,
+     4.76,
+     4.4
+    ],
+    [
+     3.97,
+     4.73,
+     4.48
+    ],
+    [
+     -9.31,
+     -4.37,
+     4.63
+    ],
+    [
+     -5.62,
+     -4.75,
+     4.44
+    ],
+    [
+     -4.52,
+     -4.75,
+     4.44
+    ],
+    [
+     -0.82,
+     -4.76,
+     4.4
+    ],
+    [
+     0.27,
+     -4.76,
+     4.4
+    ],
+    [
+     3.97,
+     -4.73,
+     4.48
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_HELM_WHEEL_A",
+   "users": 1,
+   "tris": 2732,
+   "facet_m": 29.01,
+   "worst_sag_mm": 2.5,
+   "facet_density": 2.713,
+   "flat_ratio": 0.0,
+   "area_m2": 10.69,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_BOAT_CUTTER_A",
+   "users": 1,
+   "tris": 3216,
+   "facet_m": 117.37,
+   "worst_sag_mm": 33.4,
+   "facet_density": 2.201,
+   "flat_ratio": 0.0,
+   "area_m2": 53.32,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_CAPSTAN_A",
+   "users": 1,
+   "tris": 792,
+   "facet_m": 35.5,
+   "worst_sag_mm": 6.4,
+   "facet_density": 2.671,
+   "flat_ratio": 0.0,
+   "area_m2": 13.29,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_PUMP_ELM_A_S",
+   "users": 2,
+   "tris": 536,
+   "facet_m": 19.31,
+   "worst_sag_mm": 3.8,
+   "facet_density": 8.334,
+   "flat_ratio": 0.0,
+   "area_m2": 2.32,
+   "floating_islands": [
+    [
+     0.65,
+     0.85,
+     4.61
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_RUDDER_STERNPOST_A",
+   "users": 1,
+   "tris": 588,
+   "facet_m": 68.92,
+   "worst_sag_mm": 7.1,
+   "facet_density": 3.63,
+   "flat_ratio": 0.0,
+   "area_m2": 18.99,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_STERN_GALLERY_A",
+   "users": 1,
+   "tris": 4378,
+   "facet_m": 11.25,
+   "worst_sag_mm": 4.7,
+   "facet_density": 0.077,
+   "flat_ratio": 0.0,
+   "area_m2": 146.05,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_LANTERN_STERN_A",
+   "users": 1,
+   "tris": 372,
+   "facet_m": 13.0,
+   "worst_sag_mm": 27.3,
+   "facet_density": 3.75,
+   "flat_ratio": 0.0,
+   "area_m2": 3.47,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_LANTERN_WALL_A_01",
+   "users": 8,
+   "tris": 148,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 0.6,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "MOD_CABIN_TABLE_A",
+   "users": 1,
+   "tris": 780,
+   "facet_m": 8.7,
+   "worst_sag_mm": 2.8,
+   "facet_density": 1.097,
+   "flat_ratio": 0.0,
+   "area_m2": 7.93,
+   "floating_islands": [
+    [
+     -17.55,
+     0.0,
+     4.81
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_CABIN_CHAIR_A_01",
+   "users": 5,
+   "tris": 736,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 1.43,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "MOD_CABIN_DESK_A",
+   "users": 1,
+   "tris": 384,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 7.53,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "MOD_CABIN_COT_A",
+   "users": 1,
+   "tris": 96,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 6.06,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "MOD_CABIN_SIDEBOARD_A",
+   "users": 1,
+   "tris": 412,
+   "facet_m": 1.82,
+   "worst_sag_mm": 3.7,
+   "facet_density": 0.232,
+   "flat_ratio": 0.0,
+   "area_m2": 7.87,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_CABIN_CHEST_A_01",
+   "users": 1,
+   "tris": 84,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 4.89,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "MOD_CABIN_STERN_BENCH_A",
+   "users": 1,
+   "tris": 108,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 0.0,
+   "area_m2": 8.39,
+   "floating_islands": [],
+   "fail": false
+  },
+  {
+   "name": "MOD_LANTERN_HANGING_A_01",
+   "users": 1,
+   "tris": 216,
+   "facet_m": 3.77,
+   "worst_sag_mm": 3.7,
+   "facet_density": 8.863,
+   "flat_ratio": 0.0,
+   "area_m2": 0.42,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_ANCHOR_BOWER_STARBOARD",
+   "users": 2,
+   "tris": 680,
+   "facet_m": 9.77,
+   "worst_sag_mm": 5.4,
+   "facet_density": 0.94,
+   "flat_ratio": 0.0,
+   "area_m2": 10.39,
+   "floating_islands": [
+    [
+     17.26,
+     5.48,
+     3.72
+    ],
+    [
+     17.26,
+     3.7,
+     3.72
+    ],
+    [
+     17.74,
+     4.59,
+     6.7
+    ],
+    [
+     16.37,
+     4.59,
+     6.7
+    ],
+    [
+     18.15,
+     4.59,
+     6.7
+    ]
+   ],
+   "fail": true
+  },
+  {
+   "name": "MOD_FIGUREHEAD_BOZKURT_A",
+   "users": 1,
+   "tris": 20900,
+   "facet_m": 73.1,
+   "worst_sag_mm": 16.9,
+   "facet_density": 7.848,
+   "flat_ratio": 0.0,
+   "area_m2": 9.32,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_FLAG_ENSIGN_OTTOMAN_A",
+   "users": 1,
+   "tris": 576,
+   "facet_m": 19.61,
+   "worst_sag_mm": 3.2,
+   "facet_density": 2.218,
+   "flat_ratio": 0.0,
+   "area_m2": 8.84,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_FLAG_ENSIGN_HALYARD",
+   "users": 1,
+   "tris": 20,
+   "facet_m": 0.0,
+   "worst_sag_mm": 0.0,
+   "facet_density": 0.0,
+   "flat_ratio": 1.0,
+   "area_m2": 0.16,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_FLAG_PENNANT_OTTOMAN_A",
+   "users": 1,
+   "tris": 240,
+   "facet_m": 19.29,
+   "worst_sag_mm": 6.9,
+   "facet_density": 4.585,
+   "flat_ratio": 0.0,
+   "area_m2": 4.21,
+   "floating_islands": [],
+   "fail": true
+  },
+  {
+   "name": "MOD_HOLD_CARGO_A",
+   "users": 1,
+   "tris": 59308,
+   "facet_m": 4129.67,
+   "worst_sag_mm": 14.3,
+   "facet_density": 7.081,
+   "flat_ratio": 0.0,
+   "area_m2": 583.17,
+   "floating_islands": [],
+   "fail": true
+  }
+ ]
+}

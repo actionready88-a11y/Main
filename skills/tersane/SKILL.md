@@ -22,8 +22,14 @@ en iyi referans. Özellikle: `build_hull_v001.py` (gövde üreticisi), `pass_v01
 - **Kaynaksız sayı yazılmaz.** Her ölçü `[BİRİNCİL]`, `[İKİNCİL: kaynak, "arama özeti"]` ya da `TAHMİN` olarak
   etiketlenir. Web erişimi kısıtlıysa bunu açıkça yaz.
 - **Gate A insan onayı gerektirir**; otomatik onay yok. Ölçü/sınıf/yerleşim kararlarını kullanıcıya sor.
-- **Low-poly yasağı:** kutu gibi parçalara pah (bevel), lathe'lerde yeterli dilim (namlu 40–48, direk 16–20).
-  Ama bütçe gözetilir (bkz. §9, `references/govde_ve_erisim.md`).
+- **Low-poly yasağı — ölçülür, göz kararı değil** (v030 dersi: 109 mesh'ten 86'sı ihlaldeydi ve fark edilmemişti):
+  - Yuvarlak kesit: **kiriş sapması ≤ 1,5 mm** → `seg ≥ π / acos(1 − 0,0015 / r)` (`resegment.required_segments`).
+    Örnek: r 0,016 halat → 8, r 0,03 → 12, r 0,15 seren → 24, r 0,30 fıçı/direk → 32. Eğri yol/profil de aynı
+    kurala göre sıklaştırılır (halka cıvatası, brok halatı, bodoslama, küpeşte istasyonları).
+  - Kutu kenarı: bevel **≥ 3 segment** + harden normals (90° köşe 22,5° adımla).
+  - Subdivision'da **viewport = render seviyesi** (FBX viewport'u dışa aktarır; v030'a kadar gövde oyunda fasetliydi).
+  - Her pass sonunda `scripts/quality_audit.py` çalışır; hata varsa pass bitmemiştir. Yer tutucu (blockout) nesneye
+    `quality_exempt` yazılır ve kullanıcıya söylenir. Bütçe: tekrar eden parça (fıçı, top) **tek mesh + örnek**.
 - **Versiyonlu kayıt:** her pass önceki `.blend`'i açar, yalnız hedef nesneleri değiştirir, `vNNN.blend` olarak kaydeder;
   var olan sürümün **üzerine yazmaz** (betik `SystemExit` verir). Gerekmedikçe tüm gemi yeniden kurulmaz.
 - **Her pass sonunda:** render + kısa audit (`reports/scene_audit_vNNN.json`) + belgelere not + commit/push.
@@ -75,6 +81,8 @@ en iyi referans. Özellikle: `build_hull_v001.py` (gövde üreticisi), `pass_v01
 | `stairs.py` | çakışmasız merdiven (kırpılmış kiriş), mevcut merdivenden parametre çıkarma |
 | `ship_checks.py` | BVH çakışma, delik ışın testi, UCX denetimi, soketleri güverteye oturtma, boolean listesi (CLI) |
 | `lods.py` | LOD zinciri (%50/%20, gövde +%8) `50_LODS` koleksiyonunda |
+| `quality_audit.py` | **Kalite testi**: faset (kiriş sapması + süreklilik), düz gölge, havada ada, istisna listesi (CLI) |
+| `resegment.py` | Mesh düzeyinde yeniden dilimleme: lathe/tube halkaları, elipsoitler, profil/yol ve süpürme sıklaştırma |
 | `bake_tile_textures.py` | Prosedürel malzemeleri tile BC/N/ORM'e bake (DirectX normal) + manifest (CLI) |
 
 Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs, ship_checks, lods`
@@ -86,7 +94,8 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
 - [ ] Ambar ağzı/lumbar delikleri ışınla açık mı (boolean doğrulama)
 - [ ] Mürettebat/istasyon/navlink çakışması, kafa payı
 - [ ] UCX ≤ 64 köşe, ad kuralı, sahibi mevcut
-- [ ] Render: bir dış (omuz), bir yakın (değişen parça), iç mekânsa ışıklı iç görüntü
+- [ ] **Kalite testi** (`quality_audit.py`): faset (kiriş sapması > 1,5 mm), düz gölge, havada ada = 0 hata
+- [ ] Render: bir dış (omuz), bir yakın (değişen parça), iç mekânsa ışıklı iç görüntü; kullanıcı yakın bakar
 - [ ] Belgeler (KALDIGIM_YER, MODELLEME_PLANI §, spec) + commit + push
 
 ## 17. Bilinen tuzaklar (kısa)
@@ -106,6 +115,13 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
 | Filika direğin içinde | eski soket | soket mesafe testi |
 | Bayrak direği bumbaya çarpar | yerleşim | sancak gaf ucunda |
 | Kullanıcı varyantı açamıyor | durum yalnızca betikte (`set_state`) | kontrol boşu + sürücü + N paneli |
+| Yakından low-poly (halat yassı, seren köşeli) | sabit küçük `seg` | `resegment.py` + kiriş sapması kuralı |
+| Oyunda gövde fasetli, renderda düzgün | Subsurf viewport 1 / render 2 | iki seviye eşit |
+| Elle keskin kenarlar kayboldu | `set_sharp_from_angle` sıfırlar | `resegment.sharp_from_angle_keep` |
+| Merdiven 6 cm havada | çakışmayı önlemek için kiriş ayağı kırpıldı | ayak güverteye (4 mm gömülü) |
+| Kanca/bigot/başlık havada | konum hesabı yüzeyi ıskaladı | `quality_audit` havada ada + hedefe taşı |
+| Halat havada V çiziyor | makarasız kırılma noktası | kırılmaya yönlendirme makarası |
+| Eski üreticiyi çağırınca parça 3–13 m kaydı | pass zinciri yamaları | mesh düzeyinde düzelt (resegment) ya da konum karşılaştır |
 | Sürücü testi başsızda hep eski değer | sonuç orijinale yazılmaz, evaluate önbellekli | sürücü yapısını/ifadesini doğrula |
 
 ## Değişiklik günlüğü
@@ -113,5 +129,7 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
 - **2026-09-26 (v001–v027, OTTOMAN_FRIGATE_1780_ISTANBUL):** ilk sürüm. Gövde, Hull_B, kıç, merdivenler, UCX, soketler,
   top A→B, arma, yelken + motif, bayrak, kamara, ambar, LOD, tile bake, top varyant FBX paketi, frigate sınıf kuralı,
   boolean doğrulama dersi.
+- **v030 (kalite testi):** low-poly yasağı ölçülebilir hale geldi (kiriş sapması, bevel ≥ 3, subsurf seviye eşitliği);
+  `quality_audit.py`, `resegment.py`; faset 15.249 m → ~350 m, havada parça 35 → 0; fıçı örnekleme.
 - **v028–v029:** Osmanlı tunç topu C (yunus kulp, stilize tuğra/kitabe, AO patina, yıpranmış boyalı kızak, palanga, alet
   rafı); yelken aç/kapa anahtarı (kontrol boşu + sürücü + N paneli).

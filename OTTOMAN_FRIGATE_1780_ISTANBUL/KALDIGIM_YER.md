@@ -1,9 +1,9 @@
-# Kaldığım Yer — v040 (2026-09-26)
+# Kaldığım Yer — v041 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v040.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v041.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -33,9 +33,17 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Birebir Osmanlı sembolleri (ay-yıldız sancak, tuğra) kullanılmaz ("Yüzde Yetmiş Özgünlük Kuralı").
 - Arma kullanıcı konseptinden alındı: hilal + mızrak + gök yıldızı + dalgalar (`scripts/kizil_sancak.py`).
 - Sıradaki işler:
-  1. İç düzen (v041+): makam / kaptan kamarası / çırak rıhtımı, hamak, revir, atölye, ocak-su, cephanelik / hazırlama / hazır dolap, hasar kontrol, oda kimlikleri.
-  2. Ad levhasını 4 cm aşağı al (harf üstü pervaza giriyor).
+  1. İç düzen v042+: alt güverte (hamak, subay kabinleri, revir, atölyeler), ocak-su-sanitasyon, cephanelik / hazırlama / hazır dolap, hasar kontrol, oda kimlikleri.
   3. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+
+## v041 — iç düzen 1: kıç kamarası bölündü (Ek Cilt II s. 98–99)
+- CaptainOffice (makam; kıç pencereli büyük kamara): toplantı/harita masası, çalışma masası, büfe, yazı rafı,
+  ferman/mühür kutusu, Kızıl Sancak duvar sancağı; kıç topları burada (eşyalar `clear_for_action`).
+- Kaptan kamarası (iskele-ön): asma yatak, sandık, lavabo dolabı, kitap rafı, askı.
+- Çırak / junior rıhtımı (sancak-ön): ranza, deniz sandığı, ders/harita tahtası.
+- Kızıl cilalı kapılı bölmeler (`MOD_CABIN_PARTITIONS_A`, 6 UCX); oda kimlikleri `35_ROOMS/ROOM_*`
+  (CompartmentID / RoomLabel / OperationalStationID / WatertightZoneID); ad levhası 4 cm aşağı.
+- Parça kütüphanesi: `scripts/interior_kit.py`.
 
 ## v040 — Kızıl Sancak dış kimlik
 - Sancak ve flandra: kızıl zemin, altın işleme kenar, arma, çatal uç (`scripts/make_kizil_sancak_textures.py`).

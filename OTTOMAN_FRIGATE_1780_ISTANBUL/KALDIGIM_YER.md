@@ -1,9 +1,9 @@
-# Kaldığım Yer — v042 (2026-09-26)
+# Kaldığım Yer — v043 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v042.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v043.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -33,9 +33,31 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Birebir Osmanlı sembolleri (ay-yıldız sancak, tuğra) kullanılmaz ("Yüzde Yetmiş Özgünlük Kuralı").
 - Arma kullanıcı konseptinden alındı: hilal + mızrak + gök yıldızı + dalgalar (`scripts/kizil_sancak.py`).
 - Sıradaki işler:
-  1. İç düzen v043: cephanelik / hazırlama odası / hazır servis dolapları (Ek Cilt II s. 111–115), hasar kontrol
-     istasyonları (s. 87), havalandırma (rüzgâr hortumu), ambar oda kimlikleri.
-  3. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+  1. İç düzen v044: top güvertesinde toplar arası ready-service dolapları (Ek Cilt II s. 115), top ve alt güvertede
+     2'şer hasar kontrol istasyonu (s. 87), havalandırma (rüzgâr hortumu + ızgaralar), oda kimlikleri güncellemesi.
+  2. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+
+## v043 — ambar: cephanelik, hazırlama odası, erzak ve gülle
+- Betik: `scripts/pass_v043_hold_magazine.py` (v042 → v043).
+- **Cephanelik** (ambar, baş; x 11,95–14,2):
+  - kurşun kaplı ahşap bölme (`MAT_Lead_Sheet`, donuk) ve kurşun zemin;
+  - raflarda 40 mühürlü barut fıçısı (`SM_PROP_POWDER_BARREL_A`, bakır çember + kurşun mühür;
+    UE Instanced Static Mesh, `26_HOLD_INSTANCES`).
+- **Fener odası** (`STATION_LIGHT_ROOM`): cephaneliğe camlı pencereden ışık veren ayrı fener; ateş cephaneliğe girmez
+  (Ek Cilt II s. 111–115).
+- **Hazırlama odası** (x 10,65–11,95):
+  - ahşap zemin, barut torbası dolum tezgâhı, bakır ölçü kapları;
+  - flanel torba rafları;
+  - kıç kapıda ıslak perde (yangın kesici).
+- **Erzak (ekmek) odası:** kıç ambarda bölme (x −12,35), çuval ve sandıklar.
+- **Gülle dolapları:** 2 alçak sandık × 40 gülle (`SM_PROP_SHOT_PILE_A`, 9 librelik r 0,061 m [TAHMİN]).
+  8 aday noktadan 6'sı ambar yapısıyla çakıştığı için atlandı.
+- **Hasar kontrol istasyonu (ambar):** kızıl kapaklı dolap, tapa, kova, yedek kereste, kalafat üstüpüsü (s. 87).
+- **Oda kimlikleri:** ROOM_MAGAZINE, ROOM_FILLING, STATION_LIGHT_ROOM, ROOM_BREAD_ROOM, ROOM_SHOT_LOCKER, ROOM_HOLD_CARGO
+  (`35_ROOMS`).
+- **Kalite testi:** 142 nesne, 5 hata; hepsi önceki sürümlerden kalan: gövde kıç tuck, filika, kıç galerisi,
+  ocak 2,5 mm, kıç arması 3 mm. Yeni nesnelerde faset yok, havada ada yok.
+- **Renderlar:** `renders/v043/` (ambar_ust, cephanelik, hazirlama, erzak_gulle).
 
 ## v042 — kaptan dairesi düzeltmesi + alt güverte yaşamı
 - Kullanıcı: çırak rıhtımı kaptan dairesinde olmaz, kıç topları kalksın (toplam 20 borda + 2 baş topu) →

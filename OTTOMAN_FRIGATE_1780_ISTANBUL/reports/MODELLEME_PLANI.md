@@ -456,3 +456,7 @@ Katalog: "Brig esas olarak 18. yy için güvenlidir" (`_context/GEMI_SINIFLARI_U
 ## 5aj. Pass v038–v039: açık yelkenler B, Meshy bozkurt figürü (2026-09-26)
 - v038: 11 açık yelken dolgun karın + kıvrım + kenar halatı + camadan + kanvas dokusu (oranlar [TAHMİN]).
 - v039: kullanıcı Meshy AI figürü, 250k üçgen, 4K dokular; lisans planı kullanıcı onayında (Gate A insan onayı).
+
+## 5ak. Pass v043: ambar — cephanelik, hazırlama, erzak, gülle (2026-09-26)
+- Ek Cilt II s. 111–115 ayrımı fiziksel olarak kuruldu: kurşun kaplı cephanelik, fener odası (camlı), hazırlama odası
+  (ıslak perde). Ek Cilt II s. 87: ambar hasar kontrol stoku. Ölçüler [TAHMİN].

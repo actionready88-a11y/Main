@@ -134,6 +134,8 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
   boolean doğrulama dersi.
 - **v031–v034:** Osmanlı süslemeleri (dekal-kabartma yamalar, 3B arma/rozet/alem), kuşak tahtası–lumbar çakışması,
   faset temizliği, bozkurt figürü tek parça (metaball + gömme + EXACT birleşim).
+- **v035–v036:** bozkurt figürü SDF yontusu (`sdf_sculpt.py`; tek alan → tek parça), yele yumuşak kaynak + patinalı
+  bronz (altın kenar = solucan etkisi), malzeme çoğunluk süzgeci; baş parmaklıkları bordaya gömülü.
 - **v030 (kalite testi):** low-poly yasağı ölçülebilir hale geldi (kiriş sapması, bevel ≥ 3, subsurf seviye eşitliği);
   `quality_audit.py`, `resegment.py`; faset 15.249 m → ~350 m, havada parça 35 → 0; fıçı örnekleme.
 - **v028–v029:** Osmanlı tunç topu C (yunus kulp, stilize tuğra/kitabe, AO patina, yıpranmış boyalı kızak, palanga, alet

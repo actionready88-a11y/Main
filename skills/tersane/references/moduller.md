@@ -38,3 +38,11 @@
   alanda → tek parça. Tüy: tohum → yüzeye yansıt → eşit aralık → akış yönünde uzun, sivri, basık tutam (boy/en ≈ 5).
 - Önizleme döngüsü: figürü boş sahnede 3 açıdan 16 örnekle render et (≈ 1 dk), oranları gözle düzelt; 3–5 tur gerekir.
 - Uzak alan sabit değer → yüzeye yansıtmada birleşim bölgelerine ≥ 10 cm pay ver; başlangıç noktaları yüzeye yakın.
+
+### Figür — yele ve malzeme (v036 dersi)
+- Yuvarlak kesitli ayrı tutamlar + çıkıntıya altın (pointiness) = yakından "solucan" görüntüsü. Çözüm: tutamları yumuşak
+  kaynat (k ≈ 0,012, kabarma düşük) → tek oyma kütle; malzemede çukur koyu patina / çıkıntı aşınmış bronz, altın yalnız
+  kaide gibi mimari parçada.
+- Tutam sırtına oluk çıkarma (subtract) voksel ≤ oluk yarıçapı/2 değilse çukur-delik bırakır; 6 mm vokselde yapma.
+- Voksel malzeme kimliği ince parçaların (diş) sınırında tek-yüz tırtık üretir → kenar komşuluğunda çoğunluk süzgeci
+  (`wolf_sdf2.clean_mats`).

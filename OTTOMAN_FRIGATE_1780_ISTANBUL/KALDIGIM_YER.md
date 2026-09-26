@@ -1,9 +1,9 @@
-# Kaldığım Yer — v035 (2026-09-26)
+# Kaldığım Yer — v036 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v035.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v036.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -19,13 +19,23 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
      "tuck" (su altı, 7 mm), filika (7 mm; yumuşak alt bölme denendi → şişirdi, geri alındı), ana/mizana çanaklık kenarı
      (16 mm; `pass_v033` `mast_tops()` yalnız ön direkte adayı buldu → seçim ölçütünü genişlet), hareketli armada halat
      makara içinde döner (örtülü, kabul).
-  2. Bozkurt figürü: v035'te SDF yontusu (`scripts/wolf_sdf.py`, parametreler dosyada). Kullanıcı onayı bekliyor; beğenilmezse
-     ücretsiz hazır varlık (CC0/CC-BY kurt heykeli) araştır. UE için normal/ORM bake (malzeme pointiness kullanıyor — UE'de yok).
+  2. Bozkurt figürü: v036'da patinalı bronz, yele tek oyma kütle (`scripts/wolf_sdf2.py`; v035 kaynağı `wolf_sdf.py`
+     değişmeden duruyor). Kullanıcı onayı bekliyor. Hazır varlık: bulut ortamında Sketchfab/Poly Haven/Free3D/Printables
+     ağ politikası nedeniyle kapalı → masaüstünde CC0/CC-BY kurt başı bakılabilir (lisanslı Fab varlığı depoya girmez).
+     UE için curvature/AO bake → BC + ORM (malzeme pointiness kullanıyor — UE'de yok).
   3. Top C modülü UV + bake (`Textures/Modules/Cannon_C/`), gövde/modül FBX dışa aktarımı, UE malzemeleri.
   4. Direk çanaklık kenarı sıklaştırma; gövde kıç "tuck" bölgesi; Gate B incelemesi; arma oranlarını Lees ile doğrula.
 - **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
   düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
   Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## v036 — bozkurt figürü B3 (patinalı bronz, oyma yele)
+- Kullanıcı v035 için "figür olmamış" dedi: yele tutamları "solucan" gibi; altın kenar çizgileri etkiyi büyütüyordu.
+- Hazır varlık arandı: ortamdan yalnız GitHub erişilebilir, uygun model yok → Blender'da yeniden denendi.
+- Denenen ve bırakılan: basık, oluklu "kiremit" tutamlar (oluklar 6 mm vokselde çukur/delik bıraktı; büyük tutamlar hamur
+  gibi topaklandı). Seçilen: v035 tutamları yumuşak kaynak (k 0,012, kabarma ×0,85) → tek oyma kütle; malzeme
+  `MAT_Figure_WolfBronzePatina` (çukur koyu patina, çıkıntı aşınmış bronz); diş/dil sınırı malzeme tırtıkları temizlendi.
+- Tek ada, kapalı mesh, 260k üçgen, UCX 64 köşe; 302 tutam; baş parmaklıkları v035'teki gibi.
 
 ## v035 — bozkurt figürü B2 (SDF yontusu) + baş parmaklıkları
 - v034 figürü (metaball) kullanıcıya göre çok kötüydü → SDF yontusu: anatomik kurt başı (kafatası %55/burun %45), açık çene,

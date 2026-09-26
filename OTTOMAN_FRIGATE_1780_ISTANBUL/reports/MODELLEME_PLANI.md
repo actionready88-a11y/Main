@@ -441,3 +441,10 @@ Katalog: "Brig esas olarak 18. yy için güvenlidir" (`_context/GEMI_SINIFLARI_U
   kasara alnı panoları + lale frizi, kedi başı rozetleri, alemler; kamara: İznik üslubu çini kuşağı, kalemişi duvar ve tavan, lale
   frizi, Uşak üslubu halı, sedir minderleri + yastıklar. Desenler prosedürel çizim (üslup esinli) [TAHMİN].
 - Kalite testi: yeni modüllerde havada parça yok; kıç panosu (sayaç eğriliği 6 mm), minder köşesi (3,6 mm), arma (3 mm) eşik üstü küçük artık.
+
+## 5ah. Pass v033–v036: faset temizliği, bozkurt figürü, baş parmaklıkları (2026-09-26)
+- v033: kalan fasetler (minder, arma, alem, flama); v034: metaball figür (kullanıcı reddetti).
+- v035: SDF yontusu kurt başı (`scripts/wolf_sdf.py`), tek parça; baş parmaklıkları bordaya gömülü Bezier yol + yuvarlak
+  profil + 2 destek.
+- v036: yele tek oyma kütle (`scripts/wolf_sdf2.py`), patinalı döküm bronz malzeme, diş/dil malzeme sınırı temizliği.
+  Hazır ücretsiz varlık bu ortamdan erişilemedi (ağ politikası). Oranlar üslup gereği [TAHMİN]. Gate A onayı bekler.

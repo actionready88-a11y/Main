@@ -135,6 +135,10 @@ en iyi referans. Özellikle: `build_hull_v001.py` (gövde üreticisi), `pass_v01
 - Varsayılan **sarılı** (seren üstünde rulo + gasket), açık yelken **gizli varyant** (`sail_state`), UE'de kumaş.
 - Motif/decal: yelken yüzeyini izleyen ayrı iki yüzlü mesh + saydam PNG (PIL'de 2× çizip küçült). Modül + soket
   (`SOCKET_SAIL_EMBLEM_*`). Sarılı yelkende desen görünmez — kullanıcıya söyle.
+- **Blender içi anahtar şart** (kullanıcı betik çalıştırmadan açıp kapayabilmeli): `CTRL_YELKEN` boşu + `yelken_acik` 0/1
+  özelliği, her yelkenin hide_viewport/hide_render'ı basit ifade sürücüsüyle bağlı (Auto Run gerekmez); ayrıca N paneli
+  butonu (`use_module` metin bloğu) ve Outliner'da `SAILS_SARILI` / `SAILS_ACIK` alt koleksiyonları. Başka her varyant
+  (lumbar kapağı açık/kapalı, bayrak, alt güverte yükseltmesi) için aynı desen.
 - Bayrak: dalgalı ızgara (UE kumaş için), orijin gönderde. Kıçta bumba varsa sancak gaf ucundan çekilir.
   Osmanlı donanma sancağı: 1793'te resmî (kırmızı, beyaz hilal + 8 köşeli yıldız) [İKİNCİL] — tarih farkını not et.
 
@@ -197,9 +201,13 @@ en iyi referans. Özellikle: `build_hull_v001.py` (gövde üreticisi), `pass_v01
 | Figür oyuncak gibi | skin modifier | blockout + sculpt/AI/varlık |
 | Filika direğin içinde | eski soket | soket mesafe testi |
 | Bayrak direği bumbaya çarpar | yerleşim | sancak gaf ucunda |
+| Kullanıcı varyantı açamıyor | durum yalnızca betikte (`set_state`) | kontrol boşu + sürücü + N paneli |
+| Sürücü testi başsızda hep eski değer | sonuç orijinale yazılmaz, evaluate önbellekli | sürücü yapısını/ifadesini doğrula |
 
 ## Değişiklik günlüğü
 
 - **2026-09-26 (v001–v027, OTTOMAN_FRIGATE_1780_ISTANBUL):** ilk sürüm. Gövde, Hull_B, kıç, merdivenler, UCX, soketler,
   top A→B, arma, yelken + motif, bayrak, kamara, ambar, LOD, tile bake, top varyant FBX paketi, frigate sınıf kuralı,
   boolean doğrulama dersi.
+- **v028–v029:** Osmanlı tunç topu C (yunus kulp, stilize tuğra/kitabe, AO patina, yıpranmış boyalı kızak, palanga, alet
+  rafı); yelken aç/kapa anahtarı (kontrol boşu + sürücü + N paneli).

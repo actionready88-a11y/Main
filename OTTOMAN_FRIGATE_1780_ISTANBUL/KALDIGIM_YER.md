@@ -25,7 +25,15 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 ## Skill
 - `skills/tersane/SKILL.md`: bu gemide öğrenilenler (gemi bitene kadar güncellenir; kullanıcı daha sonra skill'lere ekleyecek).
 
-## v027 (son sürüm)
+## v029 (son sürüm) — yelken anahtarı
+- Outliner → `00_CONTROLS/CTRL_YELKEN` seç → Object Properties → Custom Properties → `yelken_acik` 0 = sarılı, 1 = açık.
+- Ya da 3D Görünüm → N → "Gemi" sekmesi → "Yelkenleri Aç/Sar" (Auto Run kapalıysa Scripting → `yelken_anahtari.py` → Run Script).
+- Yedek: Outliner'da `21_MODULES_SAILS/SAILS_SARILI` ve `SAILS_ACIK` koleksiyonlarının onay kutuları.
+
+## v028 — Osmanlı tunç topu C
+- `MOD_CANNON_OTTOMAN_C` 28 top (namlu 16,8 k, kızak 5,3 k üçgen), 40 yan palanga, 10 alet rafı. Tuğra/kitabe STİLİZE (gerçek metin değil).
+
+## v027
 - `scripts/pass_v027_frigate_lower_stairs.py`: FRIGATE kararı (hat gemisi ayrıntısı yok); alt güverte yükseltmesi 3+3 top, dengeli ve şaşırtmalı, ortak salvo grubu; ambar ağızları yeniden açıldı; merdiven çakışmaları giderildi. §5ac.
 
 ## v026

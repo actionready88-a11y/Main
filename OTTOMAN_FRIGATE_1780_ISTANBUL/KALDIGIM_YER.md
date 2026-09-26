@@ -1,9 +1,9 @@
-# Kaldığım Yer — v039 (2026-09-26)
+# Kaldığım Yer — v040 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v039.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v040.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -25,6 +25,24 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
   düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
   Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## ► KIZIL SANCAK UYARLAMASI (onaylı plan: `reports/KIZIL_SANCAK_UYARLAMA_PLANI.md`)
+- Gemi, kullanıcının oyunundaki **Kızıl Sancak İmparatorluğu** donanmasına ait.
+  - Ana üs Sancakkale, donanma kurumu Kızıl Deniz Meclisi, oyun içi adı "Kızıl Pençe" (şimdilik).
+  - Kimlik bilgisi: `00_CONTROLS/SHIP_IDENTITY`.
+- Birebir Osmanlı sembolleri (ay-yıldız sancak, tuğra) kullanılmaz ("Yüzde Yetmiş Özgünlük Kuralı").
+- Arma kullanıcı konseptinden alındı: hilal + mızrak + gök yıldızı + dalgalar (`scripts/kizil_sancak.py`).
+- Sıradaki işler:
+  1. İç düzen (v041+): makam / kaptan kamarası / çırak rıhtımı, hamak, revir, atölye, ocak-su, cephanelik / hazırlama / hazır dolap, hasar kontrol, oda kimlikleri.
+  2. Ad levhasını 4 cm aşağı al (harf üstü pervaza giriyor).
+  3. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+
+## v040 — Kızıl Sancak dış kimlik
+- Sancak ve flandra: kızıl zemin, altın işleme kenar, arma, çatal uç (`scripts/make_kizil_sancak_textures.py`).
+- Ana mayistra ve ana gabya: orta 2,44 m kızıl bant + iki yüzlü arma amblemi.
+- Kıç arması: kızıl mine madalyon üzerinde arma.
+- Top C: tuğra söküldü, yerine arma mührü (kabartma, Delaunay kapak); kitabe kaldı.
+- Kıç ad levhası: altın harfle "KIZIL PENÇE".
 
 ## v039 — bozkurt figürü C (Meshy AI, kullanıcı üretimi)
 - `Imports/Meshy/*.glb` (2,40 M üçgen, 4K BC + 4K N + 2K ORM) → köşe birleştirme (930 → 1 ada) → 250k üçgen →

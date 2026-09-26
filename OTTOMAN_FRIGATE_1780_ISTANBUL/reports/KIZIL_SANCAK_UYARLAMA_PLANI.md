@@ -1,6 +1,24 @@
 # Kızıl Sancak Uyarlama Planı — dış ve iç düzen
 
-Durum: **TASLAK — Gate A insan onayı bekliyor** (otomatik onay yok).
+Durum: **ONAYLANDI (Gate A, kullanıcı, 2026-09-26)** — "Onaylıyorum, figürü en son uyarlarız".
+
+## 0. Kullanıcı kararları
+
+- **Yelkenler:** ana mayistra ve ana gabyada kızıl bant (orta 4 bez eni) + arma amblemi.
+- **Figür:** ay-yıldızdaki yıldız silinir, hilal kalır. Figür en son uyarlanacak.
+- **Gemi adı:** "Kızıl Pençe" (şimdilik).
+- **Toplar:** değiştirilmez. Yalnız birebir tuğra mühürle değiştirildi; istenirse geri alınır.
+- **Konsept görseli:** kullanıcı, paketi GPT'ye okutarak bir konsept üretti. **Arma bu konseptten alındı** (ilk taslaktaki "Yelken Hilali" yerine):
+  - yukarı açık hilal;
+  - içinden geçen lale uçlu mızrak;
+  - pusula biçimli, uzun ışınlı gök yıldızı (birebir Osmanlı 8 köşeli yıldızı değil);
+  - altta üç dalga.
+  - Konseptteki slogan: "Dalgalarda Daima".
+- **Konseptten sonraki eklemeler için referans:**
+  - kızıl-altın küpeşte baklava deseni;
+  - süslü kıç fenerleri;
+  - dalga, top/gök gürültüsü ve lalevari motifleri;
+  - renk paleti: koyu ahşap, siyah, kızıl, altın, halat, kanvas, demir.
 Kaynak: kullanıcının "Project Pirate Tasarım" paketi (depoya konmadı; yalnız özet ve sayfa göndermeleri).
 
 - Bütün Ciltler, s. 13–17: devlet ilhamı ve sancak dili.

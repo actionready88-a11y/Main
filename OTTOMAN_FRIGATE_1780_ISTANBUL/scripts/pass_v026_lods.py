@@ -33,12 +33,8 @@ def tris_of(me):
     return len(me.loop_triangles)
 
 
-def main():
-    out = ROOT / "Blender" / "versions" / f"{SHIP}_{VER}.blend"
-    if out.exists():
-        raise SystemExit(f"{out} zaten var; versiyonlu kayıt üzerine yazılmaz.")
-    bpy.ops.wm.open_mainfile(filepath=str(ROOT / "Blender" / "versions" / f"{SHIP}_{SRC_VER}.blend"))
-    sc = bpy.context.scene
+def build_lods(sc):
+    """Sahnedeki render mesh'leri için LOD kopyaları üretir (50_LODS); rapor listesi döndürür."""
     lods = bpy.data.collections["50_LODS"]
     dg = bpy.context.evaluated_depsgraph_get()
     done_data, report = {}, []
@@ -84,6 +80,16 @@ def main():
         bpy.data.meshes.remove(base)
         done_data[key] = entry
         report.append(entry)
+    return report
+
+
+def main():
+    out = ROOT / "Blender" / "versions" / f"{SHIP}_{VER}.blend"
+    if out.exists():
+        raise SystemExit(f"{out} zaten var; versiyonlu kayıt üzerine yazılmaz.")
+    bpy.ops.wm.open_mainfile(filepath=str(ROOT / "Blender" / "versions" / f"{SHIP}_{SRC_VER}.blend"))
+    sc = bpy.context.scene
+    report = build_lods(sc)
     bpy.ops.wm.save_as_mainfile(filepath=str(out), compress=True)
     H.VERSION = VER
     ap = ROOT / "reports" / f"scene_audit_{VER}.json"

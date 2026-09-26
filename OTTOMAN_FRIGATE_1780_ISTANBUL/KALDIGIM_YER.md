@@ -1,4 +1,4 @@
-# Kaldığım Yer — v026 (2026-09-26)
+# Kaldığım Yer — v027 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,10 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v026 (son sürüm)
+## v027 (son sürüm)
+- `scripts/pass_v027_frigate_lower_stairs.py`: FRIGATE kararı (hat gemisi ayrıntısı yok); alt güverte yükseltmesi 3+3 top, dengeli ve şaşırtmalı, ortak salvo grubu; ambar ağızları yeniden açıldı; merdiven çakışmaları giderildi. §5ac.
+
+## v026
 - `scripts/pass_v026_lods.py`: LOD zinciri (`50_LODS`). `scripts/bake_tile_textures.py`: 11 malzeme için BaseColor/Normal/ORM tile dokuları (`Textures/tiles/`). §5aa.
 - Top varyantları (gemide kullanılmaz): `FBX/Modules/Cannons/`, `Blender/versions/CANNON_VARIANTS_v001.blend`. §5ab.
 - Kullanıcının belirlediği sıra tamamlandı: yelkenler, toplar, bozkurt (blockout), halat ve makaralar, bayrak, ambar, LOD ve bake.

@@ -41,7 +41,7 @@ historical_basis:
     - "Kocakaplan, Ş., 'III. Selim Dönemi Fırkateyn İnşa Faaliyetleri', Istranca Tarih Araştırmaları Dergisi 2/1 (2024) — arama özeti; tam metin açılamadı"
   armament:
     gun_deck: 20        # 10/borda (v012 kullanıcı kararı "20+4"); HMS Lyme 24 x 9-pdr
-    upgrade_lower_deck: 20  # v013 Hull_B: alt güvertede 10/borda soket + lumbar (kapaklar varsayılan kapalı); oyun yükseltmesiyle toplar takılır
+    upgrade_lower_deck: 6   # v027 kullanıcı kararı: en fazla 6 (bordada 3), x = -5,06/-0,27/+4,52 m; frigate kalır, hat gemisine dönüşmez
     quarterdeck: 0      # v011: kıç kasarası kaldırıldı (Lyme: 4 x 3-pdr)
     chase_ports_bow: 2  # kullanıcı kararı 2026-09-25: 2 kalsın; batarya toplarından kaydırılır
     chase_ports_stern: 2  # v011: kaptan kamarası kıç pencerelerinden
@@ -49,6 +49,7 @@ historical_basis:
     gun_calibre_lb: {gun_deck: 9, quarterdeck: 3}
     concept_difference: "konseptteki 3 burun kovalama topu -> 2 kovalama lumbarı (frigate düzeni; kullanıcı onayı)"
   gameplay_modules:
+    class_rule: "FRIGATE — kalyon/hat gemisi ayrıntısı eklenmez; yükseltmeler frigate sınıfı içinde (kullanıcı 2026-09-26)"
     poop_deck: "v011: kıç kasarası yok; tek yükseltilmiş kıç üstü güverte ana güvertenin 2,64 m (dünya) üstünde; altında kaptan kamarası (net 2,50 m), kapı belde; köşe merdivenleri (kullanıcı kararı 2026-09-26; hibrit)"
     helm: "MOD_HELM_WHEEL_A — poop üzerinde; SOCKET_HELM"
     ram: "MOD_RAM_* — pruva çarpma mahmuzu (oynanış; 18. yy frigate'inde tarihsel değil). Soket: SOCKET_RAM"

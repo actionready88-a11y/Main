@@ -381,6 +381,19 @@ Kullanıcı: "birkaç ekstra varyant üret ama bu gemide kullanma, FBX olarak ka
 - Her varyantta namlu ve kundak ayrı; namlu pivotu muylu ekseninde. Mesh soketleri MUZZLE ve TOUCHHOLE; her varyantta 1 UCX. Ölçüler TAHMİN.
 - Blender temiz sahneye re-import kontrolü geçti (ölçek 1, soketler ve UCX yerinde). Unreal re-import kullanıcı ortamında yapılacak.
 
+## 5ac. Pass v027: frigate kararı — alt güverte 3+3, merdiven ve ambar ağzı düzeltmeleri (2026-09-26)
+
+Kullanıcı: "Gemi frigate olacak; kalyon ve hat gemisi ayrıntısı eklenmeyecek, frigate gelişip hat gemisi olamayacak." "Alta en fazla 6 top eklenebilsin; dengeli yerleştir, üstteki 20 topla uyumlu atış yapabilsin." "Alt güverteye açılan kapaklarla merdivenler iç içe girmiş."
+- **Alt batarya 10+10 → 3+3** (yükseltme, varsayılan boş).
+  - Konum: x = -5,06 / -0,27 / +4,52 m. Bordada simetrik, 4,8 m eşit aralık.
+  - Denge: ortalama -0,27 m, üst bataryanın merkezi -0,26 m. Boyuna denge korunuyor.
+  - Şaşırtma: her top iki üst lumbarın tam arasında (en yakın üst topa 1,19 m). Açık kapak üst atış hattını kapatmaz, geri tepme alanları çakışmaz.
+  - Silinen: 14 lumbar, çerçeve ve kapak; 14 top ve 56 mürettebat soketi. Kalanlar `LOWER_{S,P}_01-03` olarak numaralandı (`upgrade_max_guns = 6`).
+- **Uyumlu atış:** 26 borda soketine `fire_group` (BROADSIDE_STARBOARD / BROADSIDE_PORT) ve `fire_level` (upper/lower) verildi. Tek emirle borda ateşi; alt toplar yükseltme alınınca gruba katılır.
+- **Ambar ağızları kapalıydı (asıl hata):** v016'da güverte mesh'i yenilenince EXACT boolean sessizce başarısız oldu. Üst güvertedeki iki merdivenli ağız ve alt güvertedeki ambar ağzı kapanmıştı, merdivenler güvertenin içinden geçiyordu. Çözücü FLOAT yapıldı; üç ağız ışınla açık doğrulandı.
+- **Merdivenler:** 7 merdivenin yan kirişleri eğim nedeniyle güverte kalınlığına, koaminglere ve kasara alın kirişlerine giriyordu. Kirişler taban ve üst uçta kırpılarak yeniden kuruldu. Çakışma: öncesi 20 çift, sonrası 0.
+- Asma dirsekler (38; boşalan kiriş uçlarına yenileri), halka cıvataları ve brok halatları (B modeline göre) ile LOD'lar yenilendi.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

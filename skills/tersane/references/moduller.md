@@ -23,3 +23,11 @@
 - Yerleşimden önce mürettebat/kovalama topu noktalarını ve gövde sınırını denetle (hull_point − 0,24 iç yüz).
 - Yük (fıçı vb.) bütçesi: fıçı ~130 üçgen; 300 fıçı ≈ 60 k. Daha fazlası için UE instanced mesh öner.
 - Önizleme ışığı (render-only) ayrı; oyunda UE ışığı — soketlerde `light` notu.
+
+### Figür — tek parça (v034 dersi)
+- Oyunda pruva figürü **tek parça** olur ve öyle değişir: parçaları (gövde, kulak, göz, diş, dil) ayrı kur → gövdeye
+  değmeyenleri yüzeye en yakın doğrultuda ~8 mm göm → EXACT boolean UNION (material_mode TRANSFER) → ada sayısı = 1 ve
+  manifold doğrula; UCX ≤ 64 köşe (nokta örneğini seyrelt).
+- Metaball yüzeyi eleman yarıçapının ≈ 0,67'sinde oluşur (threshold 0,6, stiffness 2): yarıçapları buna göre büyüt, gövde
+  zincirine köprü elemanları koy. "En büyük adayı tut" adımı kopuk göğsü/kaideyi sessizce atabilir → atılan sayısını raporla.
+- Kaide, çevredeki baş parmaklıkları ve baş kıvrımına oturmalı (kalite testi "havada ada" ile doğrula).

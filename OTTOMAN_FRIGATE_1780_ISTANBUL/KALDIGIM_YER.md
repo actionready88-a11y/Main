@@ -1,9 +1,9 @@
-# Kaldığım Yer — v033 (2026-09-26)
+# Kaldığım Yer — v034 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v033.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v034.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -19,12 +19,19 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
      "tuck" (su altı, 7 mm), filika (7 mm; yumuşak alt bölme denendi → şişirdi, geri alındı), ana/mizana çanaklık kenarı
      (16 mm; `pass_v033` `mast_tops()` yalnız ön direkte adayı buldu → seçim ölçütünü genişlet), hareketli armada halat
      makara içinde döner (örtülü, kabul).
-  2. Bozkurt figürü nihai model (`references/KONSEPT_PRUVA_BOZKURT_01.webp`; şu an `MOD_FIGUREHEAD_BOZKURT_A` BLOCKOUT).
+  2. Bozkurt figürü: v034'te `MOD_FIGUREHEAD_BOZKURT_B` (tek parça). İstenirse ince yontu (sculpt) masaüstünde; UE için
+     normal/ORM bake (malzeme pointiness kullanıyor — UE'de yok).
   3. Top C modülü UV + bake (`Textures/Modules/Cannon_C/`), gövde/modül FBX dışa aktarımı, UE malzemeleri.
   4. Direk çanaklık kenarı sıklaştırma; gövde kıç "tuck" bölgesi; Gate B incelemesi; arma oranlarını Lees ile doğrula.
 - **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
   düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
   Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## v034 — bozkurt figürü B (tek parça)
+- Konsept "Sea Wolf": öne uzanan, ağzı açık hırlayan kurt başı, geriye savrulan yele, koyu tunç + altın (çıkıntılar).
+- Parçalar ayrı kuruldu (metaball gövde + kaide, 2 kulak, 2 göz, 20 diş, burun, dil) → gövdeye gömüldü → EXACT boolean
+  birleşim → **tek ada, kapalı (manifold) tek mesh**; 45,8k üçgen; UCX 57 köşe; cıvadırayla 1,61 m boşluk; baş parmaklıkları
+  kaideye oturuyor. Modül değişimi: `SOCKET_FIGUREHEAD` → tek nesne.
 
 ## v033 — faset temizliği
 - Minderler bevelli yuvarlak kutu; arma eğrileri 2–2,5×; alemler/rozet göbeği profil sıklaştırma; kıç panosu ve tavan

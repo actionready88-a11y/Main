@@ -129,6 +129,8 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
 - **2026-09-26 (v001–v027, OTTOMAN_FRIGATE_1780_ISTANBUL):** ilk sürüm. Gövde, Hull_B, kıç, merdivenler, UCX, soketler,
   top A→B, arma, yelken + motif, bayrak, kamara, ambar, LOD, tile bake, top varyant FBX paketi, frigate sınıf kuralı,
   boolean doğrulama dersi.
+- **v031–v034:** Osmanlı süslemeleri (dekal-kabartma yamalar, 3B arma/rozet/alem), kuşak tahtası–lumbar çakışması,
+  faset temizliği, bozkurt figürü tek parça (metaball + gömme + EXACT birleşim).
 - **v030 (kalite testi):** low-poly yasağı ölçülebilir hale geldi (kiriş sapması, bevel ≥ 3, subsurf seviye eşitliği);
   `quality_audit.py`, `resegment.py`; faset 15.249 m → ~350 m, havada parça 35 → 0; fıçı örnekleme.
 - **v028–v029:** Osmanlı tunç topu C (yunus kulp, stilize tuğra/kitabe, AO patina, yıpranmış boyalı kızak, palanga, alet

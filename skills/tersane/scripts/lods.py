@@ -5,6 +5,7 @@
 
 Kural (MODULAR_SHIP_STANDARD): gövde %100/%50/%20/%8, büyük modüller %100/%50/%20; aynı orijin/bounds/soket uzayı.
 Yöntem: modifier yığını uygulanmış kopya → Decimate (collapse). Paylaşılan mesh'ler bir kez (orijinde) üretilir.
+`only`: yalnız bu adlardaki nesneler için (yeni eklenen modüller; mevcut LOD'lara dokunmaz).
 Çıktı: `50_LODS` koleksiyonunda gizli `<Kaynak>_LOD<n>` nesneleri. Geometri değişince önce eski LOD'ları sil
 (`clear_lods()`), sonra yeniden üret.
 """
@@ -31,7 +32,7 @@ def clear_lods(col_name="50_LODS"):
     return n
 
 
-def build_lods(sc, min_tris=2000, ratios=None, col_name="50_LODS"):
+def build_lods(sc, min_tris=2000, ratios=None, col_name="50_LODS", only=None):
     ratios = ratios or {"default": (0.5, 0.2), "CORE_HULL_SHELL": (0.5, 0.2, 0.08)}
     col = bpy.data.collections.get(col_name) or bpy.data.collections.new(col_name)
     if col.name not in sc.collection.children:
@@ -41,7 +42,8 @@ def build_lods(sc, min_tris=2000, ratios=None, col_name="50_LODS"):
             pass
     dg = bpy.context.evaluated_depsgraph_get()
     done, report = set(), []
-    srcs = [o for o in sc.objects if o.type == "MESH" and not o.name.startswith(("UCX_", "CUT_")) and "_LOD" not in o.name]
+    srcs = [o for o in sc.objects if o.type == "MESH" and not o.name.startswith(("UCX_", "CUT_")) and "_LOD" not in o.name
+            and (only is None or o.name in only)]
     for o in sorted(srcs, key=lambda o: o.name):
         shared = o.data.users > 1
         key = o.data.name if shared else o.name

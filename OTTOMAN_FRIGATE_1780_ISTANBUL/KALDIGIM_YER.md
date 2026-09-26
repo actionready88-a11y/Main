@@ -1,9 +1,9 @@
-# Kaldığım Yer — v044 (2026-09-26)
+# Kaldığım Yer — v045 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v044.blend` + `..._v044_LOD.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v045.blend` + `..._v045_LOD.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -35,6 +35,27 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Sıradaki işler:
   1. İç düzen tamamlandı (v041–v044). Sıradaki: v045 genel iç/dış render turu, UE notları.
   2. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+
+## v045 — pruva figürü D: Kurt Gemi Figürü (yıldızlar silindi), bordaya gömülü
+- Betikler:
+  - `scripts/pass_v045_figurehead_kurt.py`
+  - `scripts/figure_kurt_prep.py` (yıldız silme)
+- **Kaynak:** kullanıcının `Imports/Meshy/Kurt Gemi Figürü.glb` dosyası (3,0 M yüz). Depoda Git LFS ile tutuluyor.
+- **Yıldız silme:** alın ve iki omuzdaki ay-yıldızdan yıldızlar silindi, hilaller kaldı.
+  - Geometri: kabartma, zemin düzlemine indirildi.
+  - Dokular: yıldız bölgesi zeminin grenli dokusuyla dolduruldu (BC, N, ORM). Yeni dosyalar `Textures/Figurehead/T_Figure_KurtD_*.png`.
+  - Figürün başka bir yerinde yıldız yok (6 açıdan tarandı).
+- **Yerleşim:**
+  - Baş kıvrımı (CORE_HEAD_KNEE) ve parmaklık destekleri kaldırıldı.
+  - Yükseklik 3,0 m; boyut 3,85 × 1,47 × 3,28 m; 450k üçgen. Bodoslama tırmığına uyum için 15° öne eğik.
+  - Montaj bloğu bodoslamaya 10 cm gömülü.
+  - Parmaklık kolları yelede bitiyor.
+  - Cıvadıraya en yakın mesafe 0,91 m.
+  - Ölçü değerleri [TAHMİN, render ile ayarlandı].
+- **Lisans:** Meshy planı kullanıcı tarafından doğrulanacak (ücretsiz plan → CC BY 4.0, atıf gerekir).
+- **Doku yolları:** v045'ten itibaren göreli kaydediliyor. v044 ve öncesinde yollar mutlak bulut yoluydu; kullanıcının
+  bilgisayarında dokular pembe görünüyordu.
+- **Kalite testi:** figür geçti (en kötü faset 1,8 mm, eşik altı sayılır). Yalnız eski 5 hata kaldı.
 
 ## v044 — top güvertesi hazır dolaplar, hasar kontrol, havalandırma; LOD'lar ayrı dosyada
 - Betik: `scripts/pass_v044_gundeck_ready_damage_vent.py` (v043 → v044).

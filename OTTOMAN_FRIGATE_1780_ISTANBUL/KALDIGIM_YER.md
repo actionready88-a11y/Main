@@ -1,4 +1,4 @@
-# Kaldığım Yer — v019 (2026-09-26)
+# Kaldığım Yer — v022 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,17 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v019 (son sürüm)
+## v022 (son sürüm)
+- `scripts/pass_v022_sailset.py`: sarılı yelkenler (varsayılan) + açık yelken varyantı + lale/rumi motif modülleri. §5w.
+- Kullanıcının belirlediği sıra (aksi söylenmedikçe): halat ve makaralar → bayrak → ambar içi → LOD ve doku bake.
+
+## v021
+- `scripts/pass_v021_figurehead_bozkurt.py`: bozkurt figürü — BLOCKOUT (yer tutucu). §5v.
+
+## v020
+- `scripts/pass_v020_cannon_realistic.py`: `MOD_CANNON_9PDR_B` gerçekçi top. §5u.
+
+## v019
 - `scripts/pass_v019_qa_fixes.py`: UCX kalite düzeltmeleri (filika UCX'i sadeleşti, tırmanma UCX adları UE kuralına uydu). Geometri v018 ile aynı. §5t.
 
 ## v018

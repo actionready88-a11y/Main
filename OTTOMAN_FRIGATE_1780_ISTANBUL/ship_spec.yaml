@@ -57,6 +57,9 @@ historical_basis:
     rig: "v015 RigSet: 3 direk + çanaklık + 9 seren + gaf/bumba + cıvadıra; sabit arma, iskalarya, 12 tırmanma rotası; oranlar TAHMİN (Lees ile doğrulanmalı); yelken yok"
     cabin_interior: "v016 InteriorSet: harita masası, 4 sandalye, yazı masası, asma yatak, sandık, büfe, kıç sediri, fener"
     boat_anchor_capstan: "v017: MOD_BOAT_CUTTER_A (kızaklarda), MOD_ANCHOR_BOWER_* (kedi başlarında), MOD_CAPSTAN_A"
+    cannon_B: "v020 MOD_CANNON_9PDR_B (ayrıntılı namlu ve kızak) — A'nın yerine"
+    figurehead: "v021 MOD_FIGUREHEAD_BOZKURT_A — BLOCKOUT (kullanıcı kararı: bozkurt)"
+    sails: "v022 SailSet: varsayılan sarılı; açık varyant + lale/rumi motif modülleri (kullanıcı referans görseli)"
     battery_dressing: "v018: asma dirsekler, halka cıvataları, brok halatları, gülle rafları, 2 tulumba"
   archived_class_data_kadirga:  # Seçenek A (arşiv) — bu gemi için GEÇERSİZ
     oturak: 25

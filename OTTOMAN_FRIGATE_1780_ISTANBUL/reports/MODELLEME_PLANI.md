@@ -321,6 +321,28 @@ Geometri değişmedi.
 - v015 tırmanma UCX'leri rota adıyla adlandırılmıştı. UE kuralı `UCX_<RenderMesh>_NN` olduğu için `UCX_MOD_RIG_STANDING_{MAST}_A_NN` yapıldı; rota adı `climb_route` özelliğinde.
 - Son durum: 193 UCX, en fazla 58 köşe; sahibi olmayan UCX ve ad kuralını bozan UCX yok. 382 soketin hepsinde `manifest_version` var.
 
+## 5u. Pass v020: gerçekçi top modeli MOD_CANNON_9PDR_B (2026-09-26)
+
+Kullanıcı: "daha gerçekçi top modelleri kullanalım".
+- **Namlu** (7.232 üçgen, 48 dilim): kaskabel topuzu ve boynu, ogee taban halkası, falya astragalı ve yastığı, 1. ve 2. takviye halkaları, kovan kuşağı ve astragalı, ağız astragalı, boyun, ağız şişkinliği, dudak, iç namlu. Muylular kök bilezikli.
+- **Kızak** (5.258 üçgen): tek parça basamaklı yanaklar ve muylu yuvası, ön travers, dingiller ve dingil başları, bombeli tekerler, demir göbek ve perno, taban tahtası, eğimli nişan takozu ve sapı, menteşeli muylu kapakları, brok ve palanga halkaları, cıvata başları.
+- **Malzeme** `MAT_Iron_Cast`: dökme demir, pürüzlülük gürültüsü ve hafif pas.
+- 24 top değiştirildi. Pivot, soket, brok halatları ve mürettebat noktaları aynı. Alt güverte soketleri artık `MOD_CANNON_9PDR_B` kabul ediyor.
+
+## 5v. Pass v021: bozkurt figürü — BLOCKOUT (2026-09-26)
+
+Kullanıcı: "figürü bozkurt ile değiştirebiliriz". Not: v020'ye kadar figür yoktu; baş kıvrımı ve boş `SOCKET_FIGUREHEAD` vardı.
+- `MOD_FIGUREHEAD_BOZKURT_A` (20.900 üçgen): iskelet (skin modifier), alt bölümleme ve oyma dokusuyla kurulmuş, ağzı açık, kulakları dik gri kurt büstü. Ön ayakları yaldızlı volütlü kaideye basıyor. Gözler kehribar, dişler fildişi. Soket baş kıvrımının ucuna alındı; cıvadıraya en az 2,3 m.
+- **Durum: yer tutucu.** Prosedürel yöntem heykel kalitesine ulaşmadı; oyuncak gibi görünüyor. Nihai model için seçenekler: yerelde sculpt, AI ile 3B üretim (ücretli servis), hazır lisanslı varlık. Soket, ölçü ve malzeme yuvaları hazır.
+
+## 5w. Pass v022: SailSet — sarılı yelkenler + açık varyant + Osmanlı motifleri (2026-09-26)
+
+Kullanıcı: "yelkenler sarılı olacak"; "yelkenlerin üstüne buradaki Osmanlı motiflerini modüler parça olarak ekle".
+- **Sarılı (varsayılan, görünür):** 9 seren rulosu gasketlerle bağlı; randa gafa toplanmış; flok ve velena cıvadıra ile flok bumbasının üstünde. 27,7 bin üçgen.
+- **Açık varyant (gizli):** 8 kare yelken (mizana alt sereni dönem düzeninde yelkensiz), randa, flok, velena. Bez dikiş çizgileri ve rüzgârla dolmuş karın var. Nesnelerde `sail_state = set`.
+- **Motifler (modüler, gizli; açık yelkenle birlikte):** `MOD_SAIL_EMBLEM_RUMI_A_*` pruva ve ana alt yelkenlerde, `MOD_SAIL_EMBLEM_LALE_A_*` gabya yelkenleri ve randada. Her biri yelken yüzeyini izleyen iki yüzlü decal. Soketler `SOCKET_SAIL_EMBLEM_*`. Dokular `Textures/emblems/T_SailEmblem_{Lale,Rumi}_A.png` (`scripts/make_sail_emblems.py` ile prosedürel çizim). Referans görselin tarzında (kırmızı dolgu, altın kontur); tarihsel desen kopyası değil.
+- Sarılı yelkende desen görünmez (bez rulo). Desenler açık yelken durumunda görünür.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

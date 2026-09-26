@@ -164,6 +164,33 @@ Kullanıcı geri bildirimi: "Şu an ikisi de ortada gibi duruyor; biri sağ, bir
 - **Soketler (manifest 4):** 4 top soketi, 16 mürettebat noktası ve 4 merdiven navlink'i taşındı.
 - **Çarpışma:** 66 UCX (ön korkulukta 3 yerine 1 parça).
 
+## 5h. Pass v007: oyun ölçeği ×1,10 (2026-09-26)
+
+Kullanıcı izni: "Bunlar sıkıntılı oluyorsa hafiften gemiyi büyütebilirsin."
+- **Sorun:** Kıç kasarası altı, baş kasarası altı ve kaptan kamarasının net tavanı 1,88-1,90 m'ydi. UE varsayılan karakter kapsülü 1,76 m.
+- **Çözüm:** `scripts/pass_v007_scale.py` tüm sahneyi orijine göre eşit oranda 1,10 ölçekledi. Su hattı Z=0 korundu. Ölçek mesh'e uygulandı, nesne ölçeği 1 kaldı. UV'ler de aynı oranla çarpıldı, tahta genişliği değişmedi. Kaplama (0,24 m) ve güverte (0,10 m) kalınlıkları gerçek değerde bırakıldı.
+- **Sonuç (audit v007, geometriden):**
+
+| Yer | Net tavan |
+|---|---|
+| Kıç kasarası altı | 2,06 m |
+| Baş kasarası altı | 2,01 m |
+| Kaptan kamarası | 2,01 m |
+
+- **Yeni ana ölçüler:**
+
+| Ölçü | Değer |
+|---|---|
+| Güverte boyu | 39,51 m |
+| En | 11,34 m |
+| Su çekimi | 4,95 m (tahmin) |
+| Toplam boy | 46,6 m |
+| Fener tepesi | 10,46 m |
+
+  Osmanlı fırkateyn aralığı (26,90-43,58 m) içinde kalıyor.
+- Merdiven eğimi (41,8°), top aralıkları ve oranlar değişmedi. Soket konumları ölçeklendi (manifest 5).
+- **Sonraki pass'ler için:** Tasarım fonksiyonları (`build_hull_v001.py`) Lyme ölçeğinde kalıyor. Dünya koordinatı için `scripts/ship_scale.py` sarmalayıcısı kullanılacak (uzunluk × 1,10). Sahnede `ship_scale = 1.10` özelliği var; `annotate_views.py` bunu okuyor.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

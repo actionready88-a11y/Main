@@ -24,7 +24,12 @@ INK, WL = (255, 214, 90), (90, 200, 255)
 
 
 def measure():
+    global CAM_Z
     bpy.ops.wm.open_mainfile(filepath=str(ROOT / "Blender" / "versions" / f"{SHIP_ID}_{VER}.blend"))
+    k = float(bpy.context.scene.get("ship_scale", 1.0))  # v007+: dünya = k × tasarım
+    for key in SCALE:
+        SCALE[key] *= k
+    CAM_Z *= k
     dg = bpy.context.evaluated_depsgraph_get()
 
     def pts(name):

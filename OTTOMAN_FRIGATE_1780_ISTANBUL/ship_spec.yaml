@@ -85,18 +85,22 @@ historical_basis:
     - "Firkateyn ölçüsü (34-42 m) 18. yy sonu tipine ait; hibrit için ölçek çapası olarak kullanıldı"
     - "Küreksiz tasarım (arşiv, Seçenek A): galerilerin uzun seyirde yelkenle yürüdüğü kaynaklı (Guilmartin 2002); kürek modülü hiç olmaması oyun tercihi"
 dimensions_m:
-  # FRIGATE REVİZYONU (2026-09-25). Çapa: HMS Lyme (1748). Ayrıntı: reports/MODELLEME_PLANI.md §2.
+  # OYUN ÖLÇEĞİ (v007, 2026-09-26): dünya = 1,10 × tasarım. Kullanıcı izni: "hafiften gemiyi büyütebilirsin".
+  # Gerekçe: kasara/kamara altı net tavan 1,88-1,90 m → 2,01-2,06 m. Tarihsel çapa HMS Lyme (1748) × 1,10.
+  ship_scale: 1.10
   length_overall: null        # bowsprit dahil kaynak yok
-  length_gundeck: 35.92       # HMS Lyme [İKİNCİL]
-  beam: 10.31                 # HMS Lyme [İKİNCİL]
-  depth_in_hold: 3.00         # HMS Lyme [İKİNCİL]
-  draft_estimate: 4.50        # TAHMİN: en x 0.41-0.48 (Vasa/Kronan) = 4.2-4.9 aralığının ortası
+  length_gundeck: 39.51       # 35,92 (HMS Lyme [İKİNCİL]) × 1,10
+  beam: 11.34                 # 10,31 (HMS Lyme [İKİNCİL]) × 1,10
+  depth_in_hold: 3.30         # 3,00 (HMS Lyme [İKİNCİL]) × 1,10
+  draft_estimate: 4.95        # TAHMİN 4,50 × 1,10
   approved_draft: null        # kaynaklı değer yok
-  gun_deck_height_above_wl: 1.90  # TAHMİN
-  castle_deck_above_gun_deck: 2.00  # TAHMİN; kullanıcı: şimdilik yeterli, az gelirse düzeltilecek
+  gun_deck_height_above_wl: 2.09   # TAHMİN 1,90 × 1,10
+  castle_deck_above_gun_deck: 2.20  # 2,00 × 1,10; net tavan 2,01-2,06 m (audit v007)
+  poop_deck_above_quarterdeck: 2.20  # 2,00 × 1,10; kaptan kamarası net 2,01 m
   freeboard: null
-  mast_height_main: null      # kaynak yok (kalyon değeri 28 m artık geçersiz)
+  mast_height_main: null      # kaynak yok
   mast_positions_ratio_from_stern: {mizzen: 0.245, main: 0.54, fore: 0.815}  # HIBRIT_CHATGPT_03 profilinden ölçüldü
+  design_space_lyme: {length_gundeck: 35.92, beam: 10.31, depth_in_hold: 3.00, draft_estimate: 4.50, note: "v001-v006 tasarım uzayı; scripts/ship_scale.py"}
   archived_kalyon_anchor: {length_recorded: 41.69, beam: 13.64, depth: 6.42, note: "Beyaz At başlı kalyon — GEÇERSİZ"}
   archived_option_a_kadirga:
     length_between_stems_range: [41.0, 42.0]  # TDV İA "Gemi"

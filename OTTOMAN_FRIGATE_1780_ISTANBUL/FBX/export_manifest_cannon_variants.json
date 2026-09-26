@@ -1,0 +1,131 @@
+{
+  "source_blend": "Blender/versions/CANNON_VARIANTS_v001.blend",
+  "blender": "5.0.1",
+  "unit": "metre (1 BU = 1 m)",
+  "axes_blender": "X ileri (namlu), Y sol, Z yukarı",
+  "fbx_settings": {
+    "use_selection": true,
+    "apply_unit_scale": true,
+    "apply_scale_options": "FBX_SCALE_UNITS",
+    "axis_forward": "-Z",
+    "axis_up": "Y",
+    "mesh_smooth_type": "FACE",
+    "use_mesh_modifiers": true,
+    "add_leaf_bones": false,
+    "use_triangles": true,
+    "object_types": [
+      "EMPTY",
+      "MESH"
+    ],
+    "bake_space_transform": false
+  },
+  "variants": [
+    {
+      "name": "MOD_CANNON_BRONZE_OTTOMAN_A",
+      "tris_barrel": 6410,
+      "tris_carriage": 17330,
+      "fbx": "FBX/Modules/Cannons/SM_MOD_CANNON_BRONZE_OTTOMAN_A.fbx",
+      "sha256_16": "6b38e584649d1845",
+      "bytes": 810156,
+      "reimport_check": {
+        "meshes": 2,
+        "ucx": 1,
+        "sockets": [
+          "SOCKET_MOD_CANNON_BRONZE_OTTOMAN_A_MUZZLE",
+          "SOCKET_MOD_CANNON_BRONZE_OTTOMAN_A_TOUCHHOLE"
+        ],
+        "dims_m": [
+          3.16,
+          1.05,
+          1.25
+        ]
+      }
+    },
+    {
+      "name": "MOD_CARRONADE_A",
+      "tris_barrel": 1980,
+      "tris_carriage": 1824,
+      "fbx": "FBX/Modules/Cannons/SM_MOD_CARRONADE_A.fbx",
+      "sha256_16": "cdee1a9cea6df278",
+      "bytes": 138140,
+      "reimport_check": {
+        "meshes": 2,
+        "ucx": 1,
+        "sockets": [
+          "SOCKET_MOD_CARRONADE_A_MUZZLE",
+          "SOCKET_MOD_CARRONADE_A_TOUCHHOLE"
+        ],
+        "dims_m": [
+          2.05,
+          0.92,
+          1.07
+        ]
+      }
+    },
+    {
+      "name": "MOD_SWIVEL_GUN_A",
+      "tris_barrel": 2204,
+      "tris_carriage": 1300,
+      "fbx": "FBX/Modules/Cannons/SM_MOD_SWIVEL_GUN_A.fbx",
+      "sha256_16": "9a0c07b03ffa0788",
+      "bytes": 129308,
+      "reimport_check": {
+        "meshes": 2,
+        "ucx": 1,
+        "sockets": [
+          "SOCKET_MOD_SWIVEL_GUN_A_MUZZLE",
+          "SOCKET_MOD_SWIVEL_GUN_A_TOUCHHOLE"
+        ],
+        "dims_m": [
+          1.57,
+          0.25,
+          0.67
+        ]
+      }
+    },
+    {
+      "name": "MOD_FIELD_GUN_SAHI_A",
+      "tris_barrel": 3200,
+      "tris_carriage": 7788,
+      "fbx": "FBX/Modules/Cannons/SM_MOD_FIELD_GUN_SAHI_A.fbx",
+      "sha256_16": "8259b5c77f5d545a",
+      "bytes": 371340,
+      "reimport_check": {
+        "meshes": 2,
+        "ucx": 1,
+        "sockets": [
+          "SOCKET_MOD_FIELD_GUN_SAHI_A_MUZZLE",
+          "SOCKET_MOD_FIELD_GUN_SAHI_A_TOUCHHOLE"
+        ],
+        "dims_m": [
+          3.76,
+          1.5,
+          1.38
+        ]
+      }
+    },
+    {
+      "name": "MOD_MORTAR_A",
+      "tris_barrel": 2000,
+      "tris_carriage": 540,
+      "fbx": "FBX/Modules/Cannons/SM_MOD_MORTAR_A.fbx",
+      "sha256_16": "f24608f1460f6053",
+      "bytes": 99516,
+      "reimport_check": {
+        "meshes": 2,
+        "ucx": 1,
+        "sockets": [
+          "SOCKET_MOD_MORTAR_A_MUZZLE",
+          "SOCKET_MOD_MORTAR_A_TOUCHHOLE"
+        ],
+        "dims_m": [
+          1.5,
+          1.1,
+          1.34
+        ]
+      }
+    }
+  ],
+  "note": "gemide kullanılmaz (kullanıcı kararı); ölçüler TAHMİN",
+  "reimport": "Blender 5.0.1 temiz sahne; Unreal re-import henüz yapılmadı (kullanıcı ortamında)"
+}

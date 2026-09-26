@@ -199,28 +199,49 @@ def build_mast(m, col, M):
     for u in (-0.30, 0.05, 0.40):
         obox(bk, m.P(m.t_h + 0.24, u * m.top_l, 0.0), m.F, Y, m.A, 0.07, m.top_w * 0.46, 0.06)
     # çanaklık platformu: D biçimi, iskele-sancak ortada lubber deliği
-    step = 0.20
+    # D biçimi: kıç kenarı düz, baş tarafı yarım elips; ortada lubber deliği. Merkezden ışınlarla halka ızgara.
     hole_u, hole_v = (-0.55, 0.75), 0.80
-    nu = int(round(m.top_l / step))
-    nv = int(round(m.top_w / step))
-    u0, v0 = -0.45 * m.top_l, -m.top_w / 2
+    uc0 = (hole_u[0] + hole_u[1]) / 2
+    ua, ub, hw = -0.45 * m.top_l, 0.55 * m.top_l, m.top_w / 2
+
+    def outer(th):
+        du, dv = math.cos(th), math.sin(th)
+        best = 1e9
+        if du < -1e-6:                                   # kıç kenarı (düz)
+            best = min(best, (ua - uc0) / du)
+        if abs(dv) > 1e-6:                               # yan kenarlar (kıç yarısında düz)
+            r = (math.copysign(hw, dv)) / dv
+            if uc0 + r * du <= 0.0:
+                best = min(best, r)
+        lo, hi = 0.0, 20.0                               # baş yarısı: elips (ikiye bölme)
+        for _ in range(50):
+            mid = (lo + hi) / 2
+            u, v = uc0 + mid * du, mid * dv
+            inside = (u <= 0 and abs(v) <= hw and u >= ua) or (u > 0 and (u / ub) ** 2 + (v / hw) ** 2 <= 1.0)
+            lo, hi = (mid, hi) if inside else (lo, mid)
+        return min(best, lo)
+
+    def inner(th):
+        du, dv = math.cos(th), math.sin(th)
+        rs = []
+        if abs(du) > 1e-6:
+            rs.append(((hole_u[1] if du > 0 else hole_u[0]) - uc0) / du)
+        if abs(dv) > 1e-6:
+            rs.append(hole_v / abs(dv))
+        return min(r for r in rs if r > 0)
+
+    N = 64
     bp = bmesh.new()
-    grid = {}
-
-    def gv(i, j):
-        if (i, j) not in grid:
-            grid[(i, j)] = bp.verts.new(m.P(m.t_h + 0.41, u0 + i * m.top_l / nu, v0 + j * m.top_w / nv))
-        return grid[(i, j)]
-
-    for i in range(nu):
-        for j in range(nv):
-            uc = u0 + (i + 0.5) * m.top_l / nu
-            vc = v0 + (j + 0.5) * m.top_w / nv
-            if uc > 0 and (uc / (0.55 * m.top_l)) ** 2 + (vc / (m.top_w / 2)) ** 2 > 1.0:
-                continue
-            if hole_u[0] < uc < hole_u[1] and abs(vc) < hole_v:
-                continue
-            bp.faces.new([gv(i, j), gv(i + 1, j), gv(i + 1, j + 1), gv(i, j + 1)])
+    zt = m.t_h + 0.41
+    ring_o, ring_i = [], []
+    for k in range(N):
+        th = 2 * math.pi * k / N
+        du, dv = math.cos(th), math.sin(th)
+        ro, ri = outer(th), inner(th)
+        ring_o.append(bp.verts.new(m.P(zt, uc0 + ro * du, ro * dv)))
+        ring_i.append(bp.verts.new(m.P(zt, uc0 + ri * du, ri * dv)))
+    for k in range(N):
+        bp.faces.new([ring_i[k], ring_o[k], ring_o[(k + 1) % N], ring_i[(k + 1) % N]])
     ext = bmesh.ops.extrude_face_region(bp, geom=list(bp.faces))
     bmesh.ops.translate(bp, verts=[e for e in ext["geom"] if isinstance(e, bmesh.types.BMVert)], vec=-m.A * 0.10)
     bmesh.ops.recalc_face_normals(bp, faces=bp.faces)

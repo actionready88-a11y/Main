@@ -295,6 +295,25 @@ Kaynak durumu: Lees (*Masting and Rigging of English Ships of War*) ve benzeri t
 - **Güverte boşluğu düzeltmesi:** üst güverte kıç aynasından 0,59 m, alt güverte 0,24 m önde bitiyordu (v011/v013'ten kalma açıklık). İki güverte de aynaya uzatıldı, dolgu UCX'leri eklendi.
 - Mobilya ölçüleri TAHMİN. Mobilya için tarihsel kaynak kullanılmadı.
 
+## 5r. Pass v017: filika, çapalar, ırgat (2026-09-26)
+
+Plan §6 madde 5 (BoatSet, AnchorSet) ve güverte donanımı (ırgat). Ölçüler TAHMİN.
+- **Filika** `MOD_BOAT_CUTTER_A` (7,0 × 2,0 × 0,78 m): bindirme kaplama görünümlü kabuk, küpeşte, omurga, oturaklar, kıç oturağı, 4 kürek. Soketinde (`SOCKET_BOAT_PRIMARY`), ana ve pruva direkleri arasındaki kızakların üstünde duruyor. Filikanın altı güverteden 2,07 m yukarıda; baş ambar merdiveninin çıkışı filikanın altında açık.
+- **Kızaklar** `CORE_BOAT_SKIDS`: iki enine kiriş, dört dikme, beşik takozları. Dikmeler |y| = 1,2 m'de, top mürettebatının iç tarafında.
+- **Çapalar** `MOD_ANCHOR_BOWER_{STARBOARD,PORT}` (gövde 3,6 m, kollar 2,3 m, ahşap çipo 3,4 m, demir çemberli): kedi başlarından asılı (`state_default = catted`). Çipo baş-kıç doğrultusunda. Dışa açıklık, çapanın her noktası gövdeden ≥ 0,15 m dışarıda kalacak biçimde hesaplandı (1,2 m).
+- **Kedi başları** `CORE_CATHEADS`: baş kasarası küpeştesinden dışa uzanan kalaslar.
+- **Irgat** `MOD_CAPSTAN_A`: taban, kastanyola çemberi, 8 kamlı gövde, 10 manivela yuvalı başlık. Konum x = -4,10 m (ana ambar ızgarası ile kıç ambar ağzı arası, orta hat). Manivelalar takılı değil. 10 itici noktası (`SOCK_CREW_CAPSTAN_*`) yalnız demir alırken kullanılır (`exclusive_with = battery_manned`). 0,9 m içinde top mürettebatı yok.
+- UCX: filika, ırgat, kedi başları, 2 çapa, 2 kızak.
+
+## 5s. Pass v018: batarya ve güverte ayrıntıları (2026-09-26)
+
+Ölçüler TAHMİN.
+- **Asma dirsekler** `CORE_KNEES_LOWER_DECK`: alt güvertede kiriş uçlarında, iki bordada 32 dirsek (16 kiriş). Lumbar, fener ve subay bölmesiyle çakışan 7 kiriş atlandı. Dirseklerin yatay kolu kiriş altında kalır, mürettebatın başının üstündedir.
+- **Halka cıvataları** `CORE_RING_BOLTS`: her top soketinin iki yanında, iç bordada (üst ve alt güverte, 80 adet).
+- **Brok halatları** `MOD_CANNON_BREECHING_{S,P}_A`: üst güvertedeki 20 borda topunda, kaskabelden iki halka cıvatasına sarkık halat. Oyunda geri tepme için UE kablosuyla değiştirilebilir.
+- **Gülle rafları** `CORE_SHOT_RACKS`: üst güvertede toplar arasında 18 raf, her birinde 10 gülle (çap 0,10 m, namlu çapına göre).
+- **Tulumbalar** `MOD_PUMP_ELM_A_{S,P}`: ana direğin kıçında (x = 0,55, y = ±0,85 m), `SOCKET_PUMP_*` ve `SOCK_CREW_PUMP_*`. Top mürettebatına en yakın mesafe 1,05 m.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

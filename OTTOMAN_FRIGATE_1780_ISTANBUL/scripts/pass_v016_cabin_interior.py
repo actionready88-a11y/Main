@@ -380,7 +380,8 @@ def render(sc):
     out = ROOT / "renders" / VER
     out.mkdir(parents=True, exist_ok=True)
     lan = bpy.data.objects["MOD_LANTERN_HANGING_A_01"]
-    for loc, e in ((lan.location + V((0, 0, -0.55)), 250), (V((-19.3, 0.0, lan.location.z - 0.8)), 120)):
+    for loc, e in ((lan.location + V((0, 0, -0.55)), 700), (V((-19.3, 0.0, lan.location.z - 0.8)), 350),
+                   (V((-16.2, 2.4, lan.location.z - 0.5)), 250), (V((-16.2, -2.4, lan.location.z - 0.5)), 250)):
         lamp = bpy.data.lights.new("CabinPreview", "POINT")
         lamp.energy = e
         lamp.color = (1.0, 0.78, 0.55)

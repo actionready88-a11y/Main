@@ -58,7 +58,21 @@ def measure():
     m["stern_rail"] = max(p.z for p in qd)
     deck = pts("CORE_DECK_GUN")
     m["gundeck_mid"] = max(p.z for p in deck if abs(p.x) < 0.4 and abs(p.y) < 0.3)
+    if bpy.data.objects.get("CORE_DECK_LOWER"):  # v013+ Hull_B
+        low = pts("CORE_DECK_LOWER")
+        m["lowerdeck_mid"] = max(p.z for p in low if abs(p.x) < 0.4 and abs(p.y) < 0.3)
     return m
+
+
+def fit_frame(m):
+    """v015+ (arma): kadrajı modelin tüm boyutuna göre ayarla."""
+    global CAM_Z
+    if m["z_max"] - m["z_min"] < 20:
+        return
+    CAM_Z = (m["z_min"] + m["z_max"]) / 2
+    zr = (m["z_max"] - m["z_min"]) * 1.15 * W / H
+    SCALE["iskele_profil"] = SCALE["sancak_profil"] = max((m["x_max"] - m["x_min"]) * 1.12, zr)
+    SCALE["bas"] = SCALE["kic"] = max(m["beam"] * 2.6, zr)
 
 
 def to_px(view, lat, z):
@@ -152,6 +166,7 @@ def f(v):
 def main():
     m = measure()
     CX["x"] = (m["x_min"] + m["x_max"]) / 2
+    fit_frame(m)
     out = ROOT / "renders" / VER / "olculu"
     out.mkdir(parents=True, exist_ok=True)
     srcs = render_ortho(out)
@@ -166,9 +181,13 @@ def main():
         arrow_h(d, view, m["hull_x_min"], m["hull_x_max"], m["z_max"] + 0.5, f"Gövde boyu (küpeşte) {f(m['hull_x_max'] - m['hull_x_min'])}")
         side = 1 if view == "iskele_profil" else -1
         arrow_v(d, view, side * 1.0, m["z_min"], 0.0, f"Su çekimi {f(-m['z_min'])}")
-        arrow_v(d, view, side * 3.5, 0.0, m["gundeck_mid"], f"Batarya güv. (orta) {f(m['gundeck_mid'])}")
+        arrow_v(d, view, side * 3.5, 0.0, m["gundeck_mid"], f"{'Üst' if 'lowerdeck_mid' in m else 'Batarya'} güv. (orta) {f(m['gundeck_mid'])}")
         arrow_v(d, view, side * -3.5, 0.0, m["waist_rail"], f"Bel küpeştesi {f(m['waist_rail'])}", right=False)
         arrow_v(d, view, side * (m["hull_x_min"] + 2.0), 0.0, m["stern_rail"], f"Kıç küpeştesi {f(m['stern_rail'])}")
+        if "lowerdeck_mid" in m:
+            arrow_v(d, view, side * 6.5, 0.0, m["lowerdeck_mid"], f"Alt güverte (orta) {f(m['lowerdeck_mid'])}")
+        if m["z_max"] > 15:
+            arrow_v(d, view, side * (m["x_max"] - 3.0), 0.0, m["z_max"], f"Direk tepesi {f(m['z_max'])}", right=False)
         title(d, name, sub)
         p = out / f"{SHIP_ID}_{VER}_{view}_olculu.png"
         im.save(p)

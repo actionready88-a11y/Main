@@ -963,8 +963,8 @@
         1.0,
         1.0
       ],
-      "verts": 4540,
-      "tris": 8572,
+      "verts": 4172,
+      "tris": 7836,
       "materials": [
         "MAT_Spar_Pine",
         "MAT_Iron_Black",
@@ -1096,8 +1096,8 @@
         1.0,
         1.0
       ],
-      "verts": 5032,
-      "tris": 9476,
+      "verts": 4460,
+      "tris": 8332,
       "materials": [
         "MAT_Spar_Pine",
         "MAT_Iron_Black",
@@ -1229,8 +1229,8 @@
         1.0,
         1.0
       ],
-      "verts": 4194,
-      "tris": 7920,
+      "verts": 4012,
+      "tris": 7556,
       "materials": [
         "MAT_Spar_Pine",
         "MAT_Iron_Black",
@@ -12941,7 +12941,7 @@
     }
   ],
   "checks": {
-    "render_tris_total": 440946,
+    "render_tris_total": 438702,
     "bounds_m": {
       "x": [
         -24.654,

@@ -54,6 +54,10 @@ historical_basis:
     ram: "MOD_RAM_* — pruva çarpma mahmuzu (oynanış; 18. yy frigate'inde tarihsel değil). Soket: SOCKET_RAM"
     lower_deck: "v013 Hull_B: alt top güvertesi, 3 ambar ağzı (2 merdivenli + ızgaralı ana ambar), kıçta subay bölmesi (gunroom), 8 duvar feneri; lumbar kapakları MOD_PORT_LID_* (menteşe yerel X)"
     cannon: "v014 MOD_CANNON_9PDR_A: kızak + namlu ayrı (namlu muylu ekseninde döner); 24 takılı (20 borda + 4 kovalama); alt güverte 20 soket boş (yükseltme)"
+    rig: "v015 RigSet: 3 direk + çanaklık + 9 seren + gaf/bumba + cıvadıra; sabit arma, iskalarya, 12 tırmanma rotası; oranlar TAHMİN (Lees ile doğrulanmalı); yelken yok"
+    cabin_interior: "v016 InteriorSet: harita masası, 4 sandalye, yazı masası, asma yatak, sandık, büfe, kıç sediri, fener"
+    boat_anchor_capstan: "v017: MOD_BOAT_CUTTER_A (kızaklarda), MOD_ANCHOR_BOWER_* (kedi başlarında), MOD_CAPSTAN_A"
+    battery_dressing: "v018: asma dirsekler, halka cıvataları, brok halatları, gülle rafları, 2 tulumba"
   archived_class_data_kadirga:  # Seçenek A (arşiv) — bu gemi için GEÇERSİZ
     oturak: 25
     oars_total: 49

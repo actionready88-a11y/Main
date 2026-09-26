@@ -282,7 +282,7 @@ def render(sc, preview_upgrade=True):
     g = bpy.data.objects["SOCKET_CANNON_S_05"].matrix_world
     views = [
         ("top_yakin", g @ V((-2.6, 2.2, 1.9)), g @ V((0.2, 0, 0.7)), 35),
-        ("top_yan", g @ V((0.2, 3.2, 1.0)), g @ V((0.2, 0, 0.6)), 35),
+        ("top_yan", g @ V((-2.2, -1.6, 1.25)), g @ V((0.3, 0.2, 0.7)), 30),
         ("bel_toplar", V((-12.0, 0.0, 6.0)) + D, V((6.0, 2.5, 2.0)) + D, 24),
         ("guverte", V((18, 12, 28)) * K + D, V((-4, 0, 3.0)) * K + D, 30),
         ("bas_omzu", V((34, 26, 12)) * K + D, V((1, 0, 1.2)) * K + D, 35),

@@ -1,6 +1,6 @@
 {
   "ship_id": "OTTOMAN_FRIGATE_1780_ISTANBUL",
-  "version": "v015",
+  "version": "v018",
   "blender": "5.0.1",
   "unit_scale": 1.0,
   "objects": [
@@ -455,8 +455,8 @@
         1.0,
         1.0
       ],
-      "verts": 3194,
-      "tris": 6384,
+      "verts": 3190,
+      "tris": 6376,
       "materials": [
         "MAT_Deck_Pine"
       ],
@@ -948,6 +948,133 @@
       "modifiers": [
         "BEVEL"
       ]
+    },
+    {
+      "name": "CORE_BOAT_SKIDS",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 560,
+      "tris": 1080,
+      "materials": [
+        "MAT_Timber_Oak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_CATHEADS",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 224,
+      "tris": 432,
+      "materials": [
+        "MAT_Timber_Oak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_KNEES_LOWER_DECK",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 3136,
+      "tris": 6144,
+      "materials": [
+        "MAT_Timber_Oak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "BEVEL"
+      ]
+    },
+    {
+      "name": "CORE_RING_BOLTS",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 5840,
+      "tris": 11040,
+      "materials": [
+        "MAT_Iron_Black"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "CORE_SHOT_RACKS",
+      "type": "MESH",
+      "collection": "10_HULL_CORE",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 9792,
+      "tris": 18648,
+      "materials": [
+        "MAT_Timber_Oak",
+        "MAT_Iron_Black"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
     },
     {
       "name": "MOD_RIG_MAST_FORE_A",
@@ -3176,6 +3303,54 @@
       ]
     },
     {
+      "name": "MOD_CANNON_BREECHING_S_A",
+      "type": "MESH",
+      "collection": "22_MODULES_CANNONS",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 780,
+      "tris": 1520,
+      "materials": [
+        "MAT_Rope_Tarred"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CANNON_BREECHING_P_A",
+      "type": "MESH",
+      "collection": "22_MODULES_CANNONS",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 780,
+      "tris": 1520,
+      "materials": [
+        "MAT_Rope_Tarred"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
       "name": "MOD_HELM_WHEEL_A",
       "type": "MESH",
       "collection": "23_MODULES_DECK",
@@ -3194,6 +3369,107 @@
       "materials": [
         "MAT_Timber_Oak",
         "MAT_Trim_Gilt",
+        "MAT_Iron_Black"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_BOAT_CUTTER_A",
+      "type": "MESH",
+      "collection": "23_MODULES_DECK",
+      "location": [
+        7.5554,
+        0.0,
+        5.573
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 1634,
+      "tris": 3216,
+      "materials": [
+        "MAT_Boat_PaintWhite",
+        "MAT_Timber_Oak",
+        "MAT_Spar_Pine"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CAPSTAN_A",
+      "type": "MESH",
+      "collection": "23_MODULES_DECK",
+      "location": [
+        -4.1,
+        0.0,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 446,
+      "tris": 792,
+      "materials": [
+        "MAT_Timber_Oak",
+        "MAT_Iron_Black"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_PUMP_ELM_A_S",
+      "type": "MESH",
+      "collection": "23_MODULES_DECK",
+      "location": [
+        0.55,
+        0.85,
+        3.2265
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 326,
+      "tris": 536,
+      "materials": [
+        "MAT_Timber_Oak",
+        "MAT_Iron_Black"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_PUMP_ELM_A_P",
+      "type": "MESH",
+      "collection": "23_MODULES_DECK",
+      "location": [
+        0.55,
+        -0.85,
+        3.2265
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 326,
+      "tris": 536,
+      "materials": [
+        "MAT_Timber_Oak",
         "MAT_Iron_Black"
       ],
       "uv_layers": [
@@ -3474,6 +3750,360 @@
       "materials": [
         "MAT_Iron_Black",
         "MAT_Glass_Lantern"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_TABLE_A",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -17.55,
+        0.0,
+        4.0748
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 412,
+      "tris": 780,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Paper_Chart",
+        "MAT_Brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_CHAIR_A_01",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -18.62,
+        0.0,
+        4.191
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 392,
+      "tris": 736,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Fabric_Crimson"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_CHAIR_A_02",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -16.48,
+        0.0,
+        3.9654
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 392,
+      "tris": 736,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Fabric_Crimson"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_CHAIR_A_03",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -17.05,
+        0.78,
+        4.0159
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 392,
+      "tris": 736,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Fabric_Crimson"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_CHAIR_A_04",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -17.05,
+        -0.78,
+        4.0159
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 392,
+      "tris": 736,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Fabric_Crimson"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_DESK_A",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -15.76,
+        2.75,
+        3.8223
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 228,
+      "tris": 384,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Brass",
+        "MAT_Paper_Chart"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_CHAIR_A_DESK",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -16.35,
+        2.75,
+        3.875
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 392,
+      "tris": 736,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Fabric_Crimson"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_COT_A",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -15.85,
+        -2.35,
+        3.85
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 64,
+      "tris": 96,
+      "materials": [
+        "MAT_Canvas",
+        "MAT_Rope_Tarred",
+        "MAT_Furniture_Mahogany"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_SIDEBOARD_A",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -15.67,
+        1.2,
+        3.8731
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 226,
+      "tris": 412,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Brass",
+        "MAT_Glass_Window"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_CHEST_A_01",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -15.85,
+        -2.35,
+        3.85
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 56,
+      "tris": 84,
+      "materials": [
+        "MAT_Timber_Oak",
+        "MAT_Iron_Black"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_CABIN_STERN_BENCH_A",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -19.63,
+        0.0,
+        4.3071
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 72,
+      "tris": 108,
+      "materials": [
+        "MAT_Furniture_Mahogany",
+        "MAT_Fabric_Crimson"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_LANTERN_HANGING_A_01",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        -17.55,
+        0.0,
+        6.546
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 129,
+      "tris": 216,
+      "materials": [
+        "MAT_Brass",
+        "MAT_Glass_Lantern"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_ANCHOR_BOWER_STARBOARD",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        17.2593,
+        4.5912,
+        7.0035
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 368,
+      "tris": 680,
+      "materials": [
+        "MAT_Iron_Black",
+        "MAT_Timber_Oak"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "MOD_ANCHOR_BOWER_PORT",
+      "type": "MESH",
+      "collection": "24_MODULES_DECOR",
+      "location": [
+        17.2593,
+        -4.5912,
+        7.0035
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 368,
+      "tris": 680,
+      "materials": [
+        "MAT_Iron_Black",
+        "MAT_Timber_Oak"
       ],
       "uv_layers": [
         "UVMap"
@@ -3950,9 +4580,9 @@
       "type": "EMPTY",
       "collection": "30_SOCKETS",
       "location": [
-        16.7593,
-        3.6237,
-        4.5635
+        17.2593,
+        4.5912,
+        7.0035
       ],
       "scale": [
         1.0,
@@ -3965,9 +4595,9 @@
       "type": "EMPTY",
       "collection": "30_SOCKETS",
       "location": [
-        16.7593,
-        -3.6237,
-        4.5635
+        17.2593,
+        -4.5912,
+        7.0035
       ],
       "scale": [
         1.0,
@@ -8776,7 +9406,412 @@
       ]
     },
     {
-      "name": "UCX_CORE_HULL_SHELL_46",
+      "name": "SOCK_INTERIOR_TABLE_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.55,
+        0.0,
+        4.0748
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_CHAIR_A_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -18.62,
+        0.0,
+        4.191
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_CHAIR_A_02",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -16.48,
+        0.0,
+        3.9654
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_CHAIR_A_03",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.05,
+        0.78,
+        4.0159
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_CHAIR_A_04",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.05,
+        -0.78,
+        4.0159
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_DESK_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -15.76,
+        2.75,
+        3.8223
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_CHAIR_A_DESK",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -16.35,
+        2.75,
+        3.875
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_COT_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -15.85,
+        -2.35,
+        3.85
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_SIDEBOARD_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -15.67,
+        1.2,
+        3.8731
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_CHEST_A_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -15.85,
+        -2.35,
+        3.85
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_STERN_BENCH_A",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -19.63,
+        0.0,
+        4.3071
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_INTERIOR_MOD_LANTERN_HANGING_A_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -17.55,
+        0.0,
+        6.546
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_CAPSTAN",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -4.1,
+        0.0,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_01",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.1028,
+        0.6489,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_02",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.8657,
+        1.6989,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_03",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -4.1,
+        2.1,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_04",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -5.3343,
+        1.6989,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_05",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -6.0972,
+        0.6489,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_06",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -6.0972,
+        -0.6489,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_07",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -5.3343,
+        -1.6989,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_08",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -4.1,
+        -2.1,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_09",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.8657,
+        -1.6989,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_CAPSTAN_10",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -2.1028,
+        -0.6489,
+        3.2416
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_PUMP_S",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        0.55,
+        0.85,
+        3.2265
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_PUMP_S",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        1.6,
+        0.85,
+        3.2265
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCKET_PUMP_P",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        0.55,
+        -0.85,
+        3.2265
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "SOCK_CREW_PUMP_P",
+      "type": "EMPTY",
+      "collection": "30_SOCKETS",
+      "location": [
+        -0.5,
+        -0.85,
+        3.2265
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_72",
       "type": "MESH",
       "collection": "40_COLLISION",
       "location": [
@@ -8796,7 +9831,7 @@
       "modifiers": []
     },
     {
-      "name": "UCX_CORE_HULL_SHELL_47",
+      "name": "UCX_CORE_HULL_SHELL_73",
       "type": "MESH",
       "collection": "40_COLLISION",
       "location": [
@@ -8816,7 +9851,7 @@
       "modifiers": []
     },
     {
-      "name": "UCX_CORE_HULL_SHELL_48",
+      "name": "UCX_CORE_HULL_SHELL_74",
       "type": "MESH",
       "collection": "40_COLLISION",
       "location": [
@@ -9056,206 +10091,6 @@
       "modifiers": []
     },
     {
-      "name": "UCX_CORE_HULL_SHELL_11",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_12",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_13",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_14",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_15",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_16",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_17",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_18",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_19",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_20",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
       "name": "UCX_CORE_HULL_SHELL_21",
       "type": "MESH",
       "collection": "40_COLLISION",
@@ -9276,7 +10111,7 @@
       "modifiers": []
     },
     {
-      "name": "UCX_CORE_HULL_SHELL_22",
+      "name": "UCX_CORE_HULL_SHELL_32",
       "type": "MESH",
       "collection": "40_COLLISION",
       "location": [
@@ -9296,7 +10131,7 @@
       "modifiers": []
     },
     {
-      "name": "UCX_CORE_HULL_SHELL_23",
+      "name": "UCX_CORE_HULL_SHELL_39",
       "type": "MESH",
       "collection": "40_COLLISION",
       "location": [
@@ -9311,6 +10146,1906 @@
       ],
       "verts": 8,
       "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_40",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_41",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_42",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_43",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_44",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_45",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_46",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_47",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_48",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_49",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_50",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_51",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_52",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_53",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_54",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_55",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_56",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_57",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_58",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_59",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_60",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_61",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_62",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 6,
+      "tris": 8,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_63",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 6,
+      "tris": 8,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_64",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_65",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_66",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_67",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_68",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_69",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_70",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_71",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_75",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 28,
+      "tris": 52,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_76",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 34,
+      "tris": 64,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_77",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 36,
+      "tris": 68,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_78",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 36,
+      "tris": 68,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_79",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 36,
+      "tris": 68,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_80",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 32,
+      "tris": 60,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_81",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_82",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_83",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_84",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_85",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_86",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_87",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_88",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_89",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_90",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_91",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_92",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 15,
+      "tris": 26,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_93",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_94",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_95",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_96",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_97",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_98",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_99",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_100",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_101",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_102",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_103",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_104",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 13,
+      "tris": 22,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_105",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_106",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 15,
+      "tris": 26,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_107",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_108",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_109",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 20,
+      "tris": 36,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_110",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_111",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_112",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_113",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_114",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_115",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_116",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_117",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_118",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_119",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_120",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_121",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_122",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_123",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_124",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_125",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_11",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_12",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_13",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_14",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_15",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_16",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_17",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_18",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_19",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_20",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_22",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_23",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 14,
+      "tris": 24,
       "materials": [],
       "uv_layers": [],
       "modifiers": []
@@ -9476,26 +12211,6 @@
       "modifiers": []
     },
     {
-      "name": "UCX_CORE_HULL_SHELL_32",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
       "name": "UCX_CORE_HULL_SHELL_33",
       "type": "MESH",
       "collection": "40_COLLISION",
@@ -9529,8 +12244,8 @@
         1.0,
         1.0
       ],
-      "verts": 8,
-      "tris": 12,
+      "verts": 6,
+      "tris": 8,
       "materials": [],
       "uv_layers": [],
       "modifiers": []
@@ -9549,8 +12264,8 @@
         1.0,
         1.0
       ],
-      "verts": 8,
-      "tris": 12,
+      "verts": 6,
+      "tris": 8,
       "materials": [],
       "uv_layers": [],
       "modifiers": []
@@ -9569,8 +12284,8 @@
         1.0,
         1.0
       ],
-      "verts": 6,
-      "tris": 8,
+      "verts": 8,
+      "tris": 12,
       "materials": [],
       "uv_layers": [],
       "modifiers": []
@@ -9589,1694 +12304,14 @@
         1.0,
         1.0
       ],
-      "verts": 6,
-      "tris": 8,
+      "verts": 8,
+      "tris": 12,
       "materials": [],
       "uv_layers": [],
       "modifiers": []
     },
     {
       "name": "UCX_CORE_HULL_SHELL_38",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_39",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_40",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_41",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_42",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_43",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_44",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_45",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_49",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 28,
-      "tris": 52,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_50",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 34,
-      "tris": 64,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_51",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 36,
-      "tris": 68,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_52",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 36,
-      "tris": 68,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_53",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 36,
-      "tris": 68,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_54",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 32,
-      "tris": 60,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_55",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_56",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_57",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_58",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_59",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_60",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_61",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_62",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_63",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_64",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_65",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_66",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 15,
-      "tris": 26,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_67",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_68",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_69",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_70",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_71",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_72",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_73",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_74",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_75",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_76",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_77",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_78",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 13,
-      "tris": 22,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_79",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_80",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 15,
-      "tris": 26,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_81",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_82",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_83",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 20,
-      "tris": 36,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_84",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_85",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_86",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_87",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 10,
-      "tris": 16,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_88",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 10,
-      "tris": 16,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_89",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 10,
-      "tris": 16,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_90",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 10,
-      "tris": 16,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_91",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_92",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_93",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_94",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_95",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 10,
-      "tris": 16,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_96",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 10,
-      "tris": 16,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_97",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_98",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_99",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_100",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_101",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_102",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_103",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_104",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_105",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_106",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_107",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_108",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_109",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_110",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_111",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 14,
-      "tris": 24,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_112",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_113",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_114",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_115",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_116",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_117",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_118",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_119",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_120",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_121",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 6,
-      "tris": 8,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_122",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 6,
-      "tris": 8,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_123",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_124",
-      "type": "MESH",
-      "collection": "40_COLLISION",
-      "location": [
-        0.0,
-        0.0,
-        0.0
-      ],
-      "scale": [
-        1.0,
-        1.0,
-        1.0
-      ],
-      "verts": 8,
-      "tris": 12,
-      "materials": [],
-      "uv_layers": [],
-      "modifiers": []
-    },
-    {
-      "name": "UCX_CORE_HULL_SHELL_125",
       "type": "MESH",
       "collection": "40_COLLISION",
       "location": [
@@ -12194,10 +13229,450 @@
       "materials": [],
       "uv_layers": [],
       "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_126",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_HULL_SHELL_127",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 10,
+      "tris": 16,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_TABLE_A_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_CHAIR_A_01_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_CHAIR_A_02_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_CHAIR_A_03_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_CHAIR_A_04_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_DESK_A_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_CHAIR_A_DESK_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_COT_A_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_SIDEBOARD_A_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_CHEST_A_01_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CABIN_STERN_BENCH_A_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_BOAT_CUTTER_A_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 294,
+      "tris": 584,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_CAPSTAN_A_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_CATHEADS_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_ANCHOR_BOWER_STARBOARD_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 58,
+      "tris": 112,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_ANCHOR_BOWER_PORT_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 58,
+      "tris": 112,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_BOAT_SKIDS_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_CORE_BOAT_SKIDS_01",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_PUMP_ELM_A_S_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
+    },
+    {
+      "name": "UCX_MOD_PUMP_ELM_A_P_00",
+      "type": "MESH",
+      "collection": "40_COLLISION",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "verts": 8,
+      "tris": 12,
+      "materials": [],
+      "uv_layers": [],
+      "modifiers": []
     }
   ],
   "checks": {
-    "render_tris_total": 432950,
+    "render_tris_total": 485526,
     "bounds_m": {
       "x": [
         -24.654,
@@ -12265,6 +13740,7 @@
       "SOCKET_CANNON_S_08",
       "SOCKET_CANNON_S_09",
       "SOCKET_CANNON_S_10",
+      "SOCKET_CAPSTAN",
       "SOCKET_FIGUREHEAD",
       "SOCKET_FLAG_STERN",
       "SOCKET_GAFF_MIZZEN",
@@ -12295,6 +13771,8 @@
       "SOCKET_PORT_LID_LOWER_S_08",
       "SOCKET_PORT_LID_LOWER_S_09",
       "SOCKET_PORT_LID_LOWER_S_10",
+      "SOCKET_PUMP_P",
+      "SOCKET_PUMP_S",
       "SOCKET_RAM",
       "SOCKET_RIG_PRIMARY",
       "SOCKET_RUDDER",
@@ -12349,6 +13827,16 @@
       "SOCK_CLIMB_MIZZEN_S_TOPMAST_BOTTOM",
       "SOCK_CLIMB_MIZZEN_S_TOPMAST_TOP",
       "SOCK_COM",
+      "SOCK_CREW_CAPSTAN_01",
+      "SOCK_CREW_CAPSTAN_02",
+      "SOCK_CREW_CAPSTAN_03",
+      "SOCK_CREW_CAPSTAN_04",
+      "SOCK_CREW_CAPSTAN_05",
+      "SOCK_CREW_CAPSTAN_06",
+      "SOCK_CREW_CAPSTAN_07",
+      "SOCK_CREW_CAPSTAN_08",
+      "SOCK_CREW_CAPSTAN_09",
+      "SOCK_CREW_CAPSTAN_10",
       "SOCK_CREW_CHASE_BOW_P_A",
       "SOCK_CREW_CHASE_BOW_P_B",
       "SOCK_CREW_CHASE_BOW_P_C",
@@ -12445,6 +13933,8 @@
       "SOCK_CREW_LOWER_S_10_B",
       "SOCK_CREW_LOWER_S_10_C",
       "SOCK_CREW_LOWER_S_10_D",
+      "SOCK_CREW_PUMP_P",
+      "SOCK_CREW_PUMP_S",
       "SOCK_CREW_P_01_A",
       "SOCK_CREW_P_01_B",
       "SOCK_CREW_P_01_C",
@@ -12525,6 +14015,18 @@
       "SOCK_CREW_S_10_B",
       "SOCK_CREW_S_10_C",
       "SOCK_CREW_S_10_D",
+      "SOCK_INTERIOR_CHAIR_A_01",
+      "SOCK_INTERIOR_CHAIR_A_02",
+      "SOCK_INTERIOR_CHAIR_A_03",
+      "SOCK_INTERIOR_CHAIR_A_04",
+      "SOCK_INTERIOR_CHAIR_A_DESK",
+      "SOCK_INTERIOR_CHEST_A_01",
+      "SOCK_INTERIOR_COT_A",
+      "SOCK_INTERIOR_DESK_A",
+      "SOCK_INTERIOR_MOD_LANTERN_HANGING_A_01",
+      "SOCK_INTERIOR_SIDEBOARD_A",
+      "SOCK_INTERIOR_STERN_BENCH_A",
+      "SOCK_INTERIOR_TABLE_A",
       "SOCK_LANTERN_LOWER_01",
       "SOCK_LANTERN_LOWER_02",
       "SOCK_LANTERN_LOWER_03",
@@ -12586,205 +14088,72 @@
       "90_EXPORT"
     ]
   },
-  "rigset_v015": {
-    "masts": {
-      "FORE": {
-        "lower_mast_design": 20.55,
-        "lower_mast_world": 22.6,
-        "dia_world": 0.628,
-        "topmast_world": 13.56,
-        "topgallant_world": 6.78,
-        "truck_z_world": 34.97,
-        "top_z_world": 17.35,
-        "top_w_world": 4.52,
-        "rake_deg": 0.0,
-        "z_ch": 3.339749968960931,
-        "channel_x": [
-          4.794150161743165,
-          12.294150161743165
-        ],
-        "ratline_rows": 92
-      },
-      "MAIN": {
-        "lower_mast_design": 23.12,
-        "lower_mast_world": 25.43,
-        "dia_world": 0.707,
-        "topmast_world": 15.26,
-        "topgallant_world": 7.63,
-        "truck_z_world": 39.84,
-        "top_z_world": 19.86,
-        "top_w_world": 5.09,
-        "rake_deg": 1.5,
-        "z_ch": 3.2500677882922315,
-        "channel_x": [
-          -5.4571102380752565,
-          2.0428897619247435
-        ],
-        "ratline_rows": 112
-      },
-      "MIZZEN": {
-        "lower_mast_design": 19.88,
-        "lower_mast_world": 21.87,
-        "dia_world": 0.608,
-        "topmast_world": 12.03,
-        "topgallant_world": 6.01,
-        "truck_z_world": 32.22,
-        "top_z_world": 16.7,
-        "top_w_world": 4.01,
-        "rake_deg": 3.0,
-        "z_ch": 3.451056449486068,
-        "channel_x": [
-          -12.58980197906494,
-          -8.83980197906494
-        ],
-        "ratline_rows": 80
-      }
-    },
-    "yards": {
-      "MOD_RIG_YARD_FORE_COURSE_A": {
-        "length_world": 19.36,
-        "dia_world": 0.403
-      },
-      "MOD_RIG_YARD_FORE_TOPSAIL_A": {
-        "length_world": 13.94,
-        "dia_world": 0.29
-      },
-      "MOD_RIG_YARD_FORE_TOPGALLANT_A": {
-        "length_world": 9.2,
-        "dia_world": 0.191
-      },
-      "MOD_RIG_YARD_MAIN_COURSE_A": {
-        "length_world": 22.13,
-        "dia_world": 0.46
-      },
-      "MOD_RIG_YARD_MAIN_TOPSAIL_A": {
-        "length_world": 15.93,
-        "dia_world": 0.331
-      },
-      "MOD_RIG_YARD_MAIN_TOPGALLANT_A": {
-        "length_world": 10.51,
-        "dia_world": 0.219
-      },
-      "MOD_RIG_YARD_MIZZEN_COURSE_A": {
-        "length_world": 15.49,
-        "dia_world": 0.322
-      },
-      "MOD_RIG_YARD_MIZZEN_TOPSAIL_A": {
-        "length_world": 11.15,
-        "dia_world": 0.232
-      },
-      "MOD_RIG_YARD_MIZZEN_TOPGALLANT_A": {
-        "length_world": 7.36,
-        "dia_world": 0.153
-      },
-      "MOD_RIG_GAFF_MIZZEN_A": {
-        "length_world": 8.52,
-        "dia_world": 0.177
-      },
-      "MOD_RIG_BOOM_MIZZEN_A": {
-        "length_world": 13.94,
-        "dia_world": 0.29
-      }
-    },
-    "bowsprit": {
-      "length_world": 15.26,
-      "steeve_deg": 25.0,
-      "end_world": [
-        35.18,
-        0.0,
-        14.57
-      ]
-    },
-    "stays": [
-      "fore_stay",
-      "fore_topmast_stay",
-      "fore_tg_stay",
-      "main_stay",
-      "main_topmast_stay",
-      "main_tg_stay",
-      "mizzen_stay",
-      "mizzen_topmast_stay"
-    ],
-    "climb_routes": [
-      "FORE_S_LOWER",
-      "FORE_S_TOPMAST",
-      "FORE_P_LOWER",
-      "FORE_P_TOPMAST",
-      "MAIN_S_LOWER",
-      "MAIN_S_TOPMAST",
-      "MAIN_P_LOWER",
-      "MAIN_P_TOPMAST",
-      "MIZZEN_S_LOWER",
-      "MIZZEN_S_TOPMAST",
-      "MIZZEN_P_LOWER",
-      "MIZZEN_P_TOPMAST"
-    ],
-    "ucx_added": 45,
-    "tris": {
-      "MOD_RIG_MAST_FORE_A": 7836,
-      "MOD_RIG_YARD_FORE_COURSE_A": 788,
-      "MOD_RIG_YARD_FORE_TOPSAIL_A": 788,
-      "MOD_RIG_YARD_FORE_TOPGALLANT_A": 788,
-      "MOD_RIG_STANDING_FORE_A": 11168,
-      "MOD_RIG_MAST_MAIN_A": 8332,
-      "MOD_RIG_YARD_MAIN_COURSE_A": 788,
-      "MOD_RIG_YARD_MAIN_TOPSAIL_A": 788,
-      "MOD_RIG_YARD_MAIN_TOPGALLANT_A": 788,
-      "MOD_RIG_STANDING_MAIN_A": 12288,
-      "MOD_RIG_MAST_MIZZEN_A": 7556,
-      "MOD_RIG_YARD_MIZZEN_COURSE_A": 788,
-      "MOD_RIG_YARD_MIZZEN_TOPSAIL_A": 788,
-      "MOD_RIG_YARD_MIZZEN_TOPGALLANT_A": 788,
-      "MOD_RIG_GAFF_MIZZEN_A": 72,
-      "MOD_RIG_BOOM_MIZZEN_A": 72,
-      "MOD_RIG_STANDING_MIZZEN_A": 6216,
-      "MOD_RIG_BOWSPRIT_A": 1688,
-      "MOD_RIG_STAYS_A": 608
-    },
-    "tris_total": 62928,
-    "boat_socket": {
-      "from": [
-        0.55,
-        0.0,
-        3.426
+  "v018": {
+    "knees": {
+      "beams_with_knees_x": [
+        -18.29,
+        -16.97,
+        -15.65,
+        -14.33,
+        -13.01,
+        -9.05,
+        -3.77,
+        1.51,
+        2.83,
+        5.47,
+        10.75,
+        13.39,
+        14.71,
+        16.03,
+        17.35,
+        18.67
       ],
-      "to": [
-        7.555,
-        0.0,
-        5.473
-      ]
+      "skipped_x": [
+        -11.69,
+        -10.37,
+        -5.09,
+        0.19,
+        4.15,
+        9.43,
+        12.07
+      ],
+      "count": 32
     },
-    "sources": "oranlar TAHMİN (dönem kuralları; Lees 'Masting and Rigging of English Ships of War' ile doğrulanmalı)"
+    "ring_bolts": 80,
+    "breeching_ropes": 20,
+    "shot_racks": 18,
+    "shot_per_rack": 10,
+    "pumps": [
+      "MOD_PUMP_ELM_A_S",
+      "MOD_PUMP_ELM_A_P"
+    ],
+    "sockets_added": [
+      "SOCKET_PUMP_S",
+      "SOCK_CREW_PUMP_S",
+      "SOCKET_PUMP_P",
+      "SOCK_CREW_PUMP_P"
+    ],
+    "checks": {
+      "pump_to_battery_crew_min_m": 1.047,
+      "pump_to_mainmast_m": 1.61
+    },
+    "sources": "ölçüler TAHMİN"
   },
   "pass": {
-    "name": "pass_v015_rigset",
-    "source": "Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v014.blend",
+    "name": "pass_v018_battery_dressing",
+    "source": "Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v017.blend",
     "pass_changes": {
-      "modules_added": [
-        "MOD_RIG_MAST_FORE_A",
-        "MOD_RIG_YARD_FORE_COURSE_A",
-        "MOD_RIG_YARD_FORE_TOPSAIL_A",
-        "MOD_RIG_YARD_FORE_TOPGALLANT_A",
-        "MOD_RIG_STANDING_FORE_A",
-        "MOD_RIG_MAST_MAIN_A",
-        "MOD_RIG_YARD_MAIN_COURSE_A",
-        "MOD_RIG_YARD_MAIN_TOPSAIL_A",
-        "MOD_RIG_YARD_MAIN_TOPGALLANT_A",
-        "MOD_RIG_STANDING_MAIN_A",
-        "MOD_RIG_MAST_MIZZEN_A",
-        "MOD_RIG_YARD_MIZZEN_COURSE_A",
-        "MOD_RIG_YARD_MIZZEN_TOPSAIL_A",
-        "MOD_RIG_YARD_MIZZEN_TOPGALLANT_A",
-        "MOD_RIG_GAFF_MIZZEN_A",
-        "MOD_RIG_BOOM_MIZZEN_A",
-        "MOD_RIG_STANDING_MIZZEN_A",
-        "MOD_RIG_BOWSPRIT_A",
-        "MOD_RIG_STAYS_A"
-      ],
-      "sockets_added": 54,
-      "ucx_added": 45
+      "added": [
+        "CORE_KNEES_LOWER_DECK",
+        "CORE_SHOT_RACKS",
+        "CORE_RING_BOLTS",
+        "MOD_CANNON_BREECHING_S_A",
+        "MOD_CANNON_BREECHING_P_A",
+        "MOD_PUMP_ELM_A_S",
+        "MOD_PUMP_ELM_A_P"
+      ]
     },
-    "manifest_version": 13,
-    "geometry_changed": "yalnız RigSet modülleri; gövde değişmedi"
+    "manifest_version": 16,
+    "geometry_changed": "ayrıntı parçaları eklendi"
   }
 }

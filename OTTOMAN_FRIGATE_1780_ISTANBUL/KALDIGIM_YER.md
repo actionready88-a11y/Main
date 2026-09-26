@@ -1,4 +1,4 @@
-# Kaldığım Yer — v016 (2026-09-26)
+# Kaldığım Yer — v018 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,14 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v016 (son sürüm)
+## v018 (son sürüm)
+- `scripts/pass_v018_battery_dressing.py`: alt güverte asma dirsekleri, halka cıvataları, brok halatları, gülle rafları, 2 tulumba. §5s.
+- Ölçülü pafta: `renders/v018/olculu/` (`annotate_views.py` artık armalı gemiyi kadraja sığdırıyor; alt güverte ve direk tepesi ölçüsü eklendi).
+
+## v017
+- `scripts/pass_v017_boat_anchor_capstan.py`: filika + kızaklar, 2 ana çapa + kedi başları, ırgat. Ölçüler TAHMİN. §5r.
+
+## v016
 - `scripts/pass_v016_cabin_interior.py`: kaptan kamarası eşyaları (masa, sandalyeler, yazı masası, asma yatak, sandık, büfe, kıç sediri, fener); ayrı `InteriorSet` modülleri. Üst ve alt güvertenin kıç aynasına kadar uzanmayan kısmı kapatıldı. Ayrıntı: MODELLEME_PLANI §5q.
 
 ## v015
@@ -89,7 +96,7 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 
 ## Sıradaki adım
 - Kullanıcı incelemesi: v013-v016 renderları (`renders/v013` … `renders/v016`).
-- Aday işler: SailSet (yelkenler), hareketli arma (halat/makara), filika (BoatSet), çapa (AnchorSet), ırgat, iç postalar, UV/PBR bake ve LOD.
+- Aday işler: SailSet (yelkenler; sarılı mı açık mı kararı), hareketli arma (halat/makara), figür (at başı), bayrak/fener seti, iç postalar, ambar (hold) iç mekânı, UV/PBR bake ve LOD.
 - Arma oranları için Lees tablosuyla doğrulama (yerelde kitap/PDF varsa).
 
 ## Eski sıradaki adım notları (v002 dönemi)

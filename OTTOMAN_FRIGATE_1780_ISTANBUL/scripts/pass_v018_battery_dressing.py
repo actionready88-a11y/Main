@@ -143,7 +143,8 @@ def build_bolts_and_breeching(core, cannons, M):
             if lower:
                 continue
             tag = g.name[len('SOCKET_CANNON_'):]
-            car = bpy.data.objects.get(f"MOD_CANNON_9PDR_A_{tag}") or bpy.data.objects.get(f"MOD_CANNON_9PDR_B_{tag}")
+            car = (bpy.data.objects.get(f"MOD_CANNON_9PDR_A_{tag}") or bpy.data.objects.get(f"MOD_CANNON_9PDR_B_{tag}")
+                   or bpy.data.objects.get(f"MOD_CANNON_OTTOMAN_C_{tag}"))
             if car is None:
                 continue
             cp = mw @ V((tr_x + casc, 0.0, P14.TRUN_Z - 0.02))

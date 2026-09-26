@@ -1,0 +1,20 @@
+{
+  "version": "v029",
+  "source": "OTTOMAN_FRIGATE_1780_ISTANBUL_v028.blend",
+  "control": "CTRL_YELKEN.yelken_acik",
+  "driven": {
+    "furled": 12,
+    "set": 17
+  },
+  "checks": {
+    "yelken_acik=1": {
+      "gorunen_sarili": 0,
+      "gorunen_acik": 17
+    },
+    "yelken_acik=0": {
+      "gorunen_sarili": 12,
+      "gorunen_acik": 0
+    },
+    "hatali_surucu": []
+  }
+}

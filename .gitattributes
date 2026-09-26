@@ -1,1 +1,13 @@
 *.glb filter=lfs diff=lfs merge=lfs -text
+# ikili dosyalar: satır sonu dönüşümü yok
+*.blend binary
+*.png binary
+*.jpg binary
+*.fbx binary
+*.zip binary
+# metin: depoda LF (Windows CRLF farkı "değişiklik" sayılmaz)
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf

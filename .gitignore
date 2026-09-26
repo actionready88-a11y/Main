@@ -1,1 +1,10 @@
 __pycache__/
+*.pyc
+# Blender otomatik yedekleri
+*.blend1
+*.blend2
+*.blend@
+# işletim sistemi artıkları
+Thumbs.db
+desktop.ini
+.DS_Store

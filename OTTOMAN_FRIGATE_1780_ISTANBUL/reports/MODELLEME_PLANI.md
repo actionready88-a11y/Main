@@ -191,6 +191,21 @@ Kullanıcı izni: "Bunlar sıkıntılı oluyorsa hafiften gemiyi büyütebilirsi
 - Merdiven eğimi (41,8°), top aralıkları ve oranlar değişmedi. Soket konumları ölçeklendi (manifest 5).
 - **Sonraki pass'ler için:** Tasarım fonksiyonları (`build_hull_v001.py`) Lyme ölçeğinde kalıyor. Dünya koordinatı için `scripts/ship_scale.py` sarmalayıcısı kullanılacak (uzunluk × 1,10). Sahnede `ship_scale = 1.10` özelliği var; `annotate_views.py` bunu okuyor.
 
+## 5i. Pass v008: bel → kasara merdivenleri (2026-09-26)
+
+Kullanıcı kararı: "Her yer gezilebilir" için önce ana güverteden kıç kasarasına ve baş kasarasına çıkan merdivenler. `scripts/pass_v008_access_stairs.py` (gövde kabuğu değişmedi; geometri tasarım uzayında kurulup ×1,10 ile yerleştirildi):
+
+| Merdiven | Yer (dünya) | Eğim / basamak yüksekliği | Neden bu yer |
+|---|---|---|---|
+| Kıç kasarası (2) | Kasara ön kenarı, orta hattın iki yanı (\|y\| 0,39-1,38 m), kıça doğru yükselir | 40,5° / 22,6 cm | Bordalarda batarya topları ve mürettebatı var |
+| Baş kasarası (2) | Kasara arka kenarı, ön direğin iki yanı (\|y\| 0,50-1,49 m), başa doğru yükselir | 41,6° / 23,4 cm | Ön direk orta hatta, iki merdivenin arasında (0,99 m boşluk) |
+
+- **12. top çifti** baş kasarası altına alındı: tasarımda x = 12,6 → **14,25** (dünyada 13,86 → 15,68). Lumbar kesicisi ve çerçeveler yeniden üretildi, soketler ve mürettebat taşındı. Top sayısı değişmedi (24 + 4). Pruva dar olduğu için bu çiftin nişancıları orta hatta 0,46 m arayla duruyor.
+- **Ön korkuluklar:** İki kasaranın ön korkuluğu kıç üstü stiline çevrildi (kaide + torna balüster + alın kirişi). Merdiven başlarında boşluk var.
+- **Soket ve çarpışma:** 8 navlink (`SOCK_NAVLINK_{QD,FC}_STAIR_{S,P}_{BOTTOM,TOP}`), 10 yeni UCX (4 merdiven rampası, 6 korkuluk).
+- **Kontrol:** Merdiven ayak izi ile mürettebat noktası çakışması yok. Kontrol, merdivenin alt yüzü baş hizasının üstündeyse o noktayı çakışma saymıyor.
+- **Erişim zinciri:** bel → kıç kasarası → kıç üstü ve bel → baş kasarası. Açık güvertelerin tamamına merdivenle çıkılabiliyor.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

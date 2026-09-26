@@ -1,4 +1,4 @@
-# Kaldığım Yer — v007 (2026-09-26)
+# Kaldığım Yer — v008 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,11 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v007 (son sürüm)
+## v008 (son sürüm)
+- `scripts/pass_v008_access_stairs.py`: bel → kıç kasarası ve bel → baş kasarası (ikişer merdiven), yeni ön korkuluklar; 12. top çifti baş kasarası altına. Ayrıntı: MODELLEME_PLANI §5i.
+- Sıradaki aday: direkler ve arma (tırmanma işaretleriyle) ya da alt güverte / ambar iç mekânı.
+
+## v007
 - `scripts/pass_v007_scale.py`: gemi eşit oranda ×1,10 (kullanıcı izni). Net tavanlar 2,01-2,06 m; güverte boyu 39,51 m, en 11,34 m, su çekimi 4,95 m.
 - **ÖNEMLİ:** v007+ dünya = 1,10 × tasarım uzayı. Yeni pass'lerde `scripts/ship_scale.py` sarmalayıcısını kullan.
 

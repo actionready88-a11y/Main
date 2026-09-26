@@ -1,9 +1,9 @@
-# Kaldığım Yer — v037 (2026-09-26)
+# Kaldığım Yer — v038 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v037.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v038.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -27,6 +27,16 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
   düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
   Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## v038 — açık yelkenler B (kullanıcı: "yelkenler basit duruyor", Fab referansı)
+- 11 açık yelken yeniden kuruldu (`scripts/pass_v038_sails_b.py`): ≈ 12 cm ağ, Coons yaması (köşeler/yaka yerinde),
+  rüzgârla dolgun karın (kare 0,10·en, flok/velena 0,08, randa 0,07 [TAHMİN]), alt kenar kavisi, yaka kıvrımları,
+  köşe gerilme kırışıkları, kenar halatı, gabyalarda 3 camadan bandı + bağlar; amblemler yeni yüzeye taşındı.
+- Kanvas dokusu `Textures/Sails/T_Sail_Canvas_B_{BC,N,ORM}` (`scripts/make_sail_canvas.py`), "Weathering" renk özniteliği.
+- Bulgu: açık yelkenler varsayılan gizli → matrix_world hesaplanmıyordu (LOD'lar orijine konuyordu) → `lods.py`
+  ebeveynsiz nesnede matrix_basis kullanır. Kalite testi açık yelkenleri ayrıca ölçer (`kalite_testi_v038.json` →
+  open_sails); kalan ≈ 3 mm faset kıvrım dalgalarında → sonraki turda ağ sıklaştırma.
+- Pruva figürü: kullanıcı Meshy GLB (37 MB) yükleyecek → `Imports/Meshy/` → incele, tek parça yerleştir.
 
 ## v037 — faset temizliği 2. tur (23 → 3 nesne)
 - Çanaklıklar: ana/mizana çanaklığı direk yatıklığı kadar eğik olduğundan v033 seçiminden kaçmıştı → topolojiyle 4 halka

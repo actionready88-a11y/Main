@@ -45,16 +45,33 @@ def load(prev_main_path, col_name=COL):
     return {"source": lp.name, "objects": len(col.all_objects)}
 
 
+def make_relative(main_path):
+    """Doku yollarını blend'e göre göreli yapar (//../../Textures/...). Mutlak bulut yolu (/home/user/...) kullanıcının
+    bilgisayarında bulunmaz → Blender'da pembe malzeme. Kaydetmeden önce çağrılır."""
+    base = Path(main_path).parent
+    n = 0
+    for im in bpy.data.images:
+        if im.source not in {"FILE", "SEQUENCE", "TILED"} or not im.filepath or im.filepath.startswith("//") or im.packed_file:
+            continue
+        try:
+            im.filepath = bpy.path.relpath(bpy.path.abspath(im.filepath), start=str(base))
+            n += 1
+        except ValueError:
+            pass
+    return n
+
+
 def save_split(main_path, col_name=COL):
     """50_LODS'u <main>_LOD.blend'e yazar, sahneden çıkarır, ana dosyayı kaydeder. Sahnede LOD kalmaz."""
     main_path = Path(main_path)
     lp = lod_path(main_path)
     if main_path.exists() or lp.exists():
         raise SystemExit(f"{main_path.name} / {lp.name} zaten var; versiyonlu kayıt üzerine yazılmaz.")
+    make_relative(main_path)
     col = bpy.data.collections.get(col_name)
     n = 0
     if col is not None and len(col.all_objects) > 0:
-        bpy.data.libraries.write(str(lp), {col}, path_remap="ABSOLUTE", compress=True)
+        bpy.data.libraries.write(str(lp), {col}, path_remap="RELATIVE_ALL", compress=True)
         meshes = set()
         for o in list(col.all_objects):
             if o.data is not None:
@@ -65,7 +82,7 @@ def save_split(main_path, col_name=COL):
             if me.users == 0:
                 bpy.data.meshes.remove(me)
         bpy.data.collections.remove(col)
-    bpy.ops.wm.save_as_mainfile(filepath=str(main_path), compress=True)
+    bpy.ops.wm.save_as_mainfile(filepath=str(main_path), compress=True, relative_remap=True)
     return {"lod_file": lp.name if n else None, "lod_objects": n,
             "main_mb": round(main_path.stat().st_size / 1e6, 1),
             "lod_mb": round(lp.stat().st_size / 1e6, 1) if n else 0.0}

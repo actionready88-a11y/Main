@@ -1,9 +1,9 @@
-# Kaldığım Yer — v041 (2026-09-26)
+# Kaldığım Yer — v042 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v041.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v042.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -33,8 +33,27 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Birebir Osmanlı sembolleri (ay-yıldız sancak, tuğra) kullanılmaz ("Yüzde Yetmiş Özgünlük Kuralı").
 - Arma kullanıcı konseptinden alındı: hilal + mızrak + gök yıldızı + dalgalar (`scripts/kizil_sancak.py`).
 - Sıradaki işler:
-  1. İç düzen v042+: alt güverte (hamak, subay kabinleri, revir, atölyeler), ocak-su-sanitasyon, cephanelik / hazırlama / hazır dolap, hasar kontrol, oda kimlikleri.
+  1. İç düzen v043: cephanelik / hazırlama odası / hazır servis dolapları (Ek Cilt II s. 111–115), hasar kontrol
+     istasyonları (s. 87), havalandırma (rüzgâr hortumu), ambar oda kimlikleri.
   3. Figür en son: yıldızı sil + bordaya gömülü yerleşim (`scripts/pass_v04X_figurehead_mount_TASLAK.py`).
+
+## v042 — kaptan dairesi düzeltmesi + alt güverte yaşamı
+- Kullanıcı: çırak rıhtımı kaptan dairesinde olmaz, kıç topları kalksın (toplam 20 borda + 2 baş topu) →
+  - kıç topları ve soketleri silindi (22 top);
+  - sancak-ön bölme kalktı, çalışma masası eski köşesine döndü, yazı rafı kıç kasarası duvarında.
+- Kullanıcı: çırak yatakhanesi subay kabinleriyle iç içe olmasın → ayrı perdeli **çırak yatakhanesi**:
+  - alt güverte baş, x 12,0–14,15, pruva direğinin iki yanı;
+  - 2×2 ranza, sandıklar, ders tahtası.
+- Alt güverte:
+  - hamaklar: 37 asılı + 17 sarılı (vardiya);
+  - 8 bordaya asılı sofra;
+  - subay odası: 4 perdeli kabin + sofra;
+  - revir: 2 asma yatak, cerrah sandığı;
+  - marangoz ve yelkenci atölyeleri;
+  - tuğla ocak, bakır kazanlar, üst güverteden çıkan baca, su fıçısı.
+- Üst güverte: içme suyu fıçısı (scuttlebutt), baş tuvaletleri.
+- Her parça üçgen düzeyinde çakışma testiyle yerleşti (`try_add` / `try_shift`).
+- Oda kimlikleri: `35_ROOMS`.
 
 ## v041 — iç düzen 1: kıç kamarası bölündü (Ek Cilt II s. 98–99)
 - CaptainOffice (makam; kıç pencereli büyük kamara): toplantı/harita masası, çalışma masası, büfe, yazı rafı,

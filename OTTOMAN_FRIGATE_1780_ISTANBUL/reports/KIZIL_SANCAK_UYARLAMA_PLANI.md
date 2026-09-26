@@ -7,6 +7,8 @@ Durum: **ONAYLANDI (Gate A, kullanıcı, 2026-09-26)** — "Onaylıyorum, figür
 - **Yelkenler:** ana mayistra ve ana gabyada kızıl bant (orta 4 bez eni) + arma amblemi.
 - **Figür:** ay-yıldızdaki yıldız silinir, hilal kalır. Figür en son uyarlanacak.
 - **Gemi adı:** "Kızıl Pençe" (şimdilik).
+- **Kıç topları:** kaldırıldı (v042). Toplam 20 borda + 2 baş topu.
+- **Çırak rıhtımı:** kaptan dairesinde değil, subay kabinlerinden de ayrı. Alt güvertede baş tarafta perdeli çırak yatakhanesi olarak (v042).
 - **Toplar:** değiştirilmez. Yalnız birebir tuğra mühürle değiştirildi; istenirse geri alınır.
 - **Konsept görseli:** kullanıcı, paketi GPT'ye okutarak bir konsept üretti. **Arma bu konseptten alındı** (ilk taslaktaki "Yelken Hilali" yerine):
   - yukarı açık hilal;

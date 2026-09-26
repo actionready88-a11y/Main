@@ -28,6 +28,8 @@ def box(bm, c, size, r=0.008, mat=0, segs=3):
     for v in vs:
         v.co = V(c) + V((v.co.x * sx, v.co.y * sy, v.co.z * sz))
     r = min(r, 0.45 * min(size))
+    if r > 0.004:                                        # çeyrek yay dilimi: kiriş sapması ≤ 1,5 mm
+        segs = max(segs, math.ceil((math.pi / 2) / math.acos(max(1 - 0.0015 / r, -1.0))))
     edges = list({e for v in vs for e in v.link_edges})
     res = bmesh.ops.bevel(bm, geom=vs + edges, offset=r, segments=segs, profile=0.5, affect="EDGES", clamp_overlap=True)
     fs = list({f for v in vs if v.is_valid for f in v.link_faces} | set(res.get("faces", [])))
@@ -173,7 +175,7 @@ def plank_partition(bm, a, b, z0, z1, t=0.035, plank=0.18, gap=0.004, door=None,
         bmesh.ops.translate(bm, verts=vs, vec=c)
 
 
-def hammock(bm, p0, p1, sag=0.22, width=0.62, mat_cloth=0, mat_rope=1, rows=18, cols=6):
+def hammock(bm, p0, p1, sag=0.22, width=0.62, mat_cloth=0, mat_rope=1, rows=30, cols=12):
     """Asılı hamak: kumaş yatak (zincir eğrisi + enine çukur) + iki uçta halat demeti (kirişe)."""
     p0, p1 = V(p0), V(p1)
     L = (p1 - p0).length
@@ -201,8 +203,8 @@ def hammock(bm, p0, p1, sag=0.22, width=0.62, mat_cloth=0, mat_rope=1, rows=18, 
         f.smooth = True
     # kalınlık yerine iki yüz: arka yüz kopyası (UE iki yüzlü malzeme de olur)
     for end, row in ((p0, grid[0]), (p1, grid[-1])):
-        for v in row[::2]:
-            tube(bm, [v.co, v.co.lerp(end, 0.5) + V((0, 0, 0.02)), end], 0.006, mat=mat_rope, seg=6)
+        for v in row[::4]:
+            tube(bm, [v.co.lerp(end, t) for t in (0.0, 0.25, 0.5, 0.75, 1.0)], 0.006, mat=mat_rope, seg=6)
     return fs
 
 
@@ -213,7 +215,8 @@ def rolled_hammock(bm, p0, p1, r=0.11, mat_cloth=0, mat_rope=1):
     for t in (0.2, 0.5, 0.8):
         c = p0.lerp(p1, t)
         u = (p1 - p0).normalized()
-        lathe(bm, [(0.0, -0.012), (r + 0.006, -0.012), (r + 0.008, 0.0), (r + 0.006, 0.012), (0.0, 0.012)], c, u, mat=mat_rope)
+        prof = [(0.0, -0.012)] + [(r + 0.002 + 0.006 * math.cos(a), 0.012 * math.sin(a)) for a in [-math.pi / 2 + math.pi * i / 8 for i in range(9)]] + [(0.0, 0.012)]
+        lathe(bm, prof, c, u, mat=mat_rope)
 
 
 def bucket(bm, c, r=0.14, h=0.28, mat=0, band=1):
@@ -233,7 +236,7 @@ def curtain(bm, a, b, z0, z1, folds=10, depth=0.05, mat=0, rows=10):
     a, b = V((a[0], a[1], 0)), V((b[0], b[1], 0))
     u = (b - a)
     nrm = V((-u.normalized().y, u.normalized().x, 0))
-    cols = folds * 6
+    cols = folds * 20
     grid = []
     for i in range(rows + 1):
         z = z0 + (z1 - z0) * i / rows
@@ -247,10 +250,30 @@ def curtain(bm, a, b, z0, z1, folds=10, depth=0.05, mat=0, rows=10):
 
 
 # ------------------------------------------------------------------ nesne + oda kimliği
+def box_uv(me, scale=1.0):
+    """Kutu izdüşümü UV (dünya metresi; ahşap/kumaş dokuları için tutarlı yoğunluk)."""
+    if not me.uv_layers:
+        me.uv_layers.new(name="UVMap")
+    uv = me.uv_layers.active.data
+    for p in me.polygons:
+        n = p.normal
+        ax = max(range(3), key=lambda i: abs(n[i]))
+        for li in p.loop_indices:
+            co = me.vertices[me.loops[li].vertex_index].co
+            if ax == 2:
+                uv[li].uv = (co.x * scale, co.y * scale)
+            elif ax == 1:
+                uv[li].uv = (co.x * scale, co.z * scale)
+            else:
+                uv[li].uv = (co.y * scale, co.z * scale)
+
+
 def finish(name, bm, mats, col, props=None):
     me = bpy.data.meshes.new(name)
     bm.to_mesh(me)
     bm.free()
+    if not me.uv_layers:
+        box_uv(me)
     for m in mats:
         me.materials.append(m)
     RS.sharp_from_angle_keep(me, 35)
@@ -307,4 +330,31 @@ def mat(name, color, rough=0.6, metal=0.0):
     b.inputs["Base Color"].default_value = (*color, 1)
     b.inputs["Roughness"].default_value = rough
     b.inputs["Metallic"].default_value = metal
+    return m
+
+
+def mat_wood(name="MAT_Wood_Oak_Interior", base=(0.30, 0.17, 0.08), dark=(0.16, 0.085, 0.04), rough=0.62):
+    """İç eşya ahşabı: derzsiz, lif yönlü gürültü (nesne koordinatı; UV ölçeğinden bağımsız). UE: BC bake."""
+    m = bpy.data.materials.get(name)
+    if m:
+        return m
+    m = bpy.data.materials.new(name)
+    m.use_nodes = True
+    nt = m.node_tree
+    b = nt.nodes["Principled BSDF"]
+    tc = nt.nodes.new("ShaderNodeTexCoord")
+    mp = nt.nodes.new("ShaderNodeMapping")
+    mp.inputs["Scale"].default_value = (1.0, 1.0, 14.0)        # lif: bir eksende sık
+    nz = nt.nodes.new("ShaderNodeTexNoise")
+    nz.inputs["Scale"].default_value = 6.0
+    nz.inputs["Detail"].default_value = 8.0
+    ramp = nt.nodes.new("ShaderNodeValToRGB")
+    ramp.color_ramp.elements[0].color = (*dark, 1)
+    ramp.color_ramp.elements[1].color = (*base, 1)
+    nt.links.new(tc.outputs["Object"], mp.inputs["Vector"])
+    nt.links.new(mp.outputs["Vector"], nz.inputs["Vector"])
+    nt.links.new(nz.outputs["Fac"], ramp.inputs["Fac"])
+    nt.links.new(ramp.outputs["Color"], b.inputs["Base Color"])
+    b.inputs["Roughness"].default_value = rough
+    m["ue_note"] = "UE: prosedürel lif → BC bake"
     return m

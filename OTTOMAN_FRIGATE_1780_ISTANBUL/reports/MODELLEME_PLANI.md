@@ -452,3 +452,7 @@ Katalog: "Brig esas olarak 18. yy için güvenlidir" (`_context/GEMI_SINIFLARI_U
 ## 5ai. Pass v037: faset temizliği 2. tur (2026-09-26)
 - Çanaklık (3 direk), hareketli arma dönüşleri, 16 küçük modülde seçici Catmull-Clark. Kalite testi: 23 → 3 nesne
   (gövde kıç altı, kıç galerisi, filika — ayrıntı `reports/kalite_testi_v037.json`).
+
+## 5aj. Pass v038–v039: açık yelkenler B, Meshy bozkurt figürü (2026-09-26)
+- v038: 11 açık yelken dolgun karın + kıvrım + kenar halatı + camadan + kanvas dokusu (oranlar [TAHMİN]).
+- v039: kullanıcı Meshy AI figürü, 250k üçgen, 4K dokular; lisans planı kullanıcı onayında (Gate A insan onayı).

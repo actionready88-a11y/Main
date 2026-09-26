@@ -1,9 +1,9 @@
-# Kaldığım Yer — v038 (2026-09-26)
+# Kaldığım Yer — v039 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v038.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v039.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -18,15 +18,19 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
   1. Kalan küçük fasetler (v037 sonrası 3 nesne, `reports/kalite_testi_v037.json`): gövde kıç "tuck" (su altı, çoğu ≈ 2 mm,
      en kötü 7 mm; subsurf 3 gövdeyi 2,2 M üçgene çıkarır → bölgesel çözüm gerek), kıç galerisi (2,6 mm; Catmull-Clark
      12,7 mm saptırdığı için geri alındı), filika (1,8 mm).
-  2. Bozkurt figürü: v036'da patinalı bronz, yele tek oyma kütle (`scripts/wolf_sdf2.py`; v035 kaynağı `wolf_sdf.py`
-     değişmeden duruyor). Kullanıcı onayı bekliyor. Hazır varlık: bulut ortamında Sketchfab/Poly Haven/Free3D/Printables
-     ağ politikası nedeniyle kapalı → masaüstünde CC0/CC-BY kurt başı bakılabilir (lisanslı Fab varlığı depoya girmez).
-     UE için curvature/AO bake → BC + ORM (malzeme pointiness kullanıyor — UE'de yok).
+  2. Bozkurt figürü: v039'da kullanıcının Meshy AI modeli (`MOD_FIGUREHEAD_BOZKURT_C`). Lisans planı (ücretsiz → CC BY 4.0
+     atıf / ücretli → kullanıcıya ait) kullanıcı tarafından doğrulanacak. UE: BC/N/ORM `Textures/Figurehead/`.
   3. Top C modülü UV + bake (`Textures/Modules/Cannon_C/`), gövde/modül FBX dışa aktarımı, UE malzemeleri.
   4. Direk çanaklık kenarı sıklaştırma; gövde kıç "tuck" bölgesi; Gate B incelemesi; arma oranlarını Lees ile doğrula.
 - **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
   düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
   Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## v039 — bozkurt figürü C (Meshy AI, kullanıcı üretimi)
+- `Imports/Meshy/*.glb` (2,40 M üçgen, 4K BC + 4K N + 2K ORM) → köşe birleştirme (930 → 1 ada) → 250k üçgen →
+  yüz pruvaya (+X), ×1,25 (2,38 × 0,90 × 1,88 m) → hilal motifli montaj plakası baş kıvrımına oturur.
+- UCX 61 köşe, LOD'lar, cıvadırayla 1,96 m boşluk; kalite testi geçti (havada parça yok). Eski B figürü sahneden çıktı
+  (v036–v038 dosyalarında duruyor; kaynak `wolf_sdf2.py`).
 
 ## v038 — açık yelkenler B (kullanıcı: "yelkenler basit duruyor", Fab referansı)
 - 11 açık yelken yeniden kuruldu (`scripts/pass_v038_sails_b.py`): ≈ 12 cm ağ, Coons yaması (köşeler/yaka yerinde),

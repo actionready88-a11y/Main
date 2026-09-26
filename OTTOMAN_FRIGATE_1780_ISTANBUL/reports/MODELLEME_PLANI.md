@@ -229,6 +229,22 @@ Kullanıcı kararı: "Kıç kasarası altını kapat". Ortadaki merdivenler kalk
 - **Soket ve çarpışma:** `SOCK_NAVLINK_GREAT_CABIN_DOOR_{OUT,IN}`, kıç kasarası merdiven navlink'leri güncellendi. Eski kıç kasarası merdiven ve korkuluk UCX'leri kaldırıldı; yeni merdiven, korkuluk ve duvar UCX'leri (`bulkhead_great_cabin`) eklendi.
 - **Eksik:** Kamara içi boş; mobilya, bölmeler ve aydınlatma yok. Bir sonraki iç mekân pass'inde yapılacak.
 
+## 5l. Pass v011: kıç kasarası kaldırıldı, kıç üstü ve kaptan kamarası ana güverteye indi (2026-09-26)
+
+Kullanıcı kararı: "Kamara, dümenin altındaki kapılı kısımda olacak; ekstra kaptan kamarası yok. Kıç kasarası altında açık alan kalmayacak; orayı düzle, bu kısmı aşağı taşı, eski kapıyı kapat, merdivenleri aşağı uzat; ek platform olmayacak." Seçenek 1 + "kamara yüksekliği artırılabilir". `scripts/pass_v011_lower_stern.py`:
+
+| Öğe | Değer (dünya) |
+|---|---|
+| Kıç kasarası | Kaldırıldı: güverte, ön korkuluk, merdivenler, v010 duvarı. Bölge düz ana güverte; borda üst kenarı bel yüksekliğinde |
+| Kıç üstü güverte | Ana güvertenin **2,64 m** üstünde (tasarım 2,40); dümen, korkuluk, tepelik ve fener onunla indi |
+| Kaptan kamarası | Kıç üstü altında, ana güverte seviyesinde; **net tavan 2,50 m**; kapı belden girilen ön duvarda; 5 kafesli kıç penceresi |
+| Merdivenler | Köşelerde, ana güverteden doğrudan kıç üstüne; 11 basamak, 25,6 cm, eğim 43,5° (UE sınırı 44,76°) |
+| Toplar | Kıç kasarasının 4 hafif topu kaldırıldı. Ana batarya bordada 11: 10 belde (x = -10,05 … 9,55 tasarım) + 1 baş kasarası altında. 2 baş ve 2 kıç kovalama; kıç kovalamaları kamara pencerelerinden (y = ±2,09 m dünya) ateşler, aynadaki eski kovalama lumbarları kapatıldı |
+
+- Gövde kabuğu, kuşaklar, silmeler ve batarya güvertesi yeni kıç profiline göre yeniden üretildi. Su hattı altı ve baş kasarası aynı kaldı.
+- 36 soket silindi (kıç kasarası topları ve mürettebatı, 12. top soketleri, eski navlink'ler). Top ve istasyon soketleri taşındı (manifest 9).
+- Çarpışma yeni profille yeniden kuruldu; baş kasarası merdiven ve korkuluk UCX'leri korundu.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

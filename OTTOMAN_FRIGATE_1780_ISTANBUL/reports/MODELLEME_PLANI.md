@@ -314,6 +314,13 @@ Plan §6 madde 5 (BoatSet, AnchorSet) ve güverte donanımı (ırgat). Ölçüle
 - **Gülle rafları** `CORE_SHOT_RACKS`: üst güvertede toplar arasında 18 raf, her birinde 10 gülle (çap 0,10 m, namlu çapına göre).
 - **Tulumbalar** `MOD_PUMP_ELM_A_{S,P}`: ana direğin kıçında (x = 0,55, y = ±0,85 m), `SOCKET_PUMP_*` ve `SOCK_CREW_PUMP_*`. Top mürettebatına en yakın mesafe 1,05 m.
 
+## 5t. Pass v019: kalite denetimi düzeltmeleri (2026-09-26)
+
+Geometri değişmedi.
+- `UCX_MOD_BOAT_CUTTER_A_00` 294 köşeliydi (sınır 64). Filika kabuğundan seyreltilmiş örneklerle 36 köşe olarak yeniden kuruldu.
+- v015 tırmanma UCX'leri rota adıyla adlandırılmıştı. UE kuralı `UCX_<RenderMesh>_NN` olduğu için `UCX_MOD_RIG_STANDING_{MAST}_A_NN` yapıldı; rota adı `climb_route` özelliğinde.
+- Son durum: 193 UCX, en fazla 58 köşe; sahibi olmayan UCX ve ad kuralını bozan UCX yok. 382 soketin hepsinde `manifest_version` var.
+
 ## 6. Sıradaki adımlar
 
 **Kurallar:** `reports/URETIM_GEREKSINIMLERI.md`: UE 5.8, fotogerçekçi ve game-ready, modüler yapı, yürünebilir güverte, versiyonlu kayıt, her pass sonunda render ve audit. v002'den itibaren her pass önceki `.blend` üzerinde çalışır; tüm gemi baştan kurulmaz.

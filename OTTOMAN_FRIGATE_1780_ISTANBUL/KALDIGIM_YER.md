@@ -1,4 +1,4 @@
-# Kaldığım Yer — v018 (2026-09-26)
+# Kaldığım Yer — v019 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,10 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v018 (son sürüm)
+## v019 (son sürüm)
+- `scripts/pass_v019_qa_fixes.py`: UCX kalite düzeltmeleri (filika UCX'i sadeleşti, tırmanma UCX adları UE kuralına uydu). Geometri v018 ile aynı. §5t.
+
+## v018
 - `scripts/pass_v018_battery_dressing.py`: alt güverte asma dirsekleri, halka cıvataları, brok halatları, gülle rafları, 2 tulumba. §5s.
 - Ölçülü pafta: `renders/v018/olculu/` (`annotate_views.py` artık armalı gemiyi kadraja sığdırıyor; alt güverte ve direk tepesi ölçüsü eklendi).
 

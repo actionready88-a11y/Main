@@ -420,3 +420,24 @@ Kullanıcı: "Gemi frigate olacak; kalyon ve hat gemisi ayrıntısı eklenmeyece
 ## 8. Brig alternatifi (ayrı gemi olarak)
 
 Katalog: "Brig esas olarak 18. yy için güvenlidir" (`_context/GEMI_SINIFLARI_URETIM_KATALOGU.md`, #30). İki direkli ve kare armalı olur. Bu frigate'in malzeme kütüphanesini, top modüllerini ve soket şemasını yeniden kullanabilir. Kendi Gate A araştırması gerekir: ölçü, arma ve en az üç kaynak.
+
+## 5ad. Pass v028: Osmanlı tunç topu C (2026-09-26)
+- `MOD_CANNON_OTTOMAN_C`: tunç namlu (yunus kulplar, stilize tuğra madalyonu ve kitabe kartuşu, sarmaşık bilezikler — belirli
+  bir tarihî tuğra/yazı değildir), AO tabanlı patina; yıpranmış boyalı kızak; 40 yan palanga, 10 takım rafı. 28 top.
+
+## 5ae. Pass v029: yelken aç/kapa anahtarı (2026-09-26)
+- `00_CONTROLS/CTRL_YELKEN.yelken_acik` (0 sarılı / 1 açık) sürücüleri + N paneli "Gemi" sekmesi + Outliner alt koleksiyonları.
+
+## 5af. Pass v030: kalite testi — low-poly yasağı denetimi (2026-09-26)
+- Ayrıntı: `reports/KALITE_TESTI_v030.md`. Kural: kiriş sapması ≤ 1,5 mm, bevel ≥ 3 segment, subsurf viewport = render.
+- Hatalı nesne 86 → 23, faset 15.249 m → 343 m, havada parça 35 → 0. Araçlar: `skills/tersane/scripts/{quality_audit,resegment}.py`.
+
+## 5ag. Pass v031: Osmanlı süslemeleri + kuşak tahtası düzeltmesi (2026-09-26)
+- Kuşak tahtaları (channels) altın silmenin üstüne, sheer'i izleyerek taşındı (ön direk +0,08…+0,53 m; ana ve mizana +0,08…+0,39);
+  bigot, savlo, çarmıh (doğrusal enterpolasyon), iskalarya, UCX, tırmanma soketleri birlikte. Lumbar önünden geçen 22 zincir
+  levhası lumbarın 3 cm üstünde bitiyor. (Kullanıcının v027 görüntüsündeki "kalmış parça" = kuşak tahtasını delen lumbar lentosu.)
+- Süslemeler (hepsi `25_MODULES_ORNAMENT`, `OrnamentSet / OTTOMAN_A`, `CTRL_SUSLEME.susleme_acik` ile açılır/kapanır):
+  gövde rumi frizi (iki borda), kıç tabanı rumi şemse panoları + korkuluk frizi, 3B hilal-yıldız arma (rumi kanatlı yeşil madalyon),
+  kasara alnı panoları + lale frizi, kedi başı rozetleri, alemler; kamara: İznik üslubu çini kuşağı, kalemişi duvar ve tavan, lale
+  frizi, Uşak üslubu halı, sedir minderleri + yastıklar. Desenler prosedürel çizim (üslup esinli) [TAHMİN].
+- Kalite testi: yeni modüllerde havada parça yok; kıç panosu (sayaç eğriliği 6 mm), minder köşesi (3,6 mm), arma (3 mm) eşik üstü küçük artık.

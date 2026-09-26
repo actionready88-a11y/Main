@@ -25,7 +25,14 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 ## Skill
 - `skills/tersane/SKILL.md`: bu gemide öğrenilenler (gemi bitene kadar güncellenir; kullanıcı daha sonra skill'lere ekleyecek).
 
-## v030 (son sürüm) — kalite testi (low-poly yasağı denetimi)
+## v031 (son sürüm) — Osmanlı süslemeleri + kuşak tahtası
+- Anahtar: Outliner → `00_CONTROLS/CTRL_SUSLEME` → Custom Properties → `susleme_acik` (1 açık / 0 sade). Modüller: `25_MODULES_ORNAMENT`.
+- Kuşak tahtaları lumbarların üstüne taşındı; zincir levhaları lumbar önünden çekildi (kullanıcının gösterdiği "kalmış parça").
+- Dokular: `Textures/ornaments/` (BC + H); UE için H → normal bake, altın maskesi renkten (metalik).
+- Sıradaki: süsleme renderlarını gözden geçir; kalan küçük fasetler (kıç panosu, minder köşesi); direk çanaklık kenarı;
+  gövde kıç tuck; bozkurt figürü nihai model; top C UV/bake.
+
+## v030 — kalite testi (low-poly yasağı denetimi)
 - Rapor: `reports/KALITE_TESTI_v030.md` (+ `kalite_testi_v029.json` / `kalite_testi_v030.json`). Hatalı nesne 86 → 23,
   faset kenar 15.249 m → 343 m, havada parça 35 → 0. Araçlar Tersane skill'inde: `quality_audit.py`, `resegment.py`.
 - Küpeşte/silme/bordalar yeni profil; lumbar çerçeveleri gövdeye oturuyor (artık çubuk giderildi); halat/seren/direk/bigot

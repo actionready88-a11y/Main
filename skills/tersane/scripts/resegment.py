@@ -247,6 +247,34 @@ def densify(groups, tol=0.0015, hard_deg=60.0, max_insert=8, max_insert_path=24,
     return out, added
 
 
+def fillet_kinks(groups, deg=8.0, d_fac=3.0, d_min=0.04):
+    """Yolu keskin dönen halat (makara/kasa dönüşü): kırılma halkası, iki yanındaki doğru parçaları üzerinde ±d'ye
+    konan iki halkayla değiştirilir; ardından densify() arayı Catmull-Rom ile doldurur → yarıçapı ≈ d olan dönüş
+    (makara dilinin sarımı gibi). d = max(d_fac·r, d_min), bitişik parçaların %40'ını aşmaz."""
+    idx = [i for i, g in enumerate(groups) if g[0] == "R"]
+    if len(idx) < 3:
+        return groups, 0
+    rings = [groups[i][1] for i in idx]
+    turns = _path_turns(rings)
+    out = [groups[i] for i in range(idx[0])]
+    n_f = 0
+    for j, ri in enumerate(rings):
+        if 0 < j < len(rings) - 1 and turns[j] >= deg:
+            c, r, n, u = ri
+            din, dout = c - rings[j - 1][0], rings[j + 1][0] - c
+            d = min(max(d_fac * r, d_min), 0.4 * din.length, 0.4 * dout.length)
+            din, dout = din.normalized(), dout.normalized()
+            for cc, nn in ((c - din * d, din), (c + dout * d, dout)):
+                uu = u - nn * u.dot(nn)
+                uu = uu.normalized() if uu.length > 1e-6 else nn.orthogonal().normalized()
+                out.append(("R", (cc, r, nn, uu)))
+            n_f += 1
+        else:
+            out.append(("R", ri))
+    out += [groups[i] for i in range(idx[-1] + 1, len(groups))]
+    return out, n_f
+
+
 # ------------------------------------------------------------------ yeniden kurma
 def _build_rings(bm, groups, seg0, caps, seg, mat, smooth, uv):
     new_groups = []
@@ -407,9 +435,10 @@ def islands(bm):
 
 
 def resegment_mesh(me, scale=1.0, tol=0.0015, max_seg=64, min_seg=6, keep=None, sharp_deg=35, densify_paths=True,
-                   hard_path_deg=None):
+                   hard_path_deg=None, fillet_path_deg=None):
     """Mesh'i yerinde yeniden dilimler. scale: nesne → dünya ölçeği (yarıçap kuralı dünya metresinde).
-    keep(info) True dönerse ada olduğu gibi kalır (ör. kasıtlı altıgen fener)."""
+    keep(info) True dönerse ada olduğu gibi kalır (ör. kasıtlı altıgen fener).
+    fillet_path_deg: yolu bu açıdan fazla kırılan halkalarda dönüş yuvarlatılır (fillet_kinks)."""
     bm = bmesh.new()
     bm.from_mesh(me)
     bm.verts.index_update()
@@ -443,8 +472,12 @@ def resegment_mesh(me, scale=1.0, tol=0.0015, max_seg=64, min_seg=6, keep=None, 
             if keep and keep({"kind": "ring", "seg": seg0, "r": rmax}):
                 rep["kept"] += 1
                 continue
+            n_fil = 0
+            if fillet_path_deg is not None:
+                groups, n_fil = fillet_kinks(groups, fillet_path_deg)
+                rep["fillets"] = rep.get("fillets", 0) + n_fil
             dgroups, added = densify(groups, tol / max(scale, 1e-6), hard_path_deg=hard_path_deg) if densify_paths else (groups, 0)
-            if seg <= seg0 and not added:
+            if seg <= seg0 and not added and not n_fil:
                 rep["kept"] += 1
                 continue
             rep["rings_added"] = rep.get("rings_added", 0) + added

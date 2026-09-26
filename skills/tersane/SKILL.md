@@ -136,6 +136,8 @@ Kullanım: `import sys; sys.path.append("<skill>/scripts"); import geom, stairs,
   faset temizliği, bozkurt figürü tek parça (metaball + gömme + EXACT birleşim).
 - **v035–v036:** bozkurt figürü SDF yontusu (`sdf_sculpt.py`; tek alan → tek parça), yele yumuşak kaynak + patinalı
   bronz (altın kenar = solucan etkisi), malzeme çoğunluk süzgeci; baş parmaklıkları bordaya gömülü.
+- **v037:** eğik çanaklık topolojiyle bulunur (eksene dik varsayma); halat dönüşü `fillet_kinks`; seçici kıvrımlı
+  Catmull-Clark + ölç/geri al (`pass_v037_facet_cleanup2.cc_subdivide`). Kalite testi 23 → 3 nesne.
 - **v030 (kalite testi):** low-poly yasağı ölçülebilir hale geldi (kiriş sapması, bevel ≥ 3, subsurf seviye eşitliği);
   `quality_audit.py`, `resegment.py`; faset 15.249 m → ~350 m, havada parça 35 → 0; fıçı örnekleme.
 - **v028–v029:** Osmanlı tunç topu C (yunus kulp, stilize tuğra/kitabe, AO patina, yıpranmış boyalı kızak, palanga, alet

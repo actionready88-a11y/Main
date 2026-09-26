@@ -448,3 +448,7 @@ Katalog: "Brig esas olarak 18. yy için güvenlidir" (`_context/GEMI_SINIFLARI_U
   profil + 2 destek.
 - v036: yele tek oyma kütle (`scripts/wolf_sdf2.py`), patinalı döküm bronz malzeme, diş/dil malzeme sınırı temizliği.
   Hazır ücretsiz varlık bu ortamdan erişilemedi (ağ politikası). Oranlar üslup gereği [TAHMİN]. Gate A onayı bekler.
+
+## 5ai. Pass v037: faset temizliği 2. tur (2026-09-26)
+- Çanaklık (3 direk), hareketli arma dönüşleri, 16 küçük modülde seçici Catmull-Clark. Kalite testi: 23 → 3 nesne
+  (gövde kıç altı, kıç galerisi, filika — ayrıntı `reports/kalite_testi_v037.json`).

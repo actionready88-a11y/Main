@@ -1,9 +1,9 @@
-# Kaldığım Yer — v036 (2026-09-26)
+# Kaldığım Yer — v037 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
 ## ► MASAÜSTÜNDE DEVAM (buradan başla)
-- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v036.blend` (her pass önceki sürümü açar, yenisini kaydeder;
+- **Son sürüm:** `Blender/versions/OTTOMAN_FRIGATE_1780_ISTANBUL_v037.blend` (her pass önceki sürümü açar, yenisini kaydeder;
   var olanın üzerine yazılmaz). Betikler `scripts/pass_vNNN_*.py`; çalıştırma: `python3.11 scripts/pass_vNNN_x.py --no-render`
   (bpy 5.0.1 modülü) ya da yerelde `blender -b --python scripts/pass_vNNN_x.py -- --no-render`.
 - **İndirilebilir paket:** `TESLIM/` klasöründe iki zip (GitHub 100 MB sınırı nedeniyle ikiye bölündü):
@@ -15,10 +15,9 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
   her pass sonunda `python3.11 ../skills/tersane/scripts/quality_audit.py <blend> --out reports/kalite_testi_vNNN.json`
   (faset = kiriş sapması > 1,5 mm; düz gölge; havada ada). Yuvarlak parça dilimi: `resegment.required_segments(r)`.
 - **Sıradaki işler (öncelik sırası):**
-  1. Kalan küçük fasetler: `reports/kalite_testi_v033.json` → `fail: true` (23 nesne; çoğu 1,6–3 mm). Büyükler: gövde kıç
-     "tuck" (su altı, 7 mm), filika (7 mm; yumuşak alt bölme denendi → şişirdi, geri alındı), ana/mizana çanaklık kenarı
-     (16 mm; `pass_v033` `mast_tops()` yalnız ön direkte adayı buldu → seçim ölçütünü genişlet), hareketli armada halat
-     makara içinde döner (örtülü, kabul).
+  1. Kalan küçük fasetler (v037 sonrası 3 nesne, `reports/kalite_testi_v037.json`): gövde kıç "tuck" (su altı, çoğu ≈ 2 mm,
+     en kötü 7 mm; subsurf 3 gövdeyi 2,2 M üçgene çıkarır → bölgesel çözüm gerek), kıç galerisi (2,6 mm; Catmull-Clark
+     12,7 mm saptırdığı için geri alındı), filika (1,8 mm).
   2. Bozkurt figürü: v036'da patinalı bronz, yele tek oyma kütle (`scripts/wolf_sdf2.py`; v035 kaynağı `wolf_sdf.py`
      değişmeden duruyor). Kullanıcı onayı bekliyor. Hazır varlık: bulut ortamında Sketchfab/Poly Haven/Free3D/Printables
      ağ politikası nedeniyle kapalı → masaüstünde CC0/CC-BY kurt başı bakılabilir (lisanslı Fab varlığı depoya girmez).
@@ -28,6 +27,14 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - **Tuzaklar (kısa):** eski pass üreticilerini yeniden çağırmak konumu kaydırabilir (pass zinciri yamaları) → mesh düzeyinde
   düzelt; `pgrep -f`/`pkill -f` deseni kendi kabuğunu öldürür → PID ile durdur; subsurf viewport = render seviyesi.
   Ayrıntılı ders listesi: `skills/tersane/SKILL.md`.
+
+## v037 — faset temizliği 2. tur (23 → 3 nesne)
+- Çanaklıklar: ana/mizana çanaklığı direk yatıklığı kadar eğik olduğundan v033 seçiminden kaçmıştı → topolojiyle 4 halka
+  + uyarlamalı Catmull-Rom (üç direk; 16 mm → 0).
+- Hareketli arma: makara/babada keskin dönüş (116 mm) → `resegment.fillet_kinks` (±d halkası, d = max(3r, 4 cm)) +
+  0,6 mm toleransla sıklaştırma → eşik altı.
+- Filika, ırgat, kıç panoları, fener, dümen dolabı, tulumba, ambar yükü, alt kuşak, bodoslama, 4 seren, 2 sarılı yelken:
+  yalnız faset adalarına kıvrımlı (crease) 1 düzey Catmull-Clark; ölçülerek tutuldu (sapma ≤ 12 mm, en kötü sapma azaldı).
 
 ## v036 — bozkurt figürü B3 (patinalı bronz, oyma yele)
 - Kullanıcı v035 için "figür olmamış" dedi: yele tutamları "solucan" gibi; altın kenar çizgileri etkiyi büyütüyordu.

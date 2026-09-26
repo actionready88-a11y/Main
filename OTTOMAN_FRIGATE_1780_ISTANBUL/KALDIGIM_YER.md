@@ -1,4 +1,4 @@
-# Kaldığım Yer — v012 (2026-09-26)
+# Kaldığım Yer — v016 (2026-09-26)
 
 Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör: `OTTOMAN_FRIGATE_1780_ISTANBUL/`)
 
@@ -22,7 +22,19 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Her yer gezilebilir ve tırmanılabilir (AC tarzı).
 - **Kıç:** kullanıcı görseli tarzında yüksek, merdivenle çıkılan kıç üstü güverte; üzerinde dümen → v005'te yapıldı. Kullanıcı ileride eklenecek bir şey olursa söyleyecek.
 
-## v012 (son sürüm)
+## v016 (son sürüm)
+- `scripts/pass_v016_cabin_interior.py`: kaptan kamarası eşyaları (masa, sandalyeler, yazı masası, asma yatak, sandık, büfe, kıç sediri, fener); ayrı `InteriorSet` modülleri. Üst ve alt güvertenin kıç aynasına kadar uzanmayan kısmı kapatıldı. Ayrıntı: MODELLEME_PLANI §5q.
+
+## v015
+- `scripts/pass_v015_rigset.py`: 3 direk + çanaklıklar + 9 seren + gaf/bumba + cıvadıra; sabit arma, iskalarya, 12 tırmanma rotası, UCX. Oranlar TAHMİN (Lees ile doğrulanmalı). Filika soketi taşındı. §5p.
+
+## v014
+- `scripts/pass_v014_cannon_9pdr.py`: `MOD_CANNON_9PDR_A` (kızak + namlu ayrı); 24 top takılı, alt güverte 20 soket boş. 216 soket güverte yüzeyine oturtuldu. §5o.
+
+## v013
+- `scripts/pass_v013_hull_b_lower_deck.py`: **Hull_B** (kullanıcı kararı "1"). Gemi suda +1,00 m yükseldi (su çekimi 3,95 m); alt top güvertesi (üstün 2,2 m altı), 10+10 kapaklı lumbar, 3 ambar ağzı, 2 iniş merdiveni, subay bölmesi, 8 fener, 100 yeni top/mürettebat soketi. §5n.
+
+## v012
 - `scripts/pass_v012_guns20.py`: 20 borda (10/borda) + 4 kovalama. Alt güverte topları ileride yükseltme olarak eklenecek (yüksek bordalı Hull varyantı gerekir).
 
 ## v011
@@ -76,5 +88,10 @@ Branch: `claude/amazing-meitner-keq46t` (repo: actionready88-a11y/Main, klasör:
 - Rapor: `reports/reference_audit/age_of_sail/` (render adımı kullanıcı ortamında görsel üretmedi). Varlığın kendisi repoya girmez.
 
 ## Sıradaki adım
+- Kullanıcı incelemesi: v013-v016 renderları (`renders/v013` … `renders/v016`).
+- Aday işler: SailSet (yelkenler), hareketli arma (halat/makara), filika (BoatSet), çapa (AnchorSet), ırgat, iç postalar, UV/PBR bake ve LOD.
+- Arma oranları için Lees tablosuyla doğrulama (yerelde kitap/PDF varsa).
+
+## Eski sıradaki adım notları (v002 dönemi)
 - v002: kıç aynası ve galeri (`SternModule`), lumbar kapakları, güverte donanımı, bocurumlar.
 - Sonra: RigSet (direk boyları için kaynak), CannonBattery, SailSet.

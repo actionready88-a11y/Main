@@ -250,7 +250,50 @@ Kullanıcı kararı: "Kamara, dümenin altındaki kapılı kısımda olacak; eks
 Kullanıcı kararı: "Toplam top sayısını 20'ye indir; oyunda yükseltme ile alt güverteye ekstra toplar eklenebilir." Netleştirme: **20 + 4**.
 - **Toplar:** 20 borda topu (bordada 10, üst güvertede, belde; x = -11,06 … 10,50 m dünya) + 2 baş kovalama + 2 kıç kovalama (kamara pencerelerinden). Baş kasarası altındaki sıkışık top çifti kaldırıldı.
 - `scripts/pass_v012_guns20.py`: lumbar kesicisi yerinde yenilendi, çerçeveler yeniden üretildi, 10 soket (top + mürettebat) silindi. Gövde değişmedi (manifest 10).
-- **Alt güverte yükseltmesi (plan):** Mevcut gövdede alt güverte lumbarları su hattının altında kalıyor. Yükseltme, bordası ~2,2 m yüksek ayrı bir Hull varyantı olarak yapılmalı (`MODULAR_SHIP_STANDARD`: yapısal gövde değişimi yeni hull sınıfıdır). Ayrı pass ve onay gerekiyor.
+- **Alt güverte yükseltmesi (plan):** Mevcut gövdede alt güverte lumbarları su hattının altında kalıyor. Yükseltme, bordası ~2,2 m yüksek ayrı bir Hull varyantı olarak yapılmalı (`MODULAR_SHIP_STANDARD`: yapısal gövde değişimi yeni hull sınıfıdır). Ayrı pass ve onay gerekiyor. → v013'te yapıldı (§5n).
+
+
+## 5n. Pass v013: Hull_B, alt top güverteli gövde (2026-09-26)
+
+Kullanıcı kararları: (1) gemi baştan Hull_B olarak kurulur, alt lumbarlar kapalı gelir, yükseltme kapakları açıp topları takar; (2) gemi aynı yükseklikte kalır; (3) güverteler arası 2,2 m; (4) alt güverte su hattının altına düştüğü için **gemi suda yükselir**.
+- **Su hattı:** gövde geometrisi değişmedi; bütün gemi +1,00 m taşındı (su hattı Z=0 standardı korunur). Su çekimi 4,95 → **3,95 m**. Gemi sudan 1 m daha yüksek görünür.
+- **Seviyeler (dünya, su hattından):** alt güverte 0,89 m (orta kesit), üst güverte 3,09 m. Alt lumbar eşiği en düşük 1,50 m. Kiriş altı net 1,89 m.
+- **Alt batarya:** bordada 10 lumbar, üsttekilerin arasına şaşırtmalı (x = -9,86 … 11,70 m). Kesici `CUT_GUNPORTS_LOWER`, çerçeveler `CORE_GUNPORT_FRAMES_LOWER`, lumbarların altında yeni kuşak `CORE_WALE_LOWER_TIER`.
+- **Lumbar kapakları:** `MOD_PORT_LID_LOWER_{S,P}_{01-10}` (20 adet, tek paylaşılan mesh). Orijin menteşede; yerel X etrafında +80° açılır. Varsayılan durum kapalı. Soket `SOCKET_PORT_LID_*`.
+- **Soketler:** `SOCKET_CANNON_LOWER_*` (20, `default_enabled = false`, `upgrade = lower_deck_battery`), `SOCK_CREW_LOWER_*` (80), `SOCK_STATION_LOWER_BATTERY_OFFICER` (komuta zinciri oyuncu → 2. kaptan → topçu subayı → alt batarya subayı).
+- **Ambar ağızları:** kıç ve baş ambar ağzı (merdivenli, 54-55°, basamak yüksekliği 0,24-0,25 m), ana ambar ağzı ızgaralı (üstünde yürünür). Üst güvertede delikler boolean ile açıldı (`CUT_HATCHES`). Kirişler `CORE_DECK_BEAMS_UPPER` ambar ağızlarında kesilir.
+- **Subay bölmesi (gunroom):** alt güverte kıçında, ön yüzü x = -11,55 m; kapı 0,94 × 1,81 m. 2 duvar feneri içeride, 6 fener borda duvarlarında (`MOD_LANTERN_WALL_A_*`, `SOCK_LANTERN_LOWER_*`).
+- **Çarpışma:** eski dolu "hull" dilimleri (üst güverteye kadar) ve delik açılmamış üst güverte dilimleri kaldırıldı. Yerlerine ambar altı dolu dilimler, iki güverte arası borda duvarları, delikli üst güverte, alt güverte, ambar koamingleri/ızgarası, merdiven rampaları ve bölme duvarı geldi. Toplam 126 UCX.
+- **Parça sayısı (Hull Core):** 33 parça + 4 kesici. Gövde grubu 14, güverte grubu 19.
+- **Denetim:** mürettebat güverte dışında 0, merdiven/bölme çakışması 0. Ambar ağzı–direk mesafesi en az 2,4 m.
+
+## 5o. Pass v014: 9 librelik top modülü (2026-09-26)
+
+- `MOD_CANNON_9PDR_A`: kızak (truck carriage, 1.912 üçgen) ve namlu (2.172 üçgen) ayrı mesh. Namlu kızağın çocuğu, pivotu muylu ekseninde (yükseliş). Kızak soket orijininde; yerel +X namlu yönü.
+- **Ölçüler:** namlu çapı 0,107 m (4,2 inç) [İKİNCİL: IMA, arama özeti]. Namlu boyu 2,44 m, muylu yüksekliği 0,86 m, kızak boyu 1,30 m, teker yarıçapı 0,21/0,19 m: TAHMİN (lumbar merkezine göre).
+- 24 top takıldı (20 borda + 4 kovalama). Alt güverte soketleri boş (yükseltme; `module_family_accepts = MOD_CANNON_9PDR_A`).
+- Mesh soketleri: `SOCKET_GUN_MUZZLE`, `SOCKET_GUN_TOUCHHOLE` (ana örnek S_01 namlusunda).
+- **Soket düzeltmesi:** v004'ten beri top ve mürettebat soketleri güvertenin orta hat yüksekliğindeydi. Kamburluk ve sheer yüzünden bazıları güvertenin 0,1 m altında, kovalama mürettebatı 0,3 m üstündeydi. 216 soket güverte yüzeyine oturtuldu (manifest 12).
+- Namlu ağzı lumbardan 0,37 m dışarıda (yerel x = 1,69). Kızakla çakışan mürettebat noktası yok.
+
+## 5p. Pass v015: RigSet — direkler, serenler, sabit arma (2026-09-26)
+
+Kaynak durumu: Lees (*Masting and Rigging of English Ships of War*) ve benzeri tablolar bu ortamda açılamadı. Bu yüzden oranlar **TAHMİN** (dönem kuralları) olarak kullanıldı ve Lees ile doğrulanmalı.
+- **Direkler (dünya):** alt direk boyları pruva 22,60, ana 25,43, mizana 21,87 m (ana = (güverte boyu + en)/2; pruva 8/9; mizana 0,86). Çap yarda başına 1 inç (ana 0,71 m). Gabya 0,6 × alt direk (mizana 0,55), babafingo 0,5 × gabya. Yatıklık 0 / 1,5 / 3°. Ana direk topuzu su hattından 39,8 m.
+- **Çanaklıklar:** D biçimli platform, lubber deliği, kıç korkuluğu; gabya kıstakları. Ana çanaklık eni 5,09 m.
+- **Serenler:** 9 seren (alt, gabya, babafingo × 3 direk) + mizana gaf ve bumba. Ana alt seren 22,13 m. Her seren ayrı nesne; pivot askıda, direk ekseni etrafında brasya (sınır 35°, TAHMİN). Altlarında basamak halatı (footrope) ve üzengiler var (AC tarzı seren yürüyüşü).
+- **Cıvadıra:** 15,26 m, eğim 25° (TAHMİN), üstünde flok bumbası; pruva başının hemen üstünden geçer.
+- **Sabit arma:** kuşak tahtaları (channels), bigotalar ve savlolar, zincir levhaları. Çarmıh sayısı bordada 9/9/5 (TAHMİN). Alt çarmıhlarda ve gabya çarmıhlarında iskalarya (0,40 m aralık), futtock çarmıhları, babafingo çarmıhları, patrisalar, 8 istralya.
+- **Tırmanma:** 12 tırmanma rotası (`SOCK_CLIMB_{MAST}_{S,P}_{LOWER,TOPMAST}_{BOTTOM,TOP}`), `climb_shrouds` UCX'leri. Çanaklık ve kıstaklar yürünür. Direkler, serenler ve cıvadıra için UCX var; lubber deliği çarpışmada kapalı (tırmanış futtock çarmıhlarından). Seren uçlarında `SOCK_YARDARM_*`, SailSet için `sail_slot` özellikleri.
+- **Filika soketi:** v001'den beri ana direkle çakışıyordu. Ana ve pruva direkleri arasına alındı. Kızaklar güverteden 2,2 m yüksekte: altından yürünür ve baş ambar merdiveni açık kalır.
+- Arma toplamı 65 bin üçgen. Yelken ve hareketli arma (halat, makara) yok.
+
+## 5q. Pass v016: Kaptan kamarası içi (2026-09-26)
+
+- Eşyalar ayrı modüller (`InteriorSet`, orijin zeminde, `SOCK_INTERIOR_*`): harita masası (açık ve dürülmüş haritalar, pergel), 4 sandalye, yazı masası (çekmeceli, seyir defteri, hokka) ve sandalyesi, asma yatak (cot), altında sandık, büfe (sürahi, kadehler), kıç pencere sediri (dolaplı, minderli), asma pirinç fener.
+- Yerleşim kıç kovalama toplarının mürettebat noktalarını boş bırakır (denetim: 0 çakışma, oda dışına taşan yok). Masada net tavan 2,49 m.
+- **Güverte boşluğu düzeltmesi:** üst güverte kıç aynasından 0,59 m, alt güverte 0,24 m önde bitiyordu (v011/v013'ten kalma açıklık). İki güverte de aynaya uzatıldı, dolgu UCX'leri eklendi.
+- Mobilya ölçüleri TAHMİN. Mobilya için tarihsel kaynak kullanılmadı.
 
 ## 6. Sıradaki adımlar
 
